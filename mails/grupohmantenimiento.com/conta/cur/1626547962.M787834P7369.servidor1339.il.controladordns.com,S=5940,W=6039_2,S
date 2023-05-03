@@ -1,0 +1,99 @@
+Return-Path: <facturacion.elcandado@gmail.com>
+Delivered-To: conta@grupohmantenimiento.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id uHziLvom82DJHAAAlvxoiw
+	(envelope-from <facturacion.elcandado@gmail.com>)
+	for <conta@grupohmantenimiento.com>; Sat, 17 Jul 2021 13:52:42 -0500
+Return-path: <facturacion.elcandado@gmail.com>
+Envelope-to: conta@grupohmantenimiento.com
+Delivery-date: Sat, 17 Jul 2021 13:52:42 -0500
+Received: from ts.anti-spam-premium.com ([67.227.206.171]:51754)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <facturacion.elcandado@gmail.com>)
+	id 1m4pQc-0002Ol-Gw
+	for conta@grupohmantenimiento.com; Sat, 17 Jul 2021 13:52:42 -0500
+Received: from mail-qv1-f52.google.com ([209.85.219.52])
+	by ts.anti-spam-premium.com with esmtps (TLSv1.2:AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <facturacion.elcandado@gmail.com>)
+	id 1m4pQW-0001hz-76
+	for conta@grupohmantenimiento.com; Sat, 17 Jul 2021 14:52:42 -0400
+Received: by mail-qv1-f52.google.com with SMTP id gh6so6286971qvb.3
+        for <conta@grupohmantenimiento.com>; Sat, 17 Jul 2021 11:52:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:reply-to:to:subject:content-transfer-encoding
+         :date:message-id;
+        bh=ILoiqp/GTVEI5wM1EI9ieolZ0Of6g0RG9nxG0zjHIhs=;
+        b=BkSBn+Ln3eiYqjUZ57lh9sooUmlRhCaX3APDFRgP11R//AexSfrjI6YGtcOVrxuFy/
+         vgeNusOyoHcAAgDxMK/jh378Jdh8sNmJw1rB3vptPOSfYZkVZKKDtrhaUTn/8j8dUBjm
+         t+iHMQbhMqDvbCi1nBUl3Q3B8R7w/DQXBLHJgpHX7ur7fSymSvj/6OCSHrttC13KX28f
+         7oEpGVGE/4IWsOiG9RuUTl++sNo3h1k7+4LD3oAnwbhGMBO0ZT0n/Vd9GxRZlijmhEs+
+         FDcuLeRXfvBHgIq7X7TH60ZBgBXEeubkn3XWIHbE3MscjsRSNcDi94KdALomhGv2GWMG
+         dEJQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:reply-to:to:subject
+         :content-transfer-encoding:date:message-id;
+        bh=ILoiqp/GTVEI5wM1EI9ieolZ0Of6g0RG9nxG0zjHIhs=;
+        b=AsEEC9DC0GHnVo9dtR1THuFczgURSgdHiEUWqPnBGgbsXSsgLUXVwF9xiXFOz/9ym4
+         KLFTYIg45EqSWv5SxBIKknlrwqVLj9kPFzNO82cuUHgCxK/KcDy2AVy4MHH94bDS9v7U
+         gKU8tVxz/LGzYRH4KBgUBxtZj6E0Ce1DNULk6i77Ptm97EwFqFooeMT5zYAkL94pzn7B
+         y5V5BljaUJ/2ip0Qw/OilRkpZChJrnChJyzCn5ldtGANEweoFecopedurZp+Yhi5kbPR
+         TRKI3efxVLWb8KD+l6vCEf0Q1gERLoqMNqt3uYoJ4ykQKc1S0lDjO4/jk4XM8q7BD2Zp
+         Viqw==
+X-Gm-Message-State: AOAM530V6uxtgBYb3RDs+S0lgtQG3z1R1/6+MdRvkOqApzbxHmuWCuco
+	1r2iLLns9QjTrcBPmiNZPqhvOHeJBWY=
+X-Google-Smtp-Source: ABdhPJxeLS4Z1GQizdFSaB+TBxMAE3ISGVLls6KOhdHJgNifsQZSuH34pKc5faiB2KrzTgs3SK9KGg==
+X-Received: by 2002:ad4:4d8f:: with SMTP id cv15mr17004569qvb.9.1626547959284;
+        Sat, 17 Jul 2021 11:52:39 -0700 (PDT)
+Received: from REMOCAN (fixed-187-190-174-145.totalplay.net. [187.190.174.145])
+        by smtp.gmail.com with ESMTPSA id o1sm4534128qta.87.2021.07.17.11.52.38
+        for <conta@grupohmantenimiento.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
+        Sat, 17 Jul 2021 11:52:38 -0700 (PDT)
+MIME-Version: 1.0
+From: TLAPALERIA EL CANDADO <facturacion.elcandado@gmail.com>
+Reply-To: ventas.elcandado@gmail.com
+To: conta@grupohmantenimiento.com
+Subject: =?utf-8?Q?Notificaci=C3=B3n_de_cancelaci=C3=B3n_de_comprobante_fi?=
+	=?utf-8?Q?scal_digital?=
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+X-Mailer: MailBee Objects (ActiveX) 9.2
+Date: Sat, 17 Jul 2021 13:52:37 -0500
+Message-ID: <13884891310002674212398@REMOCAN>
+Received-SPF: pass (ts.anti-spam-premium.com: domain of gmail.com designates 209.85.219.52 as permitted sender) client-ip=209.85.219.52; envelope-from=facturacion.elcandado@gmail.com; helo=mail-qv1-f52.google.com;
+X-SPF-Result: ts.anti-spam-premium.com: domain of gmail.com designates 209.85.219.52 as permitted sender
+Authentication-Results: ts.anti-spam-premium.com;
+	iprev=pass (mail-qv1-f52.google.com) smtp.remote-ip=209.85.219.52;
+	spf=pass smtp.mailfrom=gmail.com;
+	dkim=pass header.d=gmail.com header.s=20161025 header.a=rsa-sha256;
+	dmarc=pass header.from=gmail.com
+Authentication-Results:  anti-spam-premium.com; spf=pass smtp.mailfrom=facturacion.elcandado@gmail.com; dkim=pass header.i=gmail.com
+X-HospedandoAntiSpam-Class: unsure
+X-HospedandoAntiSpam-Evidence: Combined (0.54)
+X-Recommended-Action: accept
+X-Filter-ID: 8G1aH+8yearZuN6N5+X5bm6KuAmzEgFjeXz34jnHp0wVzbtpvrU2cu0Wyo6yyKdTXYXLg2jgZlpw
+ vA2W6L/Sr1EQyVzDVZOlehQ3EiJLhbs9orOhRAqwu25/x/1ayXCyAI1CAHo+lH84adCAseEIeyHN
+ x0hYL9hofbMrnkGe68n0/2YGoFPH1JlOGffKtBEDZVS5MIWBr7osWA+IvnaaKYnP8GD7o8DMGV5P
+ F7aJdfq4Dcwf+CZK8NXgy3In+fX7Bg1TW8m30IEpk134EpDhUylPWhA+xpGaMxBBsbigK2WIUp8P
+ WMqBh8f7pLmoNVigi7PF69LGGIWRTtHQyuuUvsxn/Tql0jI5xRrwzPULm+ItJ/urtexBTb2Nca1c
+ RzjI3WlqJWhCKKDbv2ECuYRrNMeHPRyO7f8RbaFZs/jjXOBHQBZ2RXSUdgxfRiVMU1UPFPaaZGXB
+ JmvPAG7IrHXUee2VXGdtLyog7ui50fJvZPWIbrCXo4565MHVf/EW2TprOX/jxm+0q/MMrHG/meku
+ h7o0my7oT5x5Ub5qdsSeGTGRN3bkqZd7PvSc10iiaQ7w5YE5enyccp7RH4WQio3uGenkLnSpGgRC
+ FjYGYEMeIUXPCV8dSGaRpt/yaRa/KIYWLFpFCyJ/9hQbxd9VB27J3Y+kXrZFxPNMj+t8oOjdJ7Ip
+ OMQJvQ/Ck3iiU+4DQAj3YnXukgjsLOrF+P7Na/CkUTn9lJv8t10f6hiFWDTcCevwO/R5r/CG4Ng2
+ 0lAjVGb3SZgCazv9MT0QISDgBrRAT/dDTLTs+1cX8VPYFdizSmWSOOmeSfuXi01cQ5K/qcy2a9Dp
+ RTy4eLvVA4x0D3tl6qrPGvkZJ3JeTT5btLBrL5KtFyzNSjLrawP10eDWWWx0MtcpMm/EZk7iWSmd
+ Q8ShjAi07euSlgmPM3S9T3qNT5nT9jTeGhs8lEOG/clBT20v99QCOQ1fkLJT66A+pKeUmBiygVer
+ rMIGGAE0bvhiUf4eujkNDaI1BZL4xlheqFLWkF100J0bGt4w5Q8K4E5+AMOpyKA69LF1Ge2GaGfx
+ mfoC3Wt5clR5UOrQ2tXx8Bzinl/67sXLmGnBgHsrpJoHxFtIDpT88TEiAnXgl0Wd2i0ufZ5+I9Rn
+ glyjhU77BHfM8hdN7HpqOGYBdvHlR9g3cQ==
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+Le avisamos que el siguiente comprobante fiscal digital fue cancelado=0D=0D=
+Factura: A42210 del d=C3=ADa 17/07/2021=0A
+=0DCorreo electr=C3=B3nico enviado desde SAI=C2=AE

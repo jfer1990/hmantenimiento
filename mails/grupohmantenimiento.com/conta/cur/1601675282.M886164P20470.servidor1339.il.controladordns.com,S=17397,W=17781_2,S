@@ -1,0 +1,384 @@
+Return-Path: <Geovani.HM@hotmail.com>
+Delivered-To: conta@grupohmantenimiento.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id 2E2+NBKgd1/2TwAAlvxoiw
+	(envelope-from <Geovani.HM@hotmail.com>)
+	for <conta@grupohmantenimiento.com>; Fri, 02 Oct 2020 16:48:02 -0500
+Return-path: <Geovani.HM@hotmail.com>
+Envelope-to: conta@grupohmantenimiento.com
+Delivery-date: Fri, 02 Oct 2020 16:48:02 -0500
+Received: from mx.anti-spam-premium.com ([67.227.144.30]:36994)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <Geovani.HM@hotmail.com>)
+	id 1kOSuI-0000Ne-Qn
+	for conta@grupohmantenimiento.com; Fri, 02 Oct 2020 16:48:02 -0500
+Received: from mail-dm6nam10olkn2087.outbound.protection.outlook.com ([40.92.41.87] helo=NAM10-DM6-obe.outbound.protection.outlook.com)
+	by mx.anti-spam-premium.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <Geovani.HM@hotmail.com>)
+	id 1kOSuF-0007yw-75
+	for conta@grupohmantenimiento.com; Fri, 02 Oct 2020 17:48:02 -0400
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=VGkWt8K6lvMuiUtxbiD/jM2NvRX14XzZ8+n5sSu0ZJWMZJx3D/46sIAEoUIPjvnfFceTfq+ZwljCu21/VcpY3TEk9FnyVB7xcOCO/aL4SRq9SuyJ3O3kPmIgcw1yu4hqkcGfVKNW5WLee9JD35rG0LcIRTswv2HsaoYgqIh8doVphvo6QrC095K6YDaTKUjGAE4mfDfZNzkfN9G5f1Fhckn+Y/IE/O4c5i6RU2HcxyTVDuK10pHUsXQjhQhyGRd6HjYymcPcDAcmRXW9LkUxyvi8HkWa7AkISzjOlBYJOK/H6rTzNtELUZMqMWwrkXWnjdA6YJu0QIjCJEEEoqKurQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Embnhg7V5L5tWGUA7+SnSntoY2eh9VPPyABRrrNCK+k=;
+ b=NadXJalpDXa+EDdF4ktRbb+FlKGclTbi0VCUiLJ2mWA6xbEfAJxhu7SOIAk28dN4JIoTTLms1SuurWABLCuPmSUltalrFt0Zu0sByY4CCPR2gZE4ZuCSHzsSUia72AjWCvZ5nktLt/JN9ArvJfutRHlQmcG/dqN1PEG4KGkIOKzgmeu6J8gbuafg28tbVMN2jgf2ATwucYOSSb52RhwJtdYO8qpxZID/yU22jxU6Z7N9DCte+CyWD4sOBkhN+H0QW7WDMhNpKKGLmjn7ed7rPu/CsUP7YTtyqiwTsb11f5gEqRxp78QajJfvc7tTDHavfx8Ph5h/QOm4R+B82G663A==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Embnhg7V5L5tWGUA7+SnSntoY2eh9VPPyABRrrNCK+k=;
+ b=KaQEMAZfWD+qFkL7Zse0VUyDb/FOLIk4FTLe35sy93DRM79BB02k/i6IPb0gW8ugsCrqHzT34OaWBbV6aKe3OiYbNIgQ/9lnhS3yQVTo4u9Bd+JbJbBdQfxozsufMugTSLccXI4qhglwJCw2hNAIcyinJUlB8TJ1qLaHR8FB23LXK2trjV5LWohJetQSUJ6XmAUjvCO33uROfDubb0bD5Irf4KOb8AcIe0FHHhOG8ul9oiH1pxuuTGD48H6L2TzWL5fMbZWsMyusnVA89tULKIHMNicSBi2A+A9ATzYNrDp3BCpKPt5qzuVn4IsMEbozGhFBIOpkGO5bDBdyZHFFUw==
+Received: from BN7NAM10FT057.eop-nam10.prod.protection.outlook.com
+ (2a01:111:e400:7e8f::49) by
+ BN7NAM10HT206.eop-nam10.prod.protection.outlook.com (2a01:111:e400:7e8f::367)
+ with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3433.34; Fri, 2 Oct
+ 2020 21:32:36 +0000
+Received: from SA0PR03MB5610.namprd03.prod.outlook.com
+ (2a01:111:e400:7e8f::4a) by BN7NAM10FT057.mail.protection.outlook.com
+ (2a01:111:e400:7e8f::403) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3433.34 via Frontend
+ Transport; Fri, 2 Oct 2020 21:32:36 +0000
+Received: from SA0PR03MB5610.namprd03.prod.outlook.com
+ ([fe80::252b:b507:8898:8e33]) by SA0PR03MB5610.namprd03.prod.outlook.com
+ ([fe80::252b:b507:8898:8e33%9]) with mapi id 15.20.3433.039; Fri, 2 Oct 2020
+ 21:32:36 +0000
+From: Geovani Huchin Morales <Geovani.HM@hotmail.com>
+To: grupohm <conta@grupohmantenimiento.com>
+Subject: Fwd: Acuse de cita SAT
+Thread-Topic: Acuse de cita SAT
+Thread-Index: AQHWk2EH4Vo1w75WLU2weUgh5I7jKqmEuQO6
+Date: Fri, 2 Oct 2020 21:32:36 +0000
+Message-ID:
+ <SA0PR03MB5610472C8EE13049005945F199310@SA0PR03MB5610.namprd03.prod.outlook.com>
+References: <20200925172638.19E9F11871C@mx4.sat.gob.mx>
+In-Reply-To: <20200925172638.19E9F11871C@mx4.sat.gob.mx>
+Accept-Language: es-ES, en-US
+Content-Language: aa
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-incomingtopheadermarker:
+ OriginalChecksum:FC794A7724FC474DEAA9A86B35E3B6194D947943063431BE9D1B34FF41ED50A9;UpperCasedChecksum:F7E0FB73E08CC0305827AB0FAC2C9DABAABD263FF90DD08F9189FD524B571AC2;SizeAsReceived:6690;Count:43
+x-tmn: [fCFvkGDWGQoRrcQ7tAS12ldte9ft/ck9]
+x-ms-publictraffictype: Email
+x-incomingheadercount: 43
+x-eopattributedmessage: 0
+x-ms-office365-filtering-correlation-id: 45d2c95f-e5d1-4727-a38f-08d8671aae47
+x-ms-traffictypediagnostic: BN7NAM10HT206:
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ C94/3a0A/TvnKGt4vzir1yu9Nwc9pXYemKv4mFrT8QHyZKPDJ8hNl1rV3EyB54KidXH9y9tzo7S51Q+7i8UIcf7yRgeGwL3pEH6nCQUfEzKUBa5JkHNl3q6X1XH6iuvmaOUA3wYW00tweyX/KZBqM52sXtevcuI5BfW/UBjhQhOtX80CliSeOCks2TY1gmxqNGnRqfn2y86jWEkHOnnxWBicWOriObJNgRLXJUZ59oHpOdqKrojGRaPKZWMRbX3R
+x-ms-exchange-antispam-messagedata:
+ EFRecZ5qgutuaRuFcWc+vJVBsAT6JpjiMeNnzhwV4abr+weVvMEWDY2RrOhm4tIrZ6eOg7BRxcxyyf3ANvJr/YSJiXpPUXgD81h91g3TJY97fcQyIyuwbzdWm7BcV2NZRfxNnhnSH39s7kNGwBkxVw==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_SA0PR03MB5610472C8EE13049005945F199310SA0PR03MB5610namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: hotmail.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-AuthSource: BN7NAM10FT057.eop-nam10.prod.protection.outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 45d2c95f-e5d1-4727-a38f-08d8671aae47
+X-MS-Exchange-CrossTenant-originalarrivaltime: 02 Oct 2020 21:32:36.3337
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Internet
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN7NAM10HT206
+Received-SPF: pass (mx.anti-spam-premium.com: domain of hotmail.com designates 40.92.41.87 as permitted sender) client-ip=40.92.41.87; envelope-from=Geovani.HM@hotmail.com; helo=NAM10-DM6-obe.outbound.protection.outlook.com;
+X-SPF-Result: mx.anti-spam-premium.com: domain of hotmail.com designates 40.92.41.87 as permitted sender
+Authentication-Results: mx.anti-spam-premium.com;
+	iprev=pass (mail-dm6nam10olkn2087.outbound.protection.outlook.com) smtp.remote-ip=40.92.41.87;
+	spf=pass smtp.mailfrom=hotmail.com;
+	dkim=pass header.d=hotmail.com header.s=selector1 header.a=rsa-sha256;
+	dmarc=pass header.from=hotmail.com
+Authentication-Results:  anti-spam-premium.com; spf=pass smtp.mailfrom=Geovani.HM@hotmail.com; dkim=pass header.i=hotmail.com
+X-HospedandoAntiSpam-Class: ham
+X-HospedandoAntiSpam-Evidence: Combined (0.05)
+X-Recommended-Action: accept
+X-Filter-ID: 8G1aH+8yearZuN6N5+X5bm6KuAmzEgFjeXz34jnHp0yGz/RNC9gnZMIMJLVk8JlIDKS5yqsMOpmn
+ iFp4DQ82s1EQyVzDVZOlehQ3EiJLhbuOsBcFtmDWlGkvSEMLZilc6HuaC5S0uvJSwQDNIOwSDC7a
+ 9EtxK1Ct4kMy/B/H//HU0GJ3V7VxKiRV7s1g65dyzkDD8rbyZ1fiTlioHpHoAk/fcQAu5dEEvnLy
+ V3rlRUb4OBreUAE0CklYAhYsii1OpGy6oqPLpOJyyl3azd6aHZ1Bf96KF+bfr0f0b1vm346I9HP5
+ 0EgsydFmSCXRPHlc8fxa0iDy+hOfIR1/S/4TIQEbMp8Qx9A/kiwyVnREl84sOdAaBGAeOKhTx+m3
+ vF4LBytsbpvABbBLR8yoSZ07ORZKOt+DW2DRENpC9iwGgCCWCIh6nwoBuMKwN8OP5EE2QVd8qGT3
+ kn808ekKZ0JTrTJswvJ1koq4c6+UXRCtk0DaDrBJEWiwYJQ0MLQhWZXeujSbLuhPnHlRvmp2xJ4Z
+ MZE3duSpl3s+9JzXSKJpDvDlgTl6fJxyntEfhZCKje4Z6eQudKkaBEIWNgZgQx4hRc8JXx1IZpGm
+ 3/JpFr8ohhYsWkULIn/2FBvF31UHbsndehIqUczFWeS6sE8e1b5/Uvfh771mzRA2VcsgcEAzRS49
+ Dxjnlc4Q3tszkI4oEDwyGLxob9EaO71znReI7CCMABsjVO9F8BG3Z8WlZbNGPOY/rWNl2sK0Dun5
+ hPhzFd0SDEV0R5//9WR52tGG2pyaPdXMc9kk+mUIKDZP2DUx7aVOdqHTOEzMuS9Lev+4P61DI4U9
+ LBecP4cRl8dbIe8Ej+8SxMzINygQkoz/FzsGzbf8JjFbAIptFMLm9ju7xduRiJ0p+48rBITxgVl/
+ mXLzngr+hPCzrw81LDFpUqziIGt9ZRfOx17ZAdby4uB/YqjbRJ+4km1RD2PZajamdKuBpzdf8Sb9
+ gE13hlF9lf3tl8w8UQqJMhweuiNdtOyWdLQopcxWgE9H2YwKTfm191wbNyUKRK6Obnxr/EH5cLWQ
+ JzriJkJN1zAwCixmVe9p2dzSvwHd0O+UBkWeuTUc12qbY5IhF/XDYzx/454sdmulkpfeNHk15Vol
+ AGHS5rCXQKDyHObZATZ/6v/wPTT2zC3Ikga9WKf/uBGpiFTNKPDHXqU=
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+--_000_SA0PR03MB5610472C8EE13049005945F199310SA0PR03MB5610namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+Obtener Outlook para iOS<https://aka.ms/o0ukef>
+________________________________
+De: Citas@sat.gob.mx <Citas@sat.gob.mx>
+Enviado: Friday, September 25, 2020 12:26:16 PM
+Para: Geovani.HM@hotmail.com <Geovani.HM@hotmail.com>
+Asunto: Acuse de cita SAT
+
+[https://citas.sat.gob.mx/Images/GobMxLogo.png]
+Estimado(a): GEOVANI HUCHIN MORALES
+
+El Servicio de Administraci=F3n Tributaria (SAT), le informa que ha sido re=
+gistrada su cita para el servicio de e.firma de Personas F=EDsicas, solicit=
+ada en:
+
+Oficina del SAT Ubicaci=F3n       Fecha de la cita        Horario de la cit=
+a      N=FAmero de cita  N=FAmero de confirmaci=F3n
+ADSC Quintana Roo "2" Canc=FAn    Av. Bonampak, lotes 4 y 5, p.b., locales =
+8 al 10, mza. 1, Supermanzana 8, Plaza Vivendi Am=E9ricas, 77504, Canc=FAn =
+Benito Ju=E1rez, Quintana Roo.    02/10/2020      02:15 p.m.      41615282 =
+       0453958010
+
+Mensajes importantes
+
+  *   Cuentas con una tolerancia de 10 minutos m=E1ximo despu=E9s de la hor=
+a de tu cita para que le otorguen tu turno.
+  *   Para ser atendido es indispensable contar con tu turno impreso y port=
+ar una identificaci=F3n oficial vigente con fotograf=EDa y firma.
+  *   Es importante cumplir con todos los requisitos de acuerdo a lo establ=
+ecido en el Anexo 1-A de la Resoluci=F3n Miscel=E1nea Fiscal. Consulta el d=
+ocumento en la siguiente direcci=F3n electr=F3nica<https://www.sat.gob.mx/n=
+ormatividad/60276/resolucion-miscelanea-fiscal->.
+
+Importante
+
+  *   Te informamos que en caso de no requerir la cita agendada es importan=
+te cancelarla para evitar que =E9sta cuente como inasistencia.
+  *   Te informamos que, si no asistes a 2 citas en un per=EDodo de 15 d=ED=
+as, no podr=E1s registrar una nueva cita por 5 d=EDas naturales a partir de=
+ la segunda inasistencia.
+  *   Para atenci=F3n telef=F3nica marca 01 55 62722728, o desde Estados Un=
+idos o Canad=E1 el 1 877 44 88 728.
+
+[https://citas.sat.gob.mx/images/QRCode.png]
+Requisitos:
+
+  *   Identificaci=F3n oficial vigente.
+  *   CURP
+  *   Unidad de memoria extra=EDble USB.
+  *   Correo electr=F3nico.
+  *   Comprobante del domicilio conforme al apartado de Definiciones del An=
+exo 1-A de la Resoluci=F3n Miscel=E1nea Fiscal<https://www.sat.gob.mx/norma=
+tividad/60276/resolucion-miscelanea-fiscal->
+  *   Quejas y denuncias: https://www.sat.gob.mx/aplicacion/50409/presenta-=
+tu-queja-o-denuncia
+
+  *   Todos los documentos debes presentarlos en original. Los requisitos s=
+on generales por lo que se sugiere los consultes en el Anexo 1-A de la Reso=
+luci=F3n Miscel=E1nea Fiscal
+
+[https://citas.sat.gob.mx/Images/GobMxLogo.png]
+
+--_000_SA0PR03MB5610472C8EE13049005945F199310SA0PR03MB5610namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+</head>
+<body>
+<div dir=3D"ltr">
+<div></div>
+<div>
+<div><br>
+</div>
+<div><br>
+</div>
+<div class=3D"ms-outlook-ios-signature" id=3D"ms-outlook-mobile-signature">=
+Obtener <a href=3D"https://aka.ms/o0ukef">
+Outlook para iOS</a></div>
+</div>
+</div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>De:</b> Citas@sat.gob.mx &lt;Ci=
+tas@sat.gob.mx&gt;<br>
+<b>Enviado:</b> Friday, September 25, 2020 12:26:16 PM<br>
+<b>Para:</b> Geovani.HM@hotmail.com &lt;Geovani.HM@hotmail.com&gt;<br>
+<b>Asunto:</b> Acuse de cita SAT</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div style=3D"">
+<table width=3D"100%" cellpadding=3D"0" cellspacing=3D"0" style=3D"backgrou=
+nd-color:#f3f3f3">
+<tbody>
+<tr>
+<td align=3D"center">
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+<tbody>
+<tr>
+<td height=3D"76" colspan=3D"2" style=3D"background-color:#393c3e; padding:=
+0px 0px 0px 10px">
+<img src=3D"https://citas.sat.gob.mx/Images/GobMxLogo.png" width=3D"150" he=
+ight=3D"64" border=3D"0" align=3D"left"></td>
+</tr>
+<tr>
+<td colspan=3D"2" style=3D"background-color:white; padding:27px">
+<table border=3D"0" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"color:#5a5a5a; font-size:16px; text-align:left">
+<div style=3D"font-family:Arial,Helvetica">Estimado(a): GEOVANI HUCHIN MORA=
+LES<br>
+<br>
+El Servicio de Administraci=F3n Tributaria (SAT), le informa que ha sido re=
+gistrada su cita para el servicio de
+<b>e.firma de Personas F=EDsicas</b>, solicitada en:<br>
+<br>
+<table style=3D"color:#5a5a5a; width:100%; border:1px solid #5a5a5a; border=
+-collapse:collapse; font-family:Arial,Helvetica">
+<tbody>
+<tr>
+<td style=3D"text-align:center; border:1px solid #5a5a5a">Oficina del SAT</=
+td>
+<td style=3D"text-align:center; border:1px solid #5a5a5a">Ubicaci=F3n</td>
+<td style=3D"text-align:center; border:1px solid #5a5a5a">Fecha de la cita<=
+/td>
+<td style=3D"text-align:center; border:1px solid #5a5a5a">Horario de la cit=
+a</td>
+<td style=3D"text-align:center; border:1px solid #5a5a5a">N=FAmero de cita<=
+/td>
+<td style=3D"text-align:center; border:1px solid #5a5a5a">N=FAmero de confi=
+rmaci=F3n</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid #5a5a5a"><b>ADSC Quintana Roo &quot;2&quot; C=
+anc=FAn</b></td>
+<td>Av. Bonampak, lotes 4 y 5, p.b., locales 8 al 10, mza. 1, Supermanzana =
+8, Plaza Vivendi Am=E9ricas, 77504, Canc=FAn Benito Ju=E1rez, Quintana Roo.=
+</td>
+<td style=3D"text-align:center; border:1px solid #5a5a5a"><b>02/10/2020</b>=
+</td>
+<td style=3D"text-align:center; border:1px solid #5a5a5a"><b>02:15 p.m.</b>=
+</td>
+<td style=3D"text-align:center; border:1px solid #5a5a5a">41615282</td>
+<td style=3D"text-align:center; border:1px solid #5a5a5a">0453958010</td>
+</tr>
+</tbody>
+</table>
+<br>
+<div>
+<div style=3D"color:#31708F; background-color:#D9EDF7; text-align:center; p=
+adding:20px 15px; font-family:Arial,Helvetica">
+Mensajes importantes</div>
+<ul style=3D"padding-left:15px">
+<li>Cuentas con una tolerancia de 10 minutos m=E1ximo despu=E9s de la hora =
+de tu cita para que le otorguen tu turno.</li><li>Para ser atendido es indi=
+spensable contar con tu turno impreso y portar una identificaci=F3n oficial=
+ vigente con fotograf=EDa y firma.</li><li>Es importante cumplir con todos =
+los requisitos de acuerdo a lo establecido en el Anexo 1-A de la Resoluci=
+=F3n Miscel=E1nea Fiscal. Consulta el documento en la siguiente
+<a target=3D"_blank" href=3D"https://www.sat.gob.mx/normatividad/60276/reso=
+lucion-miscelanea-fiscal-">
+direcci=F3n electr=F3nica</a>.</li></ul>
+</div>
+<div style=3D"width:100%">
+<table>
+<tbody>
+<tr>
+<td colspan=3D"2" style=3D"width:100%">
+<div style=3D"color:#5a5a5a">
+<div style=3D"color:#8A6D3B; background-color:#FCF8E3; text-align:center; p=
+adding:20px 15px; font-family:Arial,Helvetica">
+Importante</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style=3D"width:80%">
+<div style=3D"margin-right:20px; margin-top:15px; color:#5a5a5a; font-famil=
+y:Arial,Helvetica">
+<ul style=3D"padding-left:15px">
+<li>Te informamos que en caso de no requerir la cita agendada es importante=
+ cancelarla para evitar que =E9sta cuente como inasistencia.</li><li>Te inf=
+ormamos que, si no asistes a 2 citas en un per=EDodo de 15 d=EDas, no podr=
+=E1s registrar una nueva cita por 5 d=EDas naturales a partir de la segunda=
+ inasistencia.</li><li>Para atenci=F3n telef=F3nica marca 01 55 62722728, o=
+ desde Estados Unidos o Canad=E1 el 1 877 44 88 728.</li></ul>
+</div>
+<div></div>
+</td>
+<td style=3D"width:20%">
+<div><img src=3D"https://citas.sat.gob.mx/images/QRCode.png" alt=3D""></div=
+>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan=3D"2" style=3D"width:100%">
+<div style=3D"margin-right:20px; margin-top:15px; color:#5a5a5a; font-famil=
+y:Arial,Helvetica">
+Requisitos:<br>
+<ul>
+<li>Identificaci=F3n oficial vigente.</li><li>CURP</li><li>Unidad de memori=
+a extra=EDble USB.</li><li>Correo electr=F3nico.</li><li>Comprobante del do=
+micilio conforme al apartado de Definiciones del <a href=3D"https://www.sat=
+.gob.mx/normatividad/60276/resolucion-miscelanea-fiscal-">
+Anexo 1-A de la Resoluci=F3n Miscel=E1nea Fiscal</a></li><li>Quejas y denun=
+cias:&nbsp;<a href=3D"https://www.sat.gob.mx/aplicacion/50409/presenta-tu-q=
+ueja-o-denuncia" target=3D"_blank">https://www.sat.gob.mx/aplicacion/50409/=
+presenta-tu-queja-o-denuncia</a></li></ul>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan=3D"2" style=3D"width:100%">
+<ul>
+<li>Todos los documentos debes presentarlos en original. Los requisitos son=
+ generales por lo que se sugiere los consultes en el Anexo 1-A de la Resolu=
+ci=F3n Miscel=E1nea Fiscal</li></ul>
+</td>
+</tr>
+<div></div>
+<tr>
+<td height=3D"76" style=3D"background-color:#393c3e; text-align:left; paddi=
+ng-left:10px; border:none">
+<img src=3D"https://citas.sat.gob.mx/Images/GobMxLogo.png" width=3D"75" hei=
+ght=3D"32" border=3D"0"></td>
+<td height=3D"76" style=3D"background-color:#393c3e; text-align:right; padd=
+ing-right:10px; border:none">
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<div></div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
+
+--_000_SA0PR03MB5610472C8EE13049005945F199310SA0PR03MB5610namp_--

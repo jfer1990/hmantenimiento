@@ -1,0 +1,266 @@
+Return-Path: <Elizabeth.Parra@colliers.com>
+Delivered-To: conta@grupohmantenimiento.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id UPYYBYvTT18XQQAAlvxoiw
+	(envelope-from <Elizabeth.Parra@colliers.com>)
+	for <conta@grupohmantenimiento.com>; Wed, 02 Sep 2020 12:16:59 -0500
+Return-path: <Elizabeth.Parra@colliers.com>
+Envelope-to: conta@grupohmantenimiento.com
+Delivery-date: Wed, 02 Sep 2020 12:16:59 -0500
+Received: from ex.anti-spam-premium.com ([67.227.206.138]:49070)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <Elizabeth.Parra@colliers.com>)
+	id 1kDWNX-0005Ic-2B
+	for conta@grupohmantenimiento.com; Wed, 02 Sep 2020 12:16:59 -0500
+Received: from mail-bn8nam12on2041.outbound.protection.outlook.com ([40.107.237.41] helo=NAM12-BN8-obe.outbound.protection.outlook.com)
+	by ex.anti-spam-premium.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <Elizabeth.Parra@colliers.com>)
+	id 1kDWNV-0004k8-4s
+	for conta@grupohmantenimiento.com; Wed, 02 Sep 2020 13:16:59 -0400
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=iYLZzFEhOCx4SJ4UjsMyHpgaMAtC3sKCqcgGY9MT57c8OzUNo9RxHpW3IUaZI/VY1C8++hreLhwDkbG4hbDJAVZMR22IIbti0Ds5oKFaQOdz9OuSxZWSQH1lYuw7tFZb+jfMnaSFvm/sIj9KleZZOo7ANguEzuh/SFLUFs8VL4E2LCMq0WOYICMNOB75KnQf67qBiC+fY7q3qzsbiQegaDuete0eUh7YabhUgQTe5YZ4bPlHdaBnquU2rD39a3Pw4AqadDV3R4FFmjsuvNKxpt+Rvig/WFVkC2CpW0fojMoK2SiExpQJ3f98BbrzULKOpKhT3F/PfiwTZ1adJfrlXw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=xKFrBrWFPfRzfe/5mFdXqoOSapBqDPrkRNb5C+BmgkI=;
+ b=D4yovOCj7JQGCV4Ssnfvz06xw0j4c0xGyXkBjALoYLUJFB9PvH6xyZ4Zz0l/CSP6OLXdDfspP2qKxpCXZGE6MAzrSFjitvMBej5Pmprehd2usfv5nTrdoKWjxVZJs/azZZz/NfHhombMNghIPkH6Vkr//mUybeoikb+ygIKghnbr+rBwmnr3wnUBssfV+bj0qFfl2i+H51I6QIUfxZLbm0/jHcsB1zjvTPYQg5R/9tmXdjd4tUB6sVMWEEbGddhwcjf0iT2mRI7d+fglD+6F/ZRmKQJDSnByPpU8jxpRgeOFIftnLH4fPuFYOtMWtX06UUXtmg+/GjoynS5syVNy5w==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=colliers.com; dmarc=pass action=none header.from=colliers.com;
+ dkim=pass header.d=colliers.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=colliers.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=xKFrBrWFPfRzfe/5mFdXqoOSapBqDPrkRNb5C+BmgkI=;
+ b=keDM3fb8TB1MvGLoiSfaWY9b7n6E6Ii6OHA3NhAS3kcDMDr0opS4jd4CS+cCjREykCd0kTnYeZRBo7LcDytYmab+J/8hC5IpV0QzxV4uSBFgqyoe10yAm7n20ghCZQF3QzuveiPXbLF/ueR522F8UA9zIBg04cZEfehCeizHW48=
+Received: from BN7PR03MB3857.namprd03.prod.outlook.com (2603:10b6:408:21::10)
+ by BN3PR03MB2338.namprd03.prod.outlook.com (2a01:111:e400:7bbb::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3348.15; Wed, 2 Sep
+ 2020 17:16:54 +0000
+Received: from BN7PR03MB3857.namprd03.prod.outlook.com
+ ([fe80::3ce9:f991:5d93:5511]) by BN7PR03MB3857.namprd03.prod.outlook.com
+ ([fe80::3ce9:f991:5d93:5511%3]) with mapi id 15.20.3326.025; Wed, 2 Sep 2020
+ 17:16:54 +0000
+From: "Parra, Elizabeth" <Elizabeth.Parra@colliers.com>
+To: "conta@grupohmantenimiento.com" <conta@grupohmantenimiento.com>
+Subject: Re: Facturas corregidas
+Thread-Topic: Facturas corregidas
+Thread-Index: AQHWgUn/7qpsNxX2ZU+jtzInFgUZEalVktzggAADtBE=
+Date: Wed, 2 Sep 2020 17:16:54 +0000
+Message-ID:
+ <BN7PR03MB385748264F112D13D29D7B228A2F0@BN7PR03MB3857.namprd03.prod.outlook.com>
+References:
+ <78dcf4e38c88672802efe42a075ace4b@grupohmantenimiento.com>,<BN7PR03MB3857495B7056AB06654FFEE78A2F0@BN7PR03MB3857.namprd03.prod.outlook.com>
+In-Reply-To:
+ <BN7PR03MB3857495B7056AB06654FFEE78A2F0@BN7PR03MB3857.namprd03.prod.outlook.com>
+Accept-Language: es-MX, en-US
+Content-Language: es-MX
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: grupohmantenimiento.com; dkim=none (message not
+ signed) header.d=none;grupohmantenimiento.com; dmarc=none action=none
+ header.from=colliers.com;
+x-originating-ip: [2806:2f0:8080:e9b:3d81:a7d0:fd6d:3800]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-ht: Tenant
+x-ms-office365-filtering-correlation-id: 930baeaf-04ac-467e-156c-08d84f63fd70
+x-ms-traffictypediagnostic: BN3PR03MB2338:
+x-microsoft-antispam-prvs:
+ <BN3PR03MB233899C8612BB1A0804BA8188A2F0@BN3PR03MB2338.namprd03.prod.outlook.com>
+proofpoint-exchange-organization-authas: Internal
+x-ms-oob-tlc-oobclassifiers: OLM:431;
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ 5BItp2AoMugwWq9Ah4smR9UwNScN0ZJFKR4bLZ++ZRZBIl3tjCV8ae+NjTgAMr/sD6qqrkKYx+ljJHJbAaYGd+bMDHADdUcvwwC+LXdlWx4tjtnLcauPAU+pPeG/ROP8UJAwYDrpbrily/n12Rl5Nleg7Xqc66kqFlBqtCkXb4M1Y8BbMqdGKBwByNswD9tyZOz3X3YGJV4zmeZb4b41j4p+kFJ3Cv/vrNaSgkt2ApjHEIrlRa6I5rCIMBvgGt/QgZe691E80xeWse0N5pHnGKwOIft6/uK+zmZn+SbHurpNGbQl010I1l1EO9U1q/CDSMSw2lIwyaNWAj9Vzu7y0w==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:es;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BN7PR03MB3857.namprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:(4636009)(136003)(366004)(39860400002)(346002)(376002)(396003)(7696005)(66446008)(6506007)(52536014)(3480700007)(5660300002)(64756008)(9686003)(7116003)(71200400001)(316002)(66476007)(33656002)(66946007)(66556008)(76116006)(86362001)(478600001)(8676002)(55016002)(19627405001)(8936002)(6916009)(2940100002)(186003)(2906002);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata:
+ mlBDodNwZIghy5tAbBLZJpl1D9Fe84TtMcd2ViarMHIijgnnt9+x6wdaX47E+uQ2+p0TmJ9Jv1ZKLB4f1ILyJNws03k7KKR/8LS8ECyrmuedye14BjVh7xB8VDqL/JlTt90E0tPHCHP5dbCSxBIG/E2CMJqadI16QKSUgcbxjFCQ8qezW+FXLkStnhK5NUS6FW1Ch7iSx18JgMfoTvWf7e/bzS5Q8UJvnWVdhLZYL0vEFhpCxitOqkHO3aoQKDtWU3i7A3IzC6PWV6b01V1JkjZdCHDR3Un9DAO9iCLy1E+/urFNWH5hEtPw2hly144TAayLmih5kx2BnR/BamW5WwtCYwRIt5vVh5O1Wqof2KbQRumCalQ4wfjS/+dndJqoI2kkuOAddGnrIYTs9W60RxmDN75tBfFs2qrgfGX5XNV+Q4bt7FRDvAMBvVYwpKjqNjCmM4tacWW5fggZAdtX6oID9/OGrw1cae67eLsR/eNT3cmF9ounjOmrVZZs930SNci0xAV33H1n0WduKDFm/nYkvPg9mOoCtDRtae7Mv+TtmSfDH2Lx470r+tK6DYRdW4IVrrjWgi1BQZi/hIJAuxJpUfaF9VA3I2L88VpQe+oBNf67aZ9P9FZSO/RycoR0oKpn0cIi8MIKy32aIxn2jzyGDuspf1/x7nF8fGtwAmMEmGSUpX4TVb3/WwdKJ5ArP+7QMcEUIHD3KMIKoXIlZQ==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_BN7PR03MB385748264F112D13D29D7B228A2F0BN7PR03MB3857namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: colliers.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BN7PR03MB3857.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 930baeaf-04ac-467e-156c-08d84f63fd70
+X-MS-Exchange-CrossTenant-originalarrivaltime: 02 Sep 2020 17:16:54.3793
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 049e3382-8cdc-477b-9317-951b04689668
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: v6jSM4S7Ck2W1C6fk+ax+YNCyHbJOP8b3Iz8dPLpzjAn8MkAX8Eht7vEF+Htxm2nyqe7hjyrbbd3/rNgZce6zl59S+Amn92ya9XQSnzkqVI=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN3PR03MB2338
+X-MS-Exchange-CrossPremises-AuthAs: Internal
+X-MS-Exchange-CrossPremises-AuthMechanism: 04
+X-MS-Exchange-CrossPremises-AuthSource: BN7PR03MB3857.namprd03.prod.outlook.com
+X-MS-Exchange-CrossPremises-TransportTrafficType: Email
+X-MS-Exchange-CrossPremises-SCL: 1
+X-MS-Exchange-CrossPremises-messagesource: StoreDriver
+X-MS-Exchange-CrossPremises-BCC:
+X-MS-Exchange-CrossPremises-originalclientipaddress: 2806:2f0:8080:e9b:3d81:a7d0:fd6d:3800
+X-MS-Exchange-CrossPremises-transporttraffictype: Email
+X-MS-Exchange-CrossPremises-antispam-scancontext: DIR:Originating;SFV:NSPM;SKIP:0;
+X-MS-Exchange-CrossPremises-processed-by-journaling: Journal Agent
+X-OrganizationHeadersPreserved: BN3PR03MB2338.namprd03.prod.outlook.com
+Received-SPF: pass (ex.anti-spam-premium.com: domain of colliers.com designates 40.107.237.41 as permitted sender) client-ip=40.107.237.41; envelope-from=Elizabeth.Parra@colliers.com; helo=NAM12-BN8-obe.outbound.protection.outlook.com;
+X-SPF-Result: ex.anti-spam-premium.com: domain of colliers.com designates 40.107.237.41 as permitted sender
+Authentication-Results: ex.anti-spam-premium.com;
+	iprev=pass (mail-bn8nam12on2041.outbound.protection.outlook.com) smtp.remote-ip=40.107.237.41;
+	spf=pass smtp.mailfrom=colliers.com;
+	dkim=pass header.d=colliers.com header.s=selector1 header.a=rsa-sha256;
+	dmarc=pass header.from=colliers.com
+Authentication-Results:  anti-spam-premium.com; spf=pass smtp.mailfrom=Elizabeth.Parra@colliers.com; dkim=pass header.i=colliers.com
+X-HospedandoAntiSpam-Class: ham
+X-HospedandoAntiSpam-Evidence: urlwl/url-14.rbl.spamrl.com
+X-Recommended-Action: accept
+X-Filter-ID: 8G1aH+8yearZuN6N5+X5bm6KuAmzEgFjeXz34jnHp0xpaawAQLCw41DX+7uxKx0P2LDkrRcqyp/p
+ /iw75DwQ0G8XO88BGELJmwiCIfZy97JMnxyxvOAWf1AnBf0oKo/bpb9L5kMn7N9EVpW/kIaL6310
+ dzuLgZEt2mjk37HJ5h8y2Bx+blAnBTVTn+uK0NXgSLXwPZxl1/xFc7F5QwDrOWT/ZWqTHUFUBOaK
+ OoI78VtjFWYZJqpjB6z5Jl06uk5SHl73ve96GBFEwl13XHj3xFENPsZzRB8sGAgIQ+5wEFQgAaM3
+ +aUTOXWgWMM4bhNEecQR5AjAozKaLM+uf3vn+nVkgAm70oiDOh4evHKu4D3GuSMlLXwHIfLrSJHJ
+ mlWLWCEWK4MJjQR0Pz5bwy7RNp97cG6BPh2+ilkZJahnsdEpbYGgtbjfauDJKr9SzzyrPueT/JFh
+ yaMWwLpW88iXNtyBbdS8mp0iFW6IdrBYKXV/0tARiKLbsBv4eBarRURNaqEv+H+KmankqCOVUAIO
+ QvM5Js7ay2WcuK7ot37ALhzNh8A87g2bC5bRC2tQuKwUjTw3EJ2UlLkzmn24lwCQqDnpIKEAmYWl
+ XJ6dFlzcT0UCLHZnXFyqA+FXdiLocLH/bVdcPdbppsACYEn6feSAee4MV4ewoVBOkGn1HW43CMck
+ X99JsHFdcu9VkIqF/8Tq3iG+cRfpdO/eX7b0oYjWuNkalTfcHsH7tMTcUWZgk7P74O4hBSz/kkmP
+ gL+fgIgu/5j6+p5x0VjNtXrQMB8LetYy4chidLefJRL/TS2XQJlEWr+fFc/UDvbKPvQ2EEW8OpLL
+ 6tgkTa1nLgpAkEc9vs6kAaNTumYeOawROoEt7WAMMdE7dSbQRxi5RvSNnnQwiwQzKw+6v3CaIMG6
+ s7LqJAOXJTs0T3Y3bpJx6FIIFlddW48Hr2wvJAKy1IJkt2enhTwy1YMaFMzwQeO7bdUwea/L3E3Y
+ jCVK3tjBye5HcB2mE9m5LySjqUi9emkrRFKMC/E2yQFsG6PmTJOc7EQWXTQQv/QCVJMxQS6vjdIy
+ sVR/f7zMP0aKV/vjSSa6AdJW647lNwN4qOsSZg+fYhVZG9At9YNll2cv+Wu/DwDfSgq8EDw+Gj+V
+ JUcibzL2h55FaMOxnAqs3TGaMNE1E06MGnfccSHpoEA6x1E6NCAy03J75/wUhhZycG+RrWmJat+b
+ Aam2/p4p7raHE7+hxolhwXBqz7TRiWF91U/smddrJvE=
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+--_000_BN7PR03MB385748264F112D13D29D7B228A2F0BN7PR03MB3857namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Buena tarde,
+
+Por favor te pido me re factures las siguientes facturas:
+
+
+  *   Puertas de protecci=F3n (En la que me enviaste aparece un descuento d=
+e .16, requiero se descarte eso)
+  *   Limpieza tuber=EDas (Corregir Razon de emisor)
+  *   Barandal condensadoras (Corregir Razon de emisor)
+
+Requiero de estas facturas a m=E1s tardar hoy antes de las 02:00pm.
+
+gracias, quedo atenta,
+
+________________________________
+De: Parra, Elizabeth
+Enviado: mi=E9rcoles, 2 de septiembre de 2020 12:01 p. m.
+Para: conta@grupohmantenimiento.com <conta@grupohmantenimiento.com>
+Asunto: RE: Facturas corregidas
+
+Buena tarde,
+
+Cancelaste la factura de las puertas de protecci=F3n?
+
+
+
+-----Mensaje original-----
+De: conta@grupohmantenimiento.com <conta@grupohmantenimiento.com>
+Enviado el: mi=E9rcoles, 2 de septiembre de 2020 11:56 a. m.
+Para: Parra, Elizabeth <Elizabeth.Parra@colliers.com>
+Asunto: Facturas corregidas
+
+Hola Buen d=EDa!
+
+Mi nombre es Jovana Alamilla , a partir de ahora llevo lo relacionado con l=
+a facturaci=F3n, le envi=F3:
+-CFDI de rejillas a nombre de fibra HD, con el 70% -CFDI de mantenimiento a=
+ A/A con el m=E9todo de pago en transferencia -Por ultimo le env=EDo nuevam=
+ente el CFDI de puertas que cancele por error.
+
+Que tenga un buen d=EDa! saludos
+
+--_000_BN7PR03MB385748264F112D13D29D7B228A2F0BN7PR03MB3857namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Buena tarde,</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Por favor te pido me re factures las siguientes facturas:</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<ul>
+<li>Puertas de protecci=F3n (En la que me enviaste aparece un descuento de =
+.16, requiero se descarte eso)</li><li>Limpieza tuber=EDas (Corregir Razon =
+de emisor)</li><li>Barandal condensadoras (Corregir Razon de emisor)</li></=
+ul>
+<div>Requiero de estas facturas a m=E1s tardar hoy antes de las 02:00pm.</d=
+iv>
+<div><br>
+</div>
+<div>gracias, quedo atenta,</div>
+<div><br>
+</div>
+</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>De:</b> Parra, Elizabeth<br>
+<b>Enviado:</b> mi=E9rcoles, 2 de septiembre de 2020 12:01 p. m.<br>
+<b>Para:</b> conta@grupohmantenimiento.com &lt;conta@grupohmantenimiento.co=
+m&gt;<br>
+<b>Asunto:</b> RE: Facturas corregidas</font>
+<div>&nbsp;</div>
+</div>
+<div class=3D"BodyFragment"><font size=3D"2"><span style=3D"font-size:11pt;=
+">
+<div class=3D"PlainText">Buena tarde,<br>
+<br>
+Cancelaste la factura de las puertas de protecci=F3n?<br>
+<br>
+<br>
+<br>
+-----Mensaje original-----<br>
+De: conta@grupohmantenimiento.com &lt;conta@grupohmantenimiento.com&gt; <br=
+>
+Enviado el: mi=E9rcoles, 2 de septiembre de 2020 11:56 a. m.<br>
+Para: Parra, Elizabeth &lt;Elizabeth.Parra@colliers.com&gt;<br>
+Asunto: Facturas corregidas<br>
+<br>
+Hola Buen d=EDa!<br>
+<br>
+Mi nombre es Jovana Alamilla , a partir de ahora llevo lo relacionado con l=
+a facturaci=F3n, le envi=F3:<br>
+-CFDI de rejillas a nombre de fibra HD, con el 70% -CFDI de mantenimiento a=
+ A/A con el m=E9todo de pago en transferencia -Por ultimo le env=EDo nuevam=
+ente el CFDI de puertas que cancele por error.<br>
+<br>
+Que tenga un buen d=EDa! saludos<br>
+</div>
+</span></font></div>
+</body>
+</html>
+
+--_000_BN7PR03MB385748264F112D13D29D7B228A2F0BN7PR03MB3857namp_--

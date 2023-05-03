@@ -1,0 +1,125 @@
+Return-Path: <>
+Delivered-To: grupohma@servidor1339.il.controladordns.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id 8CRMDRHmEV8GLwAAlvxoiw
+	(envelope-from <>)
+	for <grupohma@servidor1339.il.controladordns.com>; Fri, 17 Jul 2020 12:55:29 -0500
+Return-path: <>
+Envelope-to: grupohma@servidor1339.il.controladordns.com
+Delivery-date: Fri, 17 Jul 2020 12:55:29 -0500
+Received: from mx.anti-spam-premium.com ([67.227.144.30]:45706)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	id 1jwUa1-00042W-6g
+	for grupohma@servidor1339.il.controladordns.com; Fri, 17 Jul 2020 12:55:29 -0500
+Received: from Debian-exim by mx.anti-spam-premium.com with local (Exim 4.92)
+	id 1jwUa0-00048h-FX
+	for grupohma@servidor1339.il.controladordns.com; Fri, 17 Jul 2020 13:55:28 -0400
+X-Failed-Recipients: hola@grupomantenimiento.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@mx.anti-spam-premium.com>
+To: grupohma@servidor1339.il.controladordns.com
+Content-Type: multipart/report; report-type=delivery-status; boundary=1595008528-eximdsn-1279949650
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1jwUa0-00048h-FX@mx.anti-spam-premium.com>
+Date: Fri, 17 Jul 2020 13:55:28 -0400
+
+--1595008528-eximdsn-1279949650
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  hola@grupomantenimiento.com
+    Unrouteable address
+
+--1595008528-eximdsn-1279949650
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; mx.anti-spam-premium.com
+
+Action: failed
+Final-Recipient: rfc822;hola@grupomantenimiento.com
+Status: 5.0.0
+
+--1595008528-eximdsn-1279949650
+Content-type: message/rfc822
+
+Return-path: <grupohma@servidor1339.il.controladordns.com>
+Received: from servidor1339.il.controladordns.com ([209.59.139.171])
+	by mx.anti-spam-premium.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <grupohma@servidor1339.il.controladordns.com>)
+	id 1jvWJZ-0003bC-Sx
+	for hola@grupomantenimiento.com; Tue, 14 Jul 2020 21:34:32 -0400
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=servidor1339.il.controladordns.com; s=default; h=Sender:Content-Type:
+	MIME-Version:Message-ID:Reply-To:From:Date:Subject:To:Cc:
+	Content-Transfer-Encoding:Content-ID:Content-Description:Resent-Date:
+	Resent-From:Resent-Sender:Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:
+	References:List-Id:List-Help:List-Unsubscribe:List-Subscribe:List-Post:
+	List-Owner:List-Archive; bh=PWIUnXX5lLnJR0TbnnWu6dVu0A6uiEHZ5JixIq6KBJw=; b=t
+	T8hkhrJAACF5MOphXphQcxjM2stktySBlTPo78nZZA+3p8R4QhUEhsrRKdV/P0A+shMbwvlVfbfC9
+	SM+2fqni+jIOrdJbZQj5LetI68TtJ9tqXtVwae+CXQfhWn9cGcbjh8pTS2LhAGmVwI1HJzYudM5ev
+	KmkmDCsrLa+8Bi54axzpB7nTQY8jV1TbZ73BQOMqzm7uffnxCRROeOuArOWkE4uYQK2W4f7vMgxPZ
+	r4jQNG4hBBpJfyNtyzyHqlP90SlLd/l5fUFlLq+RBqA2+oklcGOvT3x19qSXlezCfri8gYPhd5g6N
+	UzNJ6QVqxd8zaOO7K0TwN94KWZLfWVECQ==;
+Received: from grupohma by servidor1339.il.controladordns.com with local (Exim 4.93)
+	(envelope-from <grupohma@servidor1339.il.controladordns.com>)
+	id 1jvWIv-0000lV-F2
+	for hola@grupomantenimiento.com; Tue, 14 Jul 2020 20:33:49 -0500
+To: hola@grupomantenimiento.com
+Subject: "sd"
+X-PHP-Script: grupohmantenimiento.com/index.php for 187.252.207.88
+X-PHP-Filename: /home/grupohma/public_html/index.php REMOTE_ADDR: 187.252.207.88
+Date: Wed, 15 Jul 2020 01:33:49 +0000
+From: SANTILLANA <hola@grupomantenimiento.com>
+Reply-To: ventas3@hardakerpromos.com
+Message-ID: <13983eb95e8d82191b8eaef4213a49fa@grupohmantenimiento.com>
+X-Mailer: PHPMailer 5.2.27 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Sender:  <grupohma@servidor1339.il.controladordns.com>
+X-AuthUser: grupohma@servidor1339.il.controladordns.com
+X-Originating-IP: 209.59.139.171
+X-HospedandoAntiSpam-Domain: out.anti-spam-premium.com
+X-HospedandoAntiSpam-Username: 209.59.139.171
+Authentication-Results: anti-spam-premium.com; auth=pass smtp.auth=209.59.139.171@out.anti-spam-premium.com
+X-HospedandoAntiSpam-Outgoing-Class: ham
+X-HospedandoAntiSpam-Outgoing-Evidence: Combined (0.15)
+X-Recommended-Action: accept
+X-Filter-ID: Mvzo4OR0dZXEDF/gcnlw0ZZlDYW4q2llG44Qh0NJtYKpSDasLI4SayDByyq9LIhVUZbR67CQ7/vm
+ /hHDJU4RXkTNWdUk1Ol2OGx3IfrIJKywOmJyM1qr8uRnWBrbSAGD3dCwJ+Q3sPnO8Z/wL3Co+HDJ
+ gOchijfaF/hUhToe6GgBcORxfCojcTOpEjtvWHp2rgfEMFlakhu+sLb1XKTwwjg9YkzbMy6DOYhG
+ 3MUcvhpJCcXyzNB0g7PI+AWWlMO60IYm0YOJ9Miinv9o8T7K2j9BfZGNHB6SigJfs25QjM/SnxPg
+ 13jmPiQlGAnwwnr4FwJocJY/oTbC55vKC9UHDMiSpwSrEFtNk5P2vv/G0RLdUCdJmUHEAKDru1YM
+ OHdYyk4XBuBnMDtIcmmDN/Ktk0/+0oLb7g9Snzc7AgNE/PbtNgTvAITsChVMksVSwW7NSAoKui/U
+ ZqxZXW+PYL7Slxe4BPzpam1U3Cj9xZx6U4Oyu5lY/jnGvm2BYhWFQqiKQ/E9r5kYzEZU2nBsV9nI
+ eK0R7Wb8ZMYVp7ZDAnIm8VV02lc/+6URXoMhQMtzRh3qJOVgT5lyfynWs+kbrg/XLqfSf9Q1x+dl
+ WutEXD6dogNx4AJb8J21HWN8V7ptt7ZNUp5aDxHhMMuVb7OJg7EDXqa5zn3o6MtK8pf0hPbAkeCZ
+ ME8HeiOTBXPmeRcbGamAcxw3qqhc+N6cuEg4XWh5FnKo90D2M/v0ZVViZdNDRXqjq56g7CvixKxo
+ Dm/jKpTppvJQ/diQASPKXnjQGC5XpX3LrKg2F0PLkW7RIR4Ln3Am9CIrsvAxlEiEra2QoKkch/ra
+ O9jP0KUvnoF9IiEOc9M+m4WpRRDP6YzwkAPgQJbIT4XaeGMtKg4C0roq1hjxjJUi3m4Mms1BuCBY
+ Ikd69XBqJ1bnyfF6XmcQ5839DC+xZOZG3EEv0EfQLtBsv/7e4S+g3w6fsZO4m7WlB189c2YxGv7D
+ Zfr3KAxqGJNAwF3JqS1/0/b8WThnLkFWOXks+g8VkhKEFJ2lUlbkduNBML51bYnu7h26bjHL8+Q9
+ YTSq7xPjZpw6yMoPx7u1KUW43YFttaPRAnUMwtM4MyE9muCf6RKbch43rE0pU6z6zJlx4AJb8J21
+ HWN8V7ptt7ZN6OgwprIopbqXoJ3bkNntN8yTnmsi/FO97JcO4gXKFmnx/FrSIPL6E58hHX9L/hMh
+ Fn6Yqx/INRjkdSBRreQVpg==
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+De: SANTILLANA <ventas3@hardakerpromos.com>
+Asunto: sd
+
+Cuerpo del mensaje:
+sd
+
+-- 
+Este correo es enviado por el sitio de grupohm.com
+(http://grupohm.com)
+
+
+--1595008528-eximdsn-1279949650--

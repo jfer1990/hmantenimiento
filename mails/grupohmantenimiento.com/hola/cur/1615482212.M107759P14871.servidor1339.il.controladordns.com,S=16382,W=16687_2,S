@@ -1,0 +1,305 @@
+Return-Path: <framos@ITMGROUP.MX>
+Delivered-To: hola@grupohmantenimiento.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id yMkxBWRNSmAXOgAAlvxoiw
+	(envelope-from <framos@ITMGROUP.MX>)
+	for <hola@grupohmantenimiento.com>; Thu, 11 Mar 2021 11:03:32 -0600
+Return-path: <framos@ITMGROUP.MX>
+Envelope-to: hola@grupohmantenimiento.com
+Delivery-date: Thu, 11 Mar 2021 11:03:32 -0600
+Received: from ex.anti-spam-premium.com ([67.227.206.138]:51404)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94)
+	(envelope-from <framos@ITMGROUP.MX>)
+	id 1lKOii-0006rP-11
+	for hola@grupohmantenimiento.com; Thu, 11 Mar 2021 11:03:32 -0600
+Received: from mail-dm6nam12on2063.outbound.protection.outlook.com ([40.107.243.63] helo=NAM12-DM6-obe.outbound.protection.outlook.com)
+	by ex.anti-spam-premium.com with esmtps (TLSv1.2:AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <framos@ITMGROUP.MX>)
+	id 1lKOiW-000V6a-5X
+	for hola@grupohmantenimiento.com; Thu, 11 Mar 2021 12:03:32 -0500
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=A7zo/7Zq1DoexyJ/c4f+/dwGZLKwV48lZFohJCwi8QJUqJBUBP6HrUvxFaDPBRw+oLfP/6MJL2a32dgNH0xMrPXRVr3qWDTGm66UQTac2rWX5U2sdop02fpVIIsvYZyI1ulAFsQPq/CPGTGEgpPtPrWO40LKlY2eX3ZkZbuTLz67OxnhA10EB0BKBjdUrvBFDTxtAZXSJDv6cIfqiMbU+pEsrgYDiKJEk1AJJLN20fkzEjqwo8uUOKRExr8OyZLLe2AKRQAH1MGLmMB1AYILnqPaqJsSYiIEU0vzRmf4++TDTByU9nIh/Q0QU/xIGpyZaY30TT+Pcpgdgbya86T5zw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Ah1mvYyc41Cfvd/Uk04dOOul2HsQaI9QjfOJ4/v4TgM=;
+ b=ihtssTO8vNOwlY/pyo8BhTTDsGSNE5GWZ3a88Bt2zhxw6RZAaxGQSAajqWMkL4R004U7w9m3T6A8cwapfpxP9VCkWGPhqWddRNapoctys8hPoEfhSuHyxy/mMRrNOQ4u3ZTUquyFc5g/Go6tY1Z7bRneuxZDsILz1wdaoykyNnZhC2wi87eyfSyoKL1xgGsA/ao7WcQEOyEbCGbXTGxA96BZrvrxNG3hp2BysJ42HPLJpe+yQ09ryTGh4VW59O4foYMsEvyyYV7Vkyvd7EkAIq4xqcTo7YTreyBONuJNzmra3a8Zk7AFkq73E2taVhBYDK1YiIIaM4puasaoPVH5Eg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=itmgroup.mx; dmarc=pass action=none header.from=itmgroup.mx;
+ dkim=pass header.d=itmgroup.mx; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ITMGROUP.MX;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=Ah1mvYyc41Cfvd/Uk04dOOul2HsQaI9QjfOJ4/v4TgM=;
+ b=eyp988RIghcllOCurPGAJnBOv5VE39/9hQ0DR9RtzhKrpEHxyF9nxjljUixwZmFCu5srAd2Y4ngAPdzL++8vee2O9mTXUb0h+yeatllirmOspgtqkZigl2JEF44HnDEt441M+ibkk7mGyh2E6MZx3p5sh+NuO4GhRIMO2LI/0Vt8ZHQpBZKwA5LqViVknLCTtqeReKqemSVnUXF7ulPBRjNFSuEVNsj69vufrsK8iKlQ55QqgJPeaHS0FXU4gaeS25GoByS7Amc++5Q0+DnFgEjgfwqXFwEypgpjCC33TokEFa0zjhgkvIiJkCyqlpGPXP4c0DoiRtxb63DK6MuXbQ==
+From: Francisco Ramos <framos@ITMGROUP.MX>
+To: "hola@grupohmantenimiento.com" <hola@grupohmantenimiento.com>,
+	"geovani.hm@hotmail.com" <geovani.hm@hotmail.com>
+Subject: =?iso-8859-1?Q?Cotizaci=F3n_Centro_de_Convenciones?=
+Thread-Topic: =?iso-8859-1?Q?Cotizaci=F3n_Centro_de_Convenciones?=
+Thread-Index: AdcWlgHv+y7VKEz/Rr+FDqrXNHOZAQAAis3w
+Date: Thu, 11 Mar 2021 17:03:16 +0000
+Message-ID:
+ <SN6PR16MB3968107C4D125EC7C10BA19FCA909@SN6PR16MB3968.namprd16.prod.outlook.com>
+References:
+ <SN6PR16MB3968EBB4DE67B19597FB6289CA909@SN6PR16MB3968.namprd16.prod.outlook.com>
+In-Reply-To:
+ <SN6PR16MB3968EBB4DE67B19597FB6289CA909@SN6PR16MB3968.namprd16.prod.outlook.com>
+Accept-Language: en-US
+Content-Language: es-ES
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: grupohmantenimiento.com; dkim=none (message not
+ signed) header.d=none;grupohmantenimiento.com; dmarc=none action=none
+ header.from=ITMGROUP.MX;
+x-originating-ip: [189.176.37.37]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: ba7361a8-c1d8-4b08-bb3f-08d8e4af90a3
+x-ms-traffictypediagnostic: SA2PR16MB4313:
+x-microsoft-antispam-prvs:
+ <SA2PR16MB4313C3F1957A24B3335E688ACA909@SA2PR16MB4313.namprd16.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:849;
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ vQ1H5b5e2jbb+U9xak9SFh4upTSmimf167f+5Z4BSg9MSFcN3omZP3wVOBKOvUFnXuEI4ff39/i/vHeyuP3PesWXkLmILujHD1C/LxOYB6tk8mKsrdlOzABwG3MlUuJqkc1bj5LFFJDG9zPVdN3e9XrGCRqfUp5WRxKWJrYhRp1jEeJNF99ipd7n8Gbyn9CNfGgthpARXIFYkp4DuLXEREM93ffhxcCVF35GiFMLdM6azo7jBD9GCDaVJcxR4NDJJHIL2v/X3U3j72hzMj9j0X1IvEAYSTJRfPN9wOtki90KdAdRi7ItzB3KfX8PvCnAix9j2+Wi5nU1CgEfG+r23U7d+Zn/hKOBAWtabigoxVLZuimj62ergpGKVfOZaP2+9+q4vr5zljtS+Vu1PBqlxZpxw6Oi45eRjBsWv/5SwR/bLOf2MNDzshVmHp3wHi1XIOxkhlxfN0hg+uq3J4mhHE6nlFiFf2Lro3GtaIzKdU4Dc0NxRhjt75i580uWFG5l/L3wnzhYf12m+jbNJCzf7g==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:es;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SN6PR16MB3968.namprd16.prod.outlook.com;PTR:;CAT:NONE;SFS:(366004)(346002)(136003)(39830400003)(376002)(396003)(66946007)(5660300002)(66476007)(19627235002)(66556008)(66446008)(186003)(9686003)(76116006)(8936002)(71200400001)(478600001)(64756008)(52536014)(110136005)(2940100002)(33656002)(2906002)(224303003)(558084003)(26005)(316002)(86362001)(42186006);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata:
+ =?iso-8859-1?Q?ZroX4EZHy7K4X1p2effwZwqZ+liIwkaVulGSNg0jjznt+Y5x/oT+Hti51+?=
+ =?iso-8859-1?Q?XtMp48yRBxHszupcJ+TlYWMWGCAnrfKibJiaXjJXubv6fWkjuFYuDxhFO6?=
+ =?iso-8859-1?Q?i3FlAKABU7xdLT7gzAwkliIWk0eoM2hDWv8XE49iOANwpICNITyvikoqsz?=
+ =?iso-8859-1?Q?yZd3+9wAP4z+FWmEu/yA6479BseTwuXxdeiH4lJitzyRenXNrWQ9m5dCn3?=
+ =?iso-8859-1?Q?xHmptS52LyFrlo4BtHp3RLhe9A/vpMQTi8vdKeCIVSozWxcFM7PnM593SO?=
+ =?iso-8859-1?Q?s02Jx23OqrvXxSrZv4R53NTj6ibGgaWMP6EHIvwuqbbQ6C/uRRbqlyJx7c?=
+ =?iso-8859-1?Q?wb2slp0iI6XGPkb+Gol08NpkPG/iVzJW6+UXssoZsRoGOyqTFx8bcpRopz?=
+ =?iso-8859-1?Q?eEojB8bJUXnP10B91MEyuyj75QxEm/gRxPQyEKyY8fQQDBllFvETLmKt9r?=
+ =?iso-8859-1?Q?7nyY4CIlB5AN98DIZhLTfTwhn/aEqnXG2maJ5cUdzFxbF6bcK0SCmiuUqY?=
+ =?iso-8859-1?Q?4cxoNOkAEwdLedzrUGyizyPcmSv2WGzYSM20EaFRvELc3DWSvtdLloTzWS?=
+ =?iso-8859-1?Q?H0swGVLhu5/SjCz8StURMBXme3VKKYfqN6azeqUeSwOYRkrSvxGRaYTwnA?=
+ =?iso-8859-1?Q?ZwcumXE2oHUnq4nxNOuVLO69nOucYkjjnHVDjVe6cAyIEd1RgOFbH24q+P?=
+ =?iso-8859-1?Q?lBU+yFxV/ku198ZOQIp4Y6wIdcfGk1qXiFrw+hbgCf7kJXaK+MOrSbbCSl?=
+ =?iso-8859-1?Q?ao75UGow+MtZD071aXHEn+XthhBqwmhYLFXBXf/2R1NUsdMm+v4QmqQ6Bb?=
+ =?iso-8859-1?Q?7+eIpzOHUyfaVqKbst3pURR3XLI8U1LJyPUvpUu/li64XFWg13/qn3j+YU?=
+ =?iso-8859-1?Q?Pv96ETYeQh01P6b8v9WPjBMme2BllTcBikuS9HfVH9iqL7NfDarjN4SEIG?=
+ =?iso-8859-1?Q?GLhgIUlfuRYverY3oKHstl3axL14GPTBJAphHtf/6K6L6xHhU8qGCeGwgO?=
+ =?iso-8859-1?Q?bx8h+DhlWoebfNsi2Wfhmcf+Kx4gJ8t1a2/6NCBfO4W8nlFTnDMY3Lzsrp?=
+ =?iso-8859-1?Q?KQzAg61KcoXfRvgX0Wphh/URnBqbaRW9RbsnCa3ohAKQKlLzikG5iR3/eu?=
+ =?iso-8859-1?Q?2PAxjaXu5LobCW2CTBwbT2ny26F+TllUOuPSBoVCIr77Yw/u1zLtd+SP5n?=
+ =?iso-8859-1?Q?lzXvtrFja8+ulmQROhr1RLZl6qfL5vzofdLrDT+5fx+o0QSKxwu/HkZUY7?=
+ =?iso-8859-1?Q?o5JEcniUhAR/v7Ic9eOxWhX3jgx8PNGaZsi4Fg0UdNfIdLZ4pMxf14B1rE?=
+ =?iso-8859-1?Q?j/BDtOngy63PTGKWLCXnUX78ZZRV/PMFSBWbbnh2B5ZGZYxRqR53sVgi8V?=
+ =?iso-8859-1?Q?yYnYu2r30o?=
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_SN6PR16MB3968107C4D125EC7C10BA19FCA909SN6PR16MB3968namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: ITMGROUP.MX
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: SN6PR16MB3968.namprd16.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: ba7361a8-c1d8-4b08-bb3f-08d8e4af90a3
+X-MS-Exchange-CrossTenant-originalarrivaltime: 11 Mar 2021 17:03:16.8824
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 51cba951-22cc-4eaa-89a8-039713f273ba
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: yx/Eel+gr/8CtQWQnK8sjcFZn42x0UWMyz/lnRmxMWq1mPEcVkrKTwskXjyI/LrOh/TQ0J6F+ZEkmiz4udIvuw==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SA2PR16MB4313
+Received-SPF: pass (ex.anti-spam-premium.com: domain of ITMGROUP.MX designates 40.107.243.63 as permitted sender) client-ip=40.107.243.63; envelope-from=framos@ITMGROUP.MX; helo=NAM12-DM6-obe.outbound.protection.outlook.com;
+X-SPF-Result: ex.anti-spam-premium.com: domain of ITMGROUP.MX designates 40.107.243.63 as permitted sender
+Authentication-Results:  anti-spam-premium.com; spf=pass smtp.mailfrom=framos@ITMGROUP.MX; dkim=pass header.i=ITMGROUP.MX
+X-HospedandoAntiSpam-Class: unsure
+X-HospedandoAntiSpam-Evidence: Combined (0.50)
+X-Recommended-Action: accept
+X-Filter-ID: Mvzo4OR0dZXEDF/gcnlw0f4/MpLl7tPQgcUL7/l0UZCpSDasLI4SayDByyq9LIhVuONaXmAZ8aD7
+ psdkEevjokTNWdUk1Ol2OGx3IfrIJKywOmJyM1qr8uRnWBrbSAGDEEoE1j/vBp16teKYcgIMlVk2
+ mSC7j5gh6RxLngwsRZPnx8yeplRO3sLIqUlSH7OG85DRS0syBkxn/qQXPX0gF5OIWFXUh+IpRF9t
+ B9BlKGiLzihxhzUItDenqJI/14PTAix2Z1xcqgPhV3Yi6HCx/06YFiZbFOBtv+JGXfwB7s7HZv+y
+ CsrIWQyqCxBHcxXI5R3IemG/SqwUS8gId9Rz7qIY6LlroFVQhdn3BDexfETH9Rt64qK6xgEbUyz8
+ b+ZxYwkVsWnINYI+dgeIgaDtemW11WWPgttNHGDhzRpWrzly8gK1vhaMrc9ZPzQaqlMAUvcE+6BC
+ 6sWr28M3V90M/7JmH6c7cHZMfUxfJDLzxtNlTAABB/URi5s3zVsmN4py1ssA2J1MwMeNPB5WD/CI
+ cnUBJ71kBWBSXff2PuUdbjTRnNFIuE6n4opeJN2iqkiaZnX8MwVKd06jaPB+KvtU5boAbXytVLNL
+ wQ9G7sacbThwNfMJIKcnzXBFifVVw5sGDOhmSG6isZN1oue6nWYxxj0E9oteFb5G7+FeQsfyZgeY
+ R+lPdfUcB5GkR+yKFkgk1VT1ePenVwEdwJvrOJ3DwqFpEamnz/pZrTyQ8hFI9aQ+evqpICdA+Tc4
+ IpdREDCF75fcuW/3lDmDZZ7XgBhunPxw9an+xuMwdQKo6nZb1ZKGJ7TkvE4yJ1Midv3mVkIe2FOU
+ II2fNnfosmc6SDA7/Chkb0BBdxSxazp8UYlY0zA+5nhivmS9JW1mG3wXuruCiIeJGa5KkdKkM/Br
+ A9xY/CG7X+t1TW39Ja77LGPpOwCDTa78QpbDvAEs8PpmaUOJyLIB1jT1Bo29o7ZgvtIBLuvk8cRL
+ KjiXhh8GbGTQT9YVr903xgMfzKqIsj6rUttohTwy1YMaFMzwQeO7bdUweX3zO6VFcqE5SVoFot9h
+ aK8Z6st86w8EZbbTWGMNgwsm8fxa0iDy+hOfIR1/S/4TIfuBRzSrIsvcDFbUOmovM00=
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+--_000_SN6PR16MB3968107C4D125EC7C10BA19FCA909SN6PR16MB3968namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Buenos d=EDas Geovani.
+
+Espero me puedas apoyar con la siguiente cotizaci=F3n.
+
+fabricacion de puerta y ventana
+cantidad
+unidad
+articulo
+precio unit.
+total
+1
+pieza
+puerta metalica de 90x210 cm
+
+
+
+
+Cualquier duda estoy a tus =F3rdenes.
+
+Saludos.
+
+--_000_SN6PR16MB3968107C4D125EC7C10BA19FCA909SN6PR16MB3968namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-fareast-language:EN-US;}
+span.EstiloCorreo19
+	{mso-style-type:personal-reply;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"ES-MX" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:=
+break-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal"><span lang=3D"ES">Buenos d=EDas Geovani.<o:p></o:p><=
+/span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES">Espero me puedas apoyar con la sig=
+uiente cotizaci=F3n.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES"><o:p>&nbsp;</o:p></span></p>
+<table class=3D"MsoNormalTable" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" width=3D"744" style=3D"width:558.0pt;margin-left:-.05pt;border-colla=
+pse:collapse">
+<tbody>
+<tr style=3D"height:14.4pt">
+<td width=3D"744" nowrap=3D"" colspan=3D"5" valign=3D"bottom" style=3D"widt=
+h:558.0pt;border:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:=
+14.4pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><span s=
+tyle=3D"color:black;mso-fareast-language:ES-MX">fabricacion de puerta y ven=
+tana<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:14.4pt">
+<td width=3D"69" nowrap=3D"" valign=3D"bottom" style=3D"width:51.85pt;borde=
+r:solid windowtext 1.0pt;border-top:none;background:#9BC2E6;padding:0cm 3.5=
+pt 0cm 3.5pt;height:14.4pt">
+<p class=3D"MsoNormal"><span style=3D"color:black;mso-fareast-language:ES-M=
+X">cantidad<o:p></o:p></span></p>
+</td>
+<td width=3D"56" nowrap=3D"" valign=3D"bottom" style=3D"width:41.8pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;background:#9BC2E6;padding:0cm 3.5pt 0cm 3.5pt;hei=
+ght:14.4pt">
+<p class=3D"MsoNormal"><span style=3D"color:black;mso-fareast-language:ES-M=
+X">unidad<o:p></o:p></span></p>
+</td>
+<td width=3D"490" nowrap=3D"" valign=3D"bottom" style=3D"width:367.6pt;bord=
+er-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-ri=
+ght:solid windowtext 1.0pt;background:#9BC2E6;padding:0cm 3.5pt 0cm 3.5pt;h=
+eight:14.4pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><span s=
+tyle=3D"color:black;mso-fareast-language:ES-MX">articulo<o:p></o:p></span><=
+/p>
+</td>
+<td width=3D"90" nowrap=3D"" valign=3D"bottom" style=3D"width:67.75pt;borde=
+r-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-rig=
+ht:solid windowtext 1.0pt;background:#9BC2E6;padding:0cm 3.5pt 0cm 3.5pt;he=
+ight:14.4pt">
+<p class=3D"MsoNormal"><span style=3D"color:black;mso-fareast-language:ES-M=
+X">precio unit.<o:p></o:p></span></p>
+</td>
+<td width=3D"39" nowrap=3D"" valign=3D"bottom" style=3D"width:29.0pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;background:#9BC2E6;padding:0cm 3.5pt 0cm 3.5pt;hei=
+ght:14.4pt">
+<p class=3D"MsoNormal"><span style=3D"color:black;mso-fareast-language:ES-M=
+X">total<o:p></o:p></span></p>
+</td>
+</tr>
+<tr style=3D"height:14.4pt">
+<td width=3D"69" nowrap=3D"" valign=3D"bottom" style=3D"width:51.85pt;borde=
+r:solid windowtext 1.0pt;border-top:none;padding:0cm 3.5pt 0cm 3.5pt;height=
+:14.4pt">
+<p class=3D"MsoNormal" align=3D"right" style=3D"text-align:right"><span sty=
+le=3D"color:black;mso-fareast-language:ES-MX">1<o:p></o:p></span></p>
+</td>
+<td width=3D"56" nowrap=3D"" valign=3D"bottom" style=3D"width:41.8pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:14.4pt">
+<p class=3D"MsoNormal"><span style=3D"color:black;mso-fareast-language:ES-M=
+X">pieza<o:p></o:p></span></p>
+</td>
+<td width=3D"490" nowrap=3D"" valign=3D"bottom" style=3D"width:367.6pt;bord=
+er-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-ri=
+ght:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:14.4pt">
+<p class=3D"MsoNormal" align=3D"center" style=3D"text-align:center"><span s=
+tyle=3D"color:black;mso-fareast-language:ES-MX">puerta metalica de 90x210 c=
+m<o:p></o:p></span></p>
+</td>
+<td width=3D"90" nowrap=3D"" valign=3D"bottom" style=3D"width:67.75pt;borde=
+r-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-rig=
+ht:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:14.4pt">
+<p class=3D"MsoNormal"><span style=3D"color:black;mso-fareast-language:ES-M=
+X">&nbsp;<o:p></o:p></span></p>
+</td>
+<td width=3D"39" nowrap=3D"" valign=3D"bottom" style=3D"width:29.0pt;border=
+-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;border-righ=
+t:solid windowtext 1.0pt;padding:0cm 3.5pt 0cm 3.5pt;height:14.4pt">
+<p class=3D"MsoNormal"><span style=3D"color:black;mso-fareast-language:ES-M=
+X">&nbsp;<o:p></o:p></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class=3D"MsoNormal"><span lang=3D"ES"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES">Cualquier duda estoy a tus =F3rden=
+es.<o:p></o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES"><o:p>&nbsp;</o:p></span></p>
+<p class=3D"MsoNormal"><span lang=3D"ES">Saludos.<o:p></o:p></span></p>
+</div>
+</body>
+</html>
+
+--_000_SN6PR16MB3968107C4D125EC7C10BA19FCA909SN6PR16MB3968namp_--

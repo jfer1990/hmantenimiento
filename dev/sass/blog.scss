@@ -1,0 +1,41 @@
+#blog{
+    nav{
+        *{
+            color: black!important;
+        }
+    }
+    .nav-scrolled{
+        background: $white;
+    }
+    .btn-outline-dark{
+        &:hover{
+            color:white!important ;
+        }
+    }
+    .logo{
+        background-image: url("../assets/img/logo-sticky.svg");
+    }
+   
+}
+.blog-main{
+    margin-top: 100px;
+}
+#buttonHeader{
+    margin-bottom: 10%;
+}
+.centering{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-main{
+    .text-content{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        p{
+            line-height: 2em;
+        }
+    }
+    
+}

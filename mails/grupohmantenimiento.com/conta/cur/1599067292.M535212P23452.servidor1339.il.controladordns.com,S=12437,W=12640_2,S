@@ -1,0 +1,203 @@
+Return-Path: <Elizabeth.Parra@colliers.com>
+Delivered-To: conta@grupohmantenimiento.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id aC/VH5zUT1+cWwAAlvxoiw
+	(envelope-from <Elizabeth.Parra@colliers.com>)
+	for <conta@grupohmantenimiento.com>; Wed, 02 Sep 2020 12:21:32 -0500
+Return-path: <Elizabeth.Parra@colliers.com>
+Envelope-to: conta@grupohmantenimiento.com
+Delivery-date: Wed, 02 Sep 2020 12:21:32 -0500
+Received: from ts.anti-spam-premium.com ([67.227.206.171]:42052)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <Elizabeth.Parra@colliers.com>)
+	id 1kDWRw-0006VD-Gh
+	for conta@grupohmantenimiento.com; Wed, 02 Sep 2020 12:21:32 -0500
+Received: from mail-dm6nam08on2075.outbound.protection.outlook.com ([40.107.102.75] helo=NAM04-DM6-obe.outbound.protection.outlook.com)
+	by ts.anti-spam-premium.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <Elizabeth.Parra@colliers.com>)
+	id 1kDWRv-000S9V-01
+	for conta@grupohmantenimiento.com; Wed, 02 Sep 2020 13:21:32 -0400
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=H+xgrk1QUtiljpDkC1bQTYlLfEMcJ8nyd4a7GV16DYM/w/n4KvAGvhxH4GAKVrM98Lh/PlZZwV4AdzBdelM63E8wba6uZsFYQo9Svd+vATePkdTHNNizHzNeIWOA1VJDMrMn135575lPjHtjxxuvj4x3Guwv+xEhS1WPc64XYGi1/GOUoFFd2RRUN+fMMWLuSbWsa+nIaBUi93ZRucbn5nk5CJXAZd3FAMXs6LpOX32KR+TMu5pcsDe+OK1OzsvKjIf+I74mDMH5i59ky49vKhyzx/dtG9Pxl4K9f+vDD09lHHFGCFKtaW96XDWG69enzzJPnEjhMYGbgw3bYH19+g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=yPGysdEL2mNbYopwKjxcUfr7jR67B8q6b62Qg3rN8f0=;
+ b=UEnk8Gm3jPAy55mxWADFO6e6YRB+HDNKuobHql7Gg/jkjt9DWWqJiviB56v213hMr1bpy3O9ykvnz3Xggld15OGej0pMAZqU0nPQ5dgr9iDrEyAS70Gwn1jzdhs5Rk7ZrqzUPZ0Kn5DwubJ86Cfs7xHG5zLnSa85x0R00PI7Q6b+B3OgG3Ryq+52UGStIPiIUVN1HVyGPYpNpXxC9Wg9/Pi5lVKIQKfHWY0PGBEEHI1oxAK9lq5WBAOtOqxajOCAuPwWLz+TLEcI8Tn37bMZWhSF8tdcEyNTE7B54QoL+rOPICL4qH/i0zMeFkNjnqP4Hgaqo+hrEQHVV8rTz9w0Zg==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=colliers.com; dmarc=pass action=none header.from=colliers.com;
+ dkim=pass header.d=colliers.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=colliers.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=yPGysdEL2mNbYopwKjxcUfr7jR67B8q6b62Qg3rN8f0=;
+ b=ICQ78Vo0txW3QaRQtGV8HbBYvp3SdgjWPDu+AgR7dGCMSAdHEdXWmvGfkwkn606lAD6KQbaMUN0fntxG82NfjA1kSh8ZAMXvMO5tGvZ7KMocopHbG0HtxmpnFLmMd1vTzuN0kTOorwm4VkmRkfvS/J6L1GIKewcpmwApMCYabGw=
+Received: from BN7PR03MB3857.namprd03.prod.outlook.com (2603:10b6:408:21::10)
+ by BN7PR03MB3572.namprd03.prod.outlook.com (2603:10b6:406:c0::28) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.3348.15; Wed, 2 Sep
+ 2020 17:21:29 +0000
+Received: from BN7PR03MB3857.namprd03.prod.outlook.com
+ ([fe80::3ce9:f991:5d93:5511]) by BN7PR03MB3857.namprd03.prod.outlook.com
+ ([fe80::3ce9:f991:5d93:5511%3]) with mapi id 15.20.3326.025; Wed, 2 Sep 2020
+ 17:21:29 +0000
+From: "Parra, Elizabeth" <Elizabeth.Parra@colliers.com>
+To: "conta@grupohmantenimiento.com" <conta@grupohmantenimiento.com>
+Subject: Re: Factura puertas corregida
+Thread-Topic: Factura puertas corregida
+Thread-Index: AQHWgU1an+6SadGHwUKFB/6EzDfSpalVmD7R
+Date: Wed, 2 Sep 2020 17:21:29 +0000
+Message-ID:
+ <BN7PR03MB3857A8B663462D5FD20D522D8A2F0@BN7PR03MB3857.namprd03.prod.outlook.com>
+References: <b43d7a005107c65e0f5a64702c6bfc1b@grupohmantenimiento.com>
+In-Reply-To: <b43d7a005107c65e0f5a64702c6bfc1b@grupohmantenimiento.com>
+Accept-Language: es-MX, en-US
+Content-Language: es-MX
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: grupohmantenimiento.com; dkim=none (message not
+ signed) header.d=none;grupohmantenimiento.com; dmarc=none action=none
+ header.from=colliers.com;
+x-originating-ip: [2806:2f0:8080:e9b:3d81:a7d0:fd6d:3800]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-ht: Tenant
+x-ms-office365-filtering-correlation-id: 5f6c5e1d-1da1-489b-615b-08d84f64a123
+x-ms-traffictypediagnostic: BN7PR03MB3572:
+x-microsoft-antispam-prvs:
+ <BN7PR03MB35727CBCA7E7C8D8E97BFA8D8A2F0@BN7PR03MB3572.namprd03.prod.outlook.com>
+proofpoint-exchange-organization-authas: Internal
+x-ms-oob-tlc-oobclassifiers: OLM:1728;
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ B95+a5EwLABtQVx6fq+SSbuHm3wQ6mI31E1ZGq7Si8fuFtw0ZnBAWYOCMHuCr2s0Z39WYk95Tc69zfgINtodpzTGSXTVrwuR85GdzFGrdFhP1+dxmhEahMzEh8KnPba//Pdho9/n2I0qcvodUoxHkrkCe/7gIgNFsPpp6c+xj45ZTe+G2AWDHQdzYwNjfHDHYqkrPa/77WneL5I2Gf9DabUx0IQhIp7lQub7SK5h448L6audu17WzCnfgEGBlNG33sczkKmjUamYJ6IWOyQpI+5BNlJnQLxNmKE8BA55IK+M633OQWdyWo00d7t3C7OCyUd2+lPq7B/OI5Wk/YqrGQ==
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:es;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BN7PR03MB3857.namprd03.prod.outlook.com;PTR:;CAT:NONE;SFS:(4636009)(366004)(136003)(39860400002)(346002)(376002)(396003)(3480700007)(186003)(52536014)(7696005)(9686003)(33656002)(86362001)(55016002)(316002)(4744005)(71200400001)(8936002)(66446008)(66476007)(2906002)(5660300002)(6506007)(7116003)(478600001)(66556008)(19627405001)(6916009)(66946007)(8676002)(64756008)(76116006);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata:
+ f4hM0QmObTaLOQJSJUoVTwOvh5Pe/0I2XO0bM/rWbn/WM8rtrYJr9hy+BG92hqS2EmHxeDAyQZOgLAjwfEdO6twVV0+6YOK4l2/t9BoxykUTAiMrwyBgkeCL8uPTup4bkJGu3kntCuRBLijoqTL032VrQn6SQynzGAUc/pnTixYDOra7B3Z7mVkZzZnqkOP+Dviu3tuJvBZpf+XtUeuYoRQSBSkFuJ9eH5SHbFTGGwes0YIs7GZ8SUszkntwcSdDjsaI5iwT65uczPNgx+qsb3BHuFLDI5y38V+FhyO28dU+VukJd2A+JzgYghqxV5izjAnjZX8v5z5m1knJfHSg4rlcEuwWUiMxodQdpvobMHmiCIVlaOXkSJQboTHfN9Gj3M9T3yt/3oTvBb4ppRWlO6a6Ula8KTqk1bcufOf7ibyHzlYM7TXGVUlgCWxrWFvl65cn8SVFy+Sh5Cs1QHYx+vwL/IgiBbOmbVsX6AQiW2PmVEOCRjwymFUxEf9aXZP3rBaxg6AX/nD5HCC0PPWBI1TNT70gwey/TEl+ovxQR5VeijQZC3wCfq1OPDbfDO4NQrrRXm8XeX5fYpUsgiGw3Aclrt/ffvgba/7AbOzK8by/KVGxle/LEmSC+dvuwbZbg7aEZN1nmc1pkirBjjvlX6bZHetULbskcENPg2hT0ixaU/WFNfqxB8uYDGP+2iU9c56vgyC78PbRkDaFoMkW3w==
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/alternative;
+	boundary="_000_BN7PR03MB3857A8B663462D5FD20D522D8A2F0BN7PR03MB3857namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: colliers.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BN7PR03MB3857.namprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5f6c5e1d-1da1-489b-615b-08d84f64a123
+X-MS-Exchange-CrossTenant-originalarrivaltime: 02 Sep 2020 17:21:29.0690
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 049e3382-8cdc-477b-9317-951b04689668
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: P1E7osA9upsJebY7zdPcxhsQMsTatuJt0EU6SfcxPnW25V+BIdsPP3IdM2URMF+j4pd32iKf9GvHKW7H/VXCP66M+OD1eXRfwxADhr2/6pk=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN7PR03MB3572
+X-MS-Exchange-CrossPremises-AuthAs: Internal
+X-MS-Exchange-CrossPremises-AuthMechanism: 04
+X-MS-Exchange-CrossPremises-AuthSource: BN7PR03MB3857.namprd03.prod.outlook.com
+X-MS-Exchange-CrossPremises-TransportTrafficType: Email
+X-MS-Exchange-CrossPremises-SCL: 1
+X-MS-Exchange-CrossPremises-messagesource: StoreDriver
+X-MS-Exchange-CrossPremises-BCC:
+X-MS-Exchange-CrossPremises-originalclientipaddress: 2806:2f0:8080:e9b:3d81:a7d0:fd6d:3800
+X-MS-Exchange-CrossPremises-transporttraffictype: Email
+X-MS-Exchange-CrossPremises-antispam-scancontext: DIR:Originating;SFV:NSPM;SKIP:0;
+X-MS-Exchange-CrossPremises-processed-by-journaling: Journal Agent
+X-OrganizationHeadersPreserved: BN7PR03MB3572.namprd03.prod.outlook.com
+Received-SPF: pass (ts.anti-spam-premium.com: domain of colliers.com designates 40.107.102.75 as permitted sender) client-ip=40.107.102.75; envelope-from=Elizabeth.Parra@colliers.com; helo=NAM04-DM6-obe.outbound.protection.outlook.com;
+X-SPF-Result: ts.anti-spam-premium.com: domain of colliers.com designates 40.107.102.75 as permitted sender
+Authentication-Results: ts.anti-spam-premium.com;
+	iprev=pass (mail-dm6nam08on2075.outbound.protection.outlook.com) smtp.remote-ip=40.107.102.75;
+	spf=pass smtp.mailfrom=colliers.com;
+	dkim=pass header.d=colliers.com header.s=selector1 header.a=rsa-sha256;
+	dmarc=pass header.from=colliers.com
+Authentication-Results:  anti-spam-premium.com; spf=pass smtp.mailfrom=Elizabeth.Parra@colliers.com; dkim=pass header.i=colliers.com
+X-HospedandoAntiSpam-Class: ham
+X-HospedandoAntiSpam-Evidence: urlwl/url-14.rbl.spamrl.com
+X-Recommended-Action: accept
+X-Filter-ID: 8G1aH+8yearZuN6N5+X5bm6KuAmzEgFjeXz34jnHp0xpaawAQLCw41DX+7uxKx0P2LDkrRcqyp/p
+ /iw75DwQ0G8XO88BGELJmwiCIfZy97JMnxyxvOAWf1AnBf0oKo/bpb9L5kMn7N9EVpW/kIaL6310
+ dzuLgZEt2mjk37HJ5h8y2Bx+blAnBTVTn+uK0NXgSLXwPZxl1/xFc7F5QwDrOWT/ZWqTHUFUBOaK
+ OoI78VtjFWYZJqpjB6z5Jl06uk5SHl73ve96GBFEwl13XHj3xCbiMgETHAua3aY4W2otYZAgAaM3
+ +aUTOXWgWMM4bhNEecQR5AjAozKaLM+uf3vn+jARomWYiBu34rBYSnDOzFPGuSMlLXwHIfLrSJHJ
+ mlWLWCEWK4MJjQR0Pz5bwy7RNp97cG6BPh2+ilkZJahnsdEpbYGgtbjfauDJKr9SzzyrPueT/JFh
+ yaMWwLpW88iXNtyBbdS8mp0iFW6IdrBYKXV/0tARiKLbsBv4eBarRURNaqEv+H+KmankqCOVUAIO
+ QvM5Js7ay2WcuK7ot37ALhzNh8A87g2bC5bRC2tQuKwUjTw3EJ2UlLkzmn24lwCQqDnpIKEAmYWl
+ XJ6dFlzcT0UCLHZnXFyqA+FXdiLocLH/bVdcPdbppsACYEn6feSAee4MV4ewoVBOkGn1HW43CMck
+ X99JsHFdcu9VkIqF/8Tq3iG+cRfpdO/eX7b0oYjWuNkalTfcHsH7tMTcUWZgk7P74O4hBSz/kkmP
+ gL+fgIgu/5j6+p5x0VjNtXrQMB8LevpVOpXfyW97ZhTQZA+v/BgUPyeyAmGXf5tfT10nKhfSOpLL
+ 6tgkTa1nLgpAkEc9vs6kAaNTumYeOawROoEt7WAMMdE7dSbQRxi5RvSNnnQwiwQzKw+6v3CaIMG6
+ s7LqJBNqRyGAVpRnD5+DDiuWzK6VuVptBetjomY66M5cPj92hTwy1YMaFMzwQeO7bdUwea/L3E3Y
+ jCVK3tjBye5HcB0DbQesKdtd3z5lV0ZgbJR6SNMT1ngXPU2TNmtvanWNGTQQv/QCVJMxQS6vjdIy
+ sVQk4RHdT1f/41e/4VjmHi8G647lNwN4qOsSZg+fYhVZGzZkglgpe7WmA7hd+qOWuv28EDw+Gj+V
+ JUcibzL2h55FaMOxnAqs3TGaMNE1E06MGnfccSHpoEA6x1E6NCAy03J75/wUhhZycG+RrWmJat+b
+ Aam2/p4p7raHE7+hxolhwXBqz7TRiWF91U/smddrJvE=
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+--_000_BN7PR03MB3857A8B663462D5FD20D522D8A2F0BN7PR03MB3857namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Buena tarde,
+
+Ya teniendo esta, solo queda pendiente las facturas del barandal de las con=
+densadoras y limpieza tuber=EDas, por favor.
+
+Gracias,
+________________________________
+De: conta@grupohmantenimiento.com <conta@grupohmantenimiento.com>
+Enviado: mi=E9rcoles, 2 de septiembre de 2020 12:20 p. m.
+Para: Parra, Elizabeth <Elizabeth.Parra@colliers.com>
+Asunto: Factura puertas corregida
+
+envio la factura corregida.
+
+--_000_BN7PR03MB3857A8B663462D5FD20D522D8A2F0BN7PR03MB3857namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Buena tarde,</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Ya teniendo esta, solo queda pendiente las facturas del barandal de las con=
+densadoras y limpieza tuber=EDas, por favor.</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+Gracias,</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>De:</b> conta@grupohmantenimien=
+to.com &lt;conta@grupohmantenimiento.com&gt;<br>
+<b>Enviado:</b> mi=E9rcoles, 2 de septiembre de 2020 12:20 p. m.<br>
+<b>Para:</b> Parra, Elizabeth &lt;Elizabeth.Parra@colliers.com&gt;<br>
+<b>Asunto:</b> Factura puertas corregida</font>
+<div>&nbsp;</div>
+</div>
+<div class=3D"BodyFragment"><font size=3D"2"><span style=3D"font-size:11pt;=
+">
+<div class=3D"PlainText">envio la factura corregida.</div>
+</span></font></div>
+</body>
+</html>
+
+--_000_BN7PR03MB3857A8B663462D5FD20D522D8A2F0BN7PR03MB3857namp_--

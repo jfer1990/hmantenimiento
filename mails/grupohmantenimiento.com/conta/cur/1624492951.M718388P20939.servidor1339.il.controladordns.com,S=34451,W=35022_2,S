@@ -1,0 +1,571 @@
+Return-Path: <mantto_forumcancun@fibrauno.mx>
+Delivered-To: conta@grupohmantenimiento.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id IEW7KpfL02DLUQAAlvxoiw
+	(envelope-from <mantto_forumcancun@fibrauno.mx>)
+	for <conta@grupohmantenimiento.com>; Wed, 23 Jun 2021 19:02:31 -0500
+Return-path: <mantto_forumcancun@fibrauno.mx>
+Envelope-to: conta@grupohmantenimiento.com
+Delivery-date: Wed, 23 Jun 2021 19:02:31 -0500
+Received: from ts.anti-spam-premium.com ([67.227.206.171]:59592)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.94.2)
+	(envelope-from <mantto_forumcancun@fibrauno.mx>)
+	id 1lwCpF-0007E6-Fm
+	for conta@grupohmantenimiento.com; Wed, 23 Jun 2021 19:02:31 -0500
+Received: from mail-dm3nam07on2079.outbound.protection.outlook.com ([40.107.95.79] helo=NAM02-DM3-obe.outbound.protection.outlook.com)
+	by ts.anti-spam-premium.com with esmtps (TLSv1.2:AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <mantto_forumcancun@fibrauno.mx>)
+	id 1lwCpA-000avU-3v
+	for conta@grupohmantenimiento.com; Wed, 23 Jun 2021 20:02:31 -0400
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=evGD5uoxRBCiJeQ/AJgkD3vmdg1e67MBwyYvx8gI9yWW0BzZo6z/WWvuZZQ6QGmfJgZtMyFm9oa2bfSQ2SRJvr8Q0JcCVQznvpRWbAtJJxtm9lyoNQPC4SGK881frWG1jrddalsz64REZyervp8JYUY13Fc9mC9WRrfReD6K+K+Tjcp+87W9hBA3Gt5RvtbxXxfnO4EJWaCdRruGZV+N5pIQ2J8oAlbUh7biFe5zo9K/cYigqpfxkZzrRueUm1GbK8+gGCOrDALCcBmdRtDc6hMVwxS9ToL0p87wvSWMTpKR4BZ3hPqQPyhbZ9TKaUud21gjlDIMeg69DVnmxs9yDQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=JfkUy4kiS9BzyBcQ5spywb7+ovS/Cv5nmO1CyaE6V3w=;
+ b=Vrq+NUcsO+KvdgtmtySm6IxmHmXlI2HUhCJPk1y9ELSgEKbj5bc+AazSRda1wCc86aRvilxhh7+bRkrz0UXw4WjH5qWnFqCxuvUHU+ShIMH7OYGe6DS6/S4biO3s/yJEzJxA/iAVp7teRJQ6aSKg20wcKUgIUql33Oygkgqw48Aj4D+8y29tnChs0d9HhXivAUawJ6nvj/L9usVcRvYB5Am5fSYy4h7Am5m6m28o4tkQcj7qgTTvJwUp2NqqOvtAsSmoKtsZEaux3mKN33zFO4QHoNjMSkPGQ1igA70RejJii7z1XeRxknmajC5Oqww1s9C5XeZ8aM35Q34NndRe0g==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=fibrauno.mx; dmarc=pass action=none header.from=fibrauno.mx;
+ dkim=pass header.d=fibrauno.mx; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=fibrauno.mx;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=JfkUy4kiS9BzyBcQ5spywb7+ovS/Cv5nmO1CyaE6V3w=;
+ b=JieBA8QIrgsy8HUfDa3otumluH2kz6Nxv8BtYedM05EjTzPcbEmcYkIoxYHAWN5Yy9gORksOUtoVvCKqKA9vq0TBjOQMF0amFhcgUAIr74+9Ap3ujayj5Yhw7h5+6SRfUKTN8DVk7onke7i20WyNWHJ/ipHsLl8qgc7VpZuISxQ=
+Received: from BN6PR02MB3330.namprd02.prod.outlook.com (2603:10b6:405:63::26)
+ by BN7PR02MB4226.namprd02.prod.outlook.com (2603:10b6:406:fa::25) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4242.23; Thu, 24 Jun
+ 2021 00:02:26 +0000
+Received: from BN6PR02MB3330.namprd02.prod.outlook.com
+ ([fe80::edf3:3c7a:6f19:22dd]) by BN6PR02MB3330.namprd02.prod.outlook.com
+ ([fe80::edf3:3c7a:6f19:22dd%6]) with mapi id 15.20.4242.023; Thu, 24 Jun 2021
+ 00:02:26 +0000
+From: Mantenimiento Forum Cancun <mantto_forumcancun@fibrauno.mx>
+To: "conta@grupohmantenimiento.com" <conta@grupohmantenimiento.com>
+Subject: RV: MegaInvoice: Factura CFDI Cancelada  PCD::49970 de la Sucursal
+ 2202 del Cliente APC870316GE7
+Thread-Topic: MegaInvoice: Factura CFDI Cancelada  PCD::49970 de la Sucursal
+ 2202 del Cliente APC870316GE7
+Thread-Index: AQHXaIY7/QpIiy6ONU6bPhOhhhf9dasiR01p
+Date: Thu, 24 Jun 2021 00:02:25 +0000
+Message-ID:
+ <BN6PR02MB3330B7A3BDB7900E025B0469EE079@BN6PR02MB3330.namprd02.prod.outlook.com>
+References: <e4a2595b9e115f1ea9ce3a2a550bc2e7.nomad_mimemail@108.178.53.51>
+In-Reply-To: <e4a2595b9e115f1ea9ce3a2a550bc2e7.nomad_mimemail@108.178.53.51>
+Accept-Language: es-MX, en-US
+Content-Language: es-MX
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+authentication-results: grupohmantenimiento.com; dkim=none (message not
+ signed) header.d=none;grupohmantenimiento.com; dmarc=none action=none
+ header.from=fibrauno.mx;
+x-originating-ip: [2806:10be:b:2e75:ce:7bb8:6d2:10f1]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 67e5f456-a157-4181-57cb-08d936a3599e
+x-ms-traffictypediagnostic: BN7PR02MB4226:
+x-microsoft-antispam-prvs:
+ <BN7PR02MB4226CC58B12BCEC3858D9AABEE079@BN7PR02MB4226.namprd02.prod.outlook.com>
+x-ms-oob-tlc-oobclassifiers: OLM:2582;
+x-ms-exchange-senderadcheck: 1
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info:
+ ceDHUMaau2FEZjkpxkZhbdiILw27BEAJ49SjBkP1DN1KBthCkSmdw0CU19gcECSHMQTtwZCMh0bdVKXqYPnaJSVWJJpN6xkdta5we5NeIRDIjbPEVC2bYNyKgv2Ft1JGmFQPRjW4EtQcmBn4kMXZrtOq0qGxUiQHA8fNShxIihdxSR7AjdMrm3mxdmZVWeZod/Z3BcqivJ+p0w2gLPMCh9cqpqEpQT+2mlh3yZjG+LZyvU2KRKbn9QAOHb/XX1oevRmaUX/Sl8A5t4ncfyszLYEcZQgKk0hUyqcgesXV1yAEaJjiRgc0bYmUZwK3lvmCg9EsNp+2k15mZGwsvZl0oCGXgLFFV0jId/h1KsdHvnIOrGbRnZiaZ7wVQ8nO7CPjEP7aXH3j5F049iPG79FgSo76OoKrxn5BjO4OIIKR8FcpcIZXVA0BIlPhJLBtj6quVuDHwEXOiG/YfcMZWGhJ3UoqRCjsywCopHl8u48yvNJAIvy8+AENPc5YY/Dr0DRs/KjRqBuCLPmOVF1Yovrn6eeUlorjXQYkKVpdWF3HAb7KDwppPwQ2H/QaYxcmuxKqGAzSDOepj2SIzYvRPGbkw+n976xIvflxrvypg3oBy3M=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:es;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:BN6PR02MB3330.namprd02.prod.outlook.com;PTR:;CAT:NONE;SFS:(4636009)(136003)(346002)(366004)(396003)(39850400004)(376002)(316002)(2906002)(19627405001)(83380400001)(786003)(478600001)(8676002)(71200400001)(8936002)(76116006)(66946007)(66576008)(66476007)(7696005)(66556008)(64756008)(86362001)(99936003)(52536014)(186003)(55016002)(38100700002)(9686003)(6916009)(5660300002)(66574015)(122000001)(66446008)(33656002)(6506007);DIR:OUT;SFP:1101;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?8LjPkfCOBckoOivvjz0kLtxLXV8gx5XCIZ4t2gBWd2XDqLgirwlG1Hk+tx?=
+ =?iso-8859-1?Q?rgdYwrE/aGtugGbruB6Vya9h9m+0kBwjg8nshJRnQz4KGzLU2p6Y8d04Fq?=
+ =?iso-8859-1?Q?7k/QL7dZmk79VVxyCFdL/A3V9L5eIChJhxgplNYXaLiBCYD67C4B5hEI4T?=
+ =?iso-8859-1?Q?6TcrzmGqm7TicPDZUEbJlE8JbQPWpNtENFxTen234cyjCdWjBjSqUnb63a?=
+ =?iso-8859-1?Q?R9DO3MO38C4LqY/zQqq+qWu7f45fQcdWG5VjhWeCqx2jPOabj47aCQi7GY?=
+ =?iso-8859-1?Q?H2ptRXUZ9TtFzc4x1oBo0qLmzagpaiiNVu0R4Ihx9Ij7h32AaYAHY4HeC1?=
+ =?iso-8859-1?Q?X5uy9VoEns+QrOpqp3UHp3dYUCc+z9qmJvvMEVkQ8qZ00Ykhh9jAq4zjHL?=
+ =?iso-8859-1?Q?0tIVFbJOBTfrSxQIxR2Zn8v1XUWuk9PjHBxQt7jesWsqd8fP/HphL8Tt6M?=
+ =?iso-8859-1?Q?zQ3piUjQ/II4icT06VfHF7bmPvpLmFZW+lLk72f/C6UC2MEgKNun1ogYlj?=
+ =?iso-8859-1?Q?Eg70TK4+Hjcgud4i07uWagmMfSZ0ThS9G9fuVDSrn/oVATSic8ZfLElHgN?=
+ =?iso-8859-1?Q?NayOrTOgqy9e3m4tQ+DMlfrPA1fbjNY7Z/VO4/BjMkzA7YzCrqLlg4URIk?=
+ =?iso-8859-1?Q?WonR6qXFd8qEGWTo9bWp00CTX1l4uoe1bg7EuQy05wdGHaJW6Secf8H+Ux?=
+ =?iso-8859-1?Q?HjxKei4D8waLCJ5UNyoA6ruk3OlcQCJTSWYAthxahsA36AXawQyDUc7UGD?=
+ =?iso-8859-1?Q?JKzlQyYB9lPvHmdAc76VYDyMWXPWZX4bckLMgDJLTe2Yw+cjHQ5VQkPoCx?=
+ =?iso-8859-1?Q?j9L+mpSXgCVKuee82w0edb2TevWBVFvUOznQnyEOZXFxtHjAKsDh8k/gQn?=
+ =?iso-8859-1?Q?3E74eHTyrXZLgda9ULFgFnjOjUGFHqTluSoFcpqWkT8VRIeQeQ1upIJkIE?=
+ =?iso-8859-1?Q?0R9lggNvnaI8dXPb94P5e+R0Xes9jGYgocfLCHyCgQTkrJMSdeq9AiyhQ8?=
+ =?iso-8859-1?Q?j80xu3ywfoGpJ/e7M0XXQg5siAzf2d+dOy3FL1puYvZnVtMY0XC/XdR4FN?=
+ =?iso-8859-1?Q?YsK7BjlDsIWFWycllbY6HU4cA/PHipES9XmZYyVJvDZDi1pRlE/QbRRnvS?=
+ =?iso-8859-1?Q?1h6D8xRDyW1CAJZy0InhoiWiTXjQpTHBuWUSiG8dkdyg6K7MEBpn+/q08v?=
+ =?iso-8859-1?Q?0zm/uTBh9BPTz7G6ld/wPnqczDDFJ6uz0nai92ef0zRbmx77Mnq9REhAkC?=
+ =?iso-8859-1?Q?viTubROBhSpaS4V/D/o/98InbXNSb2cbez3IT2Sm4C04wc+YhTIc/AmLQg?=
+ =?iso-8859-1?Q?ltGzNhwMIL0mm8IWrduoouINibI4IdNHwh4PceSmHNFTjjYGEl95+UsYPU?=
+ =?iso-8859-1?Q?2ygCBvF8Mn6VRvmLArwpxWLDzWiNZMAbuITLxPYDyHJUXzpamO5Vg=3D?=
+x-ms-exchange-transport-forked: True
+Content-Type: multipart/mixed;
+	boundary="_007_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_"
+MIME-Version: 1.0
+X-OriginatorOrg: fibrauno.mx
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: BN6PR02MB3330.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: 67e5f456-a157-4181-57cb-08d936a3599e
+X-MS-Exchange-CrossTenant-originalarrivaltime: 24 Jun 2021 00:02:25.9854
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 59a215f1-98a0-42d3-867c-866cb8fde6bf
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: SYsR0Mh3OINq1WDVQb5kUCx1LZVYjtt6ydNAnFafXkBAwB0RLnXFwiKlN7s08OSKcapXOgmCWuaw/IYe4QRllxN52pdm1CK6mqluxoar4qA=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: BN7PR02MB4226
+Received-SPF: pass (ts.anti-spam-premium.com: domain of fibrauno.mx designates 40.107.95.79 as permitted sender) client-ip=40.107.95.79; envelope-from=mantto_forumcancun@fibrauno.mx; helo=NAM02-DM3-obe.outbound.protection.outlook.com;
+X-SPF-Result: ts.anti-spam-premium.com: domain of fibrauno.mx designates 40.107.95.79 as permitted sender
+Authentication-Results: ts.anti-spam-premium.com;
+	iprev=pass (mail-dm3nam07on2079.outbound.protection.outlook.com) smtp.remote-ip=40.107.95.79;
+	spf=pass smtp.mailfrom=fibrauno.mx;
+	dkim=pass header.d=fibrauno.mx header.s=selector1 header.a=rsa-sha256;
+	dmarc=pass header.from=fibrauno.mx
+Authentication-Results:  anti-spam-premium.com; spf=pass smtp.mailfrom=mantto_forumcancun@fibrauno.mx; dkim=pass header.i=fibrauno.mx
+X-HospedandoAntiSpam-Class: ham
+X-HospedandoAntiSpam-Evidence: Combined (0.15)
+X-Recommended-Action: accept
+X-Filter-ID: 8G1aH+8yearZuN6N5+X5bm6KuAmzEgFjeXz34jnHp0yUbbjGR2IRRoiRCclrUvUZVaPuWW65IIT8
+ lIUNtU+PTFEQyVzDVZOlehQ3EiJLhbuUFPik2AEetNQFz+BihvM7IzLbbErDyV1sGtttcN/GWpHC
+ Xor75MVrwfLgo57V+RDg7hYH6zcIzIUnP5l98W12Zmiwr1oFusdb22OsnwZZd1bhkVvJPyR1uH23
+ fxL7mf/nx8yeplRO3sLIqUlSH7OGoQ1RJl/v8DQA7kqf3zK4ZVLkvQbf9vDc1KU//y47OQyDwIE7
+ VKe+bqpcdCns72R1eOcAWVyDiMAIB1Fx9PXxyAJmMlK1ZtWglQF1Sm5sMIA+AwMXi+OSqQVvJeAt
+ QeT9Q5MeWyHYFcw5tP/0jE4kly59G3Ak/vn5Zqq5MBClRhkIbjogMSywWLwTaTL3Ga4Qv0IGv7zm
+ kXv9c9AS0gZ8TkQMF99VlWOZVo1sbhkkbsWnOf5tRsMU4ivK86DnunB5Pi+P03wMGhewNgI1zusK
+ J8ISkKgHPPLmO0y1q7+r4LCRN3bkqZd7PvSc10iiaQ7w5YE5enyccp7RH4WQio3uGenkLnSpGgRC
+ FjYGYEMeIUXPCV8dSGaRpt/yaRa/KIYWLFpFCyJ/9hQbxd9VB27J3Y+kXrZFxPNMj+t8oOjdJ7Ip
+ OMQJvQ/Ck3iiU+4DQAj3YnXukgjsLOrF+P7Na/CkUTn9lJv8t10f6hiFWDTcCevwO/R5r/CG4Ng2
+ 0lAjVGb3SZgCazv9MT0QISDgBrRAT/dDTLTs+1cX8VPYFdizSmVR7MbGL7jROej28kFk98dr4fiI
+ YGXBZ+C1/C8wLw+suhecCglOBTU1+s89RrOa6pa2Cocd8I/f8Vf9ycRyxGQEEfVZp0HcNzPQ6BgX
+ CYEs8OBsVdJazjmzo06btAnZK0zG/1pvQKUqAnuakQWsy8CWzTnE2QOLFmTK7djFHwOqKmHEuxpt
+ wkinM+LoHGjcZuR3dsUPl7uuWZECTxDoGLxKM5rqZ4DGWwa02D+d+sAu5yCq+h4dYxbt6McfeAf5
+ k1tElVrfePZsNzKoYYRZMtFc57heozVGPQn9KVJrBx4aOhVQQ6Qnq+VvC66Du2JrhKwsyGnHye48
+ Ogu4/8bPlXjQcOXgaono7vNQJWy1TN34lSGNRkjwWS97Mqj+KZLD21fa0Kg54SywdHoM7cHGWQYO
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+--_007_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_
+Content-Type: multipart/related;
+	boundary="_006_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_";
+	type="multipart/alternative"
+
+--_006_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_
+Content-Type: multipart/alternative;
+	boundary="_000_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_"
+
+--_000_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+[cid:e2574b0c-e98c-4c51-9a3b-c087d59cbca9]
+
+________________________________
+De: facturas.caribe@grupodg.mx <facturas.caribe@grupodg.mx>
+Enviado: mi=E9rcoles, 23 de junio de 2021 06:19 p. m.
+Para: Mantenimiento Forum Cancun <mantto_forumcancun@fibrauno.mx>
+Asunto: MegaInvoice: Factura CFDI Cancelada PCD::49970 de la Sucursal 2202 =
+del Cliente APC870316GE7
+
+
+PRECAUCI=D3N: Este mensaje proviene de un destinatario externo a la organiz=
+aci=F3n. No d=E9 clic a v=EDnculos de este mensaje o abra documentos adjunt=
+os a menos que reconozca al emisor y que el contenido sea seguro.
+
+
+Factura CFDI Cancelada
+Serie:  PCD
+Folio:  49970
+Mensaje SAT:    Cancelable sin aceptaci=F3n: Cancelado (Cancelado sin acept=
+aci=F3n)
+
+En caso de pedir asistencia, favor de adjuntar este informe.
+
+
+________________________________
+
+
+Este mensaje y sus adjuntos se dirigen exclusivamente a su destinatario, pu=
+ede contener informaci=F3n privilegiada o confidencial y es para uso exclus=
+ivo de la persona o entidad de destino. Si no es usted el destinatario indi=
+cado, queda notificado de que la lectura, utilizaci=F3n, divulgaci=F3n y/o =
+copia sin autorizaci=F3n puede estar prohibida en virtud de la legislaci=F3=
+n vigente. Si ha recibido este mensaje por error, le rogamos que nos lo com=
+unique inmediatamente por esta misma v=EDa y proceda a su destrucci=F3n. Co=
+nsidere que las opiniones expresadas en este documento son responsabilidad =
+del autor y no necesariamente expresan la opini=F3n de la compa=F1=EDa.
+
+No se otorga garant=EDa o seguridad en relaci=F3n a la seguridad y contenid=
+o de este correo y sus archivos adjuntos. La compa=F1=EDa no acepta respons=
+abilidad alguna por da=F1os causados por virus trasmitidos o contenidos en =
+este correo o sus archivos adjuntos. No se acepta ninguna responsabilidad c=
+omo consecuencia de la recepci=F3n de este correo.
+
+The information contained in this transmission is privileged and confidenti=
+al information intended only for the use of the individual or entity named =
+above. If the reader of this message is not the intended recipient, you are=
+ hereby notified that any dissemination, distribution or copying of this co=
+mmunication is strictly prohibited. If you have received this transmission =
+in error, do not read it. Please immediately reply to the sender that you h=
+ave received this communication in error and then delete it. Please note th=
+at the views and opinions expressed herein are solely those of the author a=
+nd do not necessarily reflect those of the company.
+
+No warranties or assurances are made in relation to the safety and content =
+of this email and attachments. The company accepts no liability for any dam=
+age caused by any virus transmitted by or contained in this email and attac=
+hments. No liability is accepted for any consequences arising from this ema=
+il.
+
+--_000_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div>
+<div style=3D"font-family: Calibri, Arial, Helvetica, sans-serif; font-size=
+: 12pt; color: rgb(0, 0, 0);">
+<br>
+</div>
+<div id=3D"Signature">
+<div>
+<meta content=3D"text/html; charset=3DUTF-8">
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<div id=3D"divtagdefaultwrapper" dir=3D"ltr" style=3D"font-size:12pt; color=
+:#000000; font-family:Calibri,Helvetica,sans-serif">
+<p style=3D"margin-top: 0px; margin-bottom: 0px;margin-top:0; margin-bottom=
+:0"><br>
+</p>
+<img class=3D"EmojiInsert" style=3D"" data-outlook-trace=3D"F:1|T:1" src=3D=
+"cid:e2574b0c-e98c-4c51-9a3b-c087d59cbca9"><br>
+</div>
+<br>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div id=3D"appendonsend"></div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" co=
+lor=3D"#000000" style=3D"font-size:11pt"><b>De:</b> facturas.caribe@grupodg=
+.mx &lt;facturas.caribe@grupodg.mx&gt;<br>
+<b>Enviado:</b> mi=E9rcoles, 23 de junio de 2021 06:19 p. m.<br>
+<b>Para:</b> Mantenimiento Forum Cancun &lt;mantto_forumcancun@fibrauno.mx&=
+gt;<br>
+<b>Asunto:</b> MegaInvoice: Factura CFDI Cancelada PCD::49970 de la Sucursa=
+l 2202 del Cliente APC870316GE7</font>
+<div>&nbsp;</div>
+</div>
+<div>
+<p></p>
+<div style=3D"background-color:#FFEB9C; width:100%; border-style:solid; bor=
+der-color:#9C6500; border-width:1pt; padding:2pt; font-size:10pt; line-heig=
+ht:12pt; font-family:'Calibri'; color:Black; text-align:left">
+<span style=3D"color:#9C6500">PRECAUCI=D3N:</span> Este mensaje proviene de=
+ un destinatario externo a la organizaci=F3n. No d=E9 clic a v=EDnculos de =
+este mensaje o abra documentos adjuntos a menos que reconozca al emisor y q=
+ue el contenido sea seguro.</div>
+<br>
+<p></p>
+<div><strong>Factura CFDI Cancelada</strong>
+<table border=3D"0" cellpadding=3D"2" cellspacing=3D"2">
+<tbody>
+<tr>
+<td bgcolor=3D"#EFEBE7"><strong>Serie:</strong></td>
+<td>PCD</td>
+</tr>
+<tr>
+<td bgcolor=3D"#EFEBE7"><strong>Folio:</strong></td>
+<td>49970</td>
+</tr>
+<tr>
+<td bgcolor=3D"#EFEBE7"><strong>Mensaje SAT:</strong></td>
+<td>Cancelable sin aceptaci=F3n: Cancelado (Cancelado sin aceptaci=F3n)</td=
+>
+</tr>
+</tbody>
+</table>
+<p>En caso de pedir asistencia, favor de adjuntar este informe.</p>
+</div>
+</div>
+</div>
+<div style=3D"font-size:9pt; font-family: 'Calibri',sans-serif;"><br>
+</div>
+&nbsp; &nbsp; <br>
+<hr>
+<span style=3D"font-size:10pt; font-family: 'Cambria','courier','garamond',=
+serif; color:#0ca9a6;"></span><br>
+<p style=3D"font-size:9pt; line-height:10pt; font-family: 'Cambria','times =
+roman',serif;">
+Este mensaje y sus adjuntos se dirigen exclusivamente a su destinatario, pu=
+ede contener informaci=F3n privilegiada o confidencial y es para uso exclus=
+ivo de la persona o entidad de destino. Si no es usted el destinatario indi=
+cado, queda notificado de que la lectura,
+ utilizaci=F3n, divulgaci=F3n y/o copia sin autorizaci=F3n puede estar proh=
+ibida en virtud de la legislaci=F3n vigente. Si ha recibido este mensaje po=
+r error, le rogamos que nos lo comunique inmediatamente por esta misma v=ED=
+a y proceda a su destrucci=F3n. Considere que
+ las opiniones expresadas en este documento son responsabilidad del autor y=
+ no necesariamente expresan la opini=F3n de la compa=F1=EDa.
+<br>
+<br>
+No se otorga garant=EDa o seguridad en relaci=F3n a la seguridad y contenid=
+o de este correo y sus archivos adjuntos. La compa=F1=EDa no acepta respons=
+abilidad alguna por da=F1os causados por virus trasmitidos o contenidos en =
+este correo o sus archivos adjuntos. No se
+ acepta ninguna responsabilidad como consecuencia de la recepci=F3n de este=
+ correo.
+<br>
+<br>
+The information contained in this transmission is privileged and confidenti=
+al information intended only for the use of the individual or entity named =
+above. If the reader of this message is not the intended recipient, you are=
+ hereby notified that any dissemination,
+ distribution or copying of this communication is strictly prohibited. If y=
+ou have received this transmission in error, do not read it. Please immedia=
+tely reply to the sender that you have received this communication in error=
+ and then delete it. Please note
+ that the views and opinions expressed herein are solely those of the autho=
+r and do not necessarily reflect those of the company.
+<br>
+<br>
+No warranties or assurances are made in relation to the safety and content =
+of this email and attachments. The company accepts no liability for any dam=
+age caused by any virus transmitted by or contained in this email and attac=
+hments. No liability is accepted
+ for any consequences arising from this email. </p>
+<span style=3D"padding-top:10px; font-weight:bold; color:#CC0000; font-size=
+:10pt; font-family: 'Calibri',Arial,sans-serif; "></span>
+</body>
+</html>
+
+--_000_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_--
+
+--_006_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_
+Content-Type: image/jpeg; name="Outlook-c1yy4ogk.jpg"
+Content-Description: Outlook-c1yy4ogk.jpg
+Content-Disposition: inline; filename="Outlook-c1yy4ogk.jpg"; size=6294;
+	creation-date="Thu, 24 Jun 2021 00:02:25 GMT";
+	modification-date="Thu, 24 Jun 2021 00:02:25 GMT"
+Content-ID: <e2574b0c-e98c-4c51-9a3b-c087d59cbca9>
+Content-Transfer-Encoding: base64
+
+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
+FKUoFKUoFKUoFKUoFKUoFKUoFKUoP//Z
+
+--_006_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_--
+
+--_007_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_
+Content-Type: application/octet-stream;
+	name="AcuseCancelacion_APC870316GE7_PCD_49970.xml"
+Content-Description: AcuseCancelacion_APC870316GE7_PCD_49970.xml
+Content-Disposition: attachment;
+	filename="AcuseCancelacion_APC870316GE7_PCD_49970.xml"; size=1616;
+	creation-date="Wed, 23 Jun 2021 23:19:36 GMT";
+	modification-date="Wed, 23 Jun 2021 23:19:36 GMT"
+Content-ID: <EBDDCE04F5F4EA409B056466C23D3001@namprd02.prod.outlook.com>
+Content-Transfer-Encoding: base64
+
+PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48QWN1c2UgeG1sbnM6eHNkPSJo
+dHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3Lncz
+Lm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgRmVjaGE9IjIwMjEtMDYtMjNUMTg6MTk6Mjcu
+Mzc4NTc4IiBSZmNFbWlzb3I9IkFQQzg3MDMxNkdFNyI+PEZvbGlvcyB4bWxucz0iaHR0cDovL2Nh
+bmNlbGFjZmQuc2F0LmdvYi5teCI+PFVVSUQ+NTcwQTE4REQtMDk1Ni00N0VBLUFBNUItRTY5OERB
+Qjk5NjU3PC9VVUlEPjxFc3RhdHVzVVVJRD4yMDI8L0VzdGF0dXNVVUlEPjwvRm9saW9zPjxTaWdu
+YXR1cmUgSWQ9IlNlbGxvU0FUIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxk
+c2lnIyI+PFNpZ25lZEluZm8+PENhbm9uaWNhbGl6YXRpb25NZXRob2QgQWxnb3JpdGhtPSJodHRw
+Oi8vd3d3LnczLm9yZy9UUi8yMDAxL1JFQy14bWwtYzE0bi0yMDAxMDMxNSIgLz48U2lnbmF0dXJl
+TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxkc2lnLW1vcmUj
+aG1hYy1zaGE1MTIiIC8+PFJlZmVyZW5jZSBVUkk9IiI+PFRyYW5zZm9ybXM+PFRyYW5zZm9ybSBB
+bGdvcml0aG09Imh0dHA6Ly93d3cudzMub3JnL1RSLzE5OTkvUkVDLXhwYXRoLTE5OTkxMTE2Ij48
+WFBhdGg+bm90KGFuY2VzdG9yLW9yLXNlbGY6OipbbG9jYWwtbmFtZSgpPSdTaWduYXR1cmUnXSk8
+L1hQYXRoPjwvVHJhbnNmb3JtPjwvVHJhbnNmb3Jtcz48RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0i
+aHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxlbmMjc2hhNTEyIiAvPjxEaWdlc3RWYWx1ZT5F
+OU5xV3ZweFZmL3R5QVN3R0xBaVRaTS93b01jc3JZYytYM1NLMS9lcUQzUHN3bExBVFBNMDRMcjB2
+RFpQWnhwRXlSUmlXcDhEVWUvdldXYUkwZlduZz09PC9EaWdlc3RWYWx1ZT48L1JlZmVyZW5jZT48
+L1NpZ25lZEluZm8+PFNpZ25hdHVyZVZhbHVlPmxZU0tydU5PbG9lWWNkUG9hd2lLMEkwU2F3YWJh
+a3RzekQxUzV0Sk83Y2hiNnp3alJmUTRhWUFjNENXUFl1OHBjQmxadGU1RExsZCsrY215dU1UZXZB
+PT08L1NpZ25hdHVyZVZhbHVlPjxLZXlJbmZvPjxLZXlOYW1lPjAwMDAxMDg4ODg4ODAwMDAwMDMx
+PC9LZXlOYW1lPjxLZXlWYWx1ZT48UlNBS2V5VmFsdWU+PE1vZHVsdXM+dWp3SUphTUtXV21hd3FE
+cEh4L09TMTBwWHpFaDJTUWhZMDJ5NjR2OVEwK0krMGRHbElyakZKZUdyc0hxQVQzSm9ZbmgzOER4
+d3RhOTh0LzcrK2RoMmhPZ2laRXdSaWduV1JJbE9nTTFNZWZCSEV5WStoaTR2SHBaZ1BLcS9oSlZm
+SGY5bk92bGI1VWdJSE1UQ0V3ckRwM3FrOU81WHRURXljbld3aXFsZUcwYzFKOXNmYlJ4QzBnWUJI
+c05USDg1T0V0U1hZTWtpV05ZTm5GYkljN0Iwc2dwMnkxOGpVeFVDTkZCTU1UVjB0ejJzeFJGK1Y0
+aGJsYVBqSTc1UldtdnM5RTRsRDdNVm1XM3o3TElsU2FqdVNMOGVPcW9lclNrUWhQQkFCSWVRZW5F
+UFF3UlR0M2VqM1hwVmFCc09tYWdJUFpaSTNSdk9WaCs1bWNYREU1dHhRPT08L01vZHVsdXM+PEV4
+cG9uZW50PkFRQUI8L0V4cG9uZW50PjwvUlNBS2V5VmFsdWU+PC9LZXlWYWx1ZT48L0tleUluZm8+
+PC9TaWduYXR1cmU+PC9BY3VzZT4=
+
+--_007_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_
+Content-Type: application/pdf;
+	name="AcuseCancelacion_APC870316GE7_PCD_49970.pdf"
+Content-Description: AcuseCancelacion_APC870316GE7_PCD_49970.pdf
+Content-Disposition: attachment;
+	filename="AcuseCancelacion_APC870316GE7_PCD_49970.pdf"; size=1911;
+	creation-date="Wed, 23 Jun 2021 23:19:36 GMT";
+	modification-date="Wed, 23 Jun 2021 23:19:36 GMT"
+Content-ID: <83496CB9AE28BD48AF45DC60E4D95220@namprd02.prod.outlook.com>
+Content-Transfer-Encoding: base64
+
+JVBERi0xLjMKJe+/ve+/ve+/ve+/vQoKMSAwIG9iago8PCAvVHlwZSAvQ2F0YWxvZwovT3V0bGlu
+ZXMgMiAwIFIKL1BhZ2VzIDMgMCBSID4+CmVuZG9iagoyIDAgb2JqCjw8IC9UeXBlIC9PdXRsaW5l
+cyAvQ291bnQgMCA+PgplbmRvYmoKMyAwIG9iago8PCAvVHlwZSAvUGFnZXMKL0tpZHMgWzYgMCBS
+Cl0KL0NvdW50IDEKL1Jlc291cmNlcyA8PAovUHJvY1NldCA0IDAgUgovRm9udCA8PCAKL0YxIDgg
+MCBSCi9GMiA5IDAgUiA+Pgo+PgovTWVkaWFCb3ggWzAuMDAwIDAuMDAwIDYxMi4wMDAgNzkyLjAw
+MF0KID4+CmVuZG9iago0IDAgb2JqClsvUERGIC9UZXh0IF0KZW5kb2JqCjUgMCBvYmoKPDwKL0Ny
+ZWF0b3IgKFIgYW5kIE9TIHBocCBwZGYgd3JpdGVyLCBodHRwOi8vd3d3LnJvcy5jby5ueikKL0Ny
+ZWF0aW9uRGF0ZSAoRDoyMDIxMDYyMykKPj4KZW5kb2JqCjYgMCBvYmoKPDwgL1R5cGUgL1BhZ2UK
+L1BhcmVudCAzIDAgUgovQ29udGVudHMgWwo3IDAgUgoxMCAwIFIKMTEgMCBSCl0KPj4KZW5kb2Jq
+CjcgMCBvYmoKPDwgL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAyOTggPj4Kc3RyZWFtCnic
+lZLBToQwEIbvPMUc9bC1UyhluSHCxpsufYFacLeGhVjAxOf2BWQXN5a4GL00nSb/N1/b8SihlIK7
+2p13K4FRPFWhmE5lCTc5G4/JuH8GuCoq+2a0aaGsICkPpjFdb5U2Hw1Ia56GXlmjrkG+QCZPQM4n
+YDADIj8DEz101ZGmVaOrekKNZZrf3TucLx8+90I8Y/JK7xW8w7616hjv2nrU7IcydmXW/HcKowxX
+NFwxX2IU4zpmgvgi4iK6oBL8UcW52EWZJc6/ZHABss1TyA6ma+3F3kux5CGNBPUx3GTinKNkfZqW
+73W7cRQCIUiA0cRC9z3Gr2ghN51WtePgc0YE95dzWdersp0NwqvnPbotKScc8We0qOp6HFGzM72q
+oUgkxC7iEzruuNwKZW5kc3RyZWFtCmVuZG9iagoKOCAwIG9iago8PCAvVHlwZSAvRm9udAovU3Vi
+dHlwZSAvVHlwZTEKL05hbWUgL0YxCi9CYXNlRm9udCAvSGVsdmV0aWNhCi9FbmNvZGluZyAvV2lu
+QW5zaUVuY29kaW5nCj4+CmVuZG9iago5IDAgb2JqCjw8IC9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9U
+eXBlMQovTmFtZSAvRjIKL0Jhc2VGb250IC9IZWx2ZXRpY2EtQm9sZAovRW5jb2RpbmcgL1dpbkFu
+c2lFbmNvZGluZwo+PgplbmRvYmoKMTAgMCBvYmoKPDwgL0ZpbHRlciAvRmxhdGVEZWNvZGUKL0xl
+bmd0aCAxNzUgPj4Kc3RyZWFtCnicdY67EsIgEEV7vmJLLcDlsRBKYqK98gMZH4UTtfT3TTQgYybN
+FnfOPXdZHcGhQEQwFoVSDuIZNjsJUgqEeAVYkcMgq6bh6Mly49rAQ6Cat9ZXTai9t+TWEG/QRjbo
+NCnhSC/7tt3jdOm78zOVvvvlPeyZhBdLn3kppDZwz6+SHSYU9HD8cHkygzn5I81MaRac1guagWUy
+gqnrtPBGl7YpGaFkmgYK02/yDQIMULgKZW5kc3RyZWFtCmVuZG9iagoKMTEgMCBvYmoKPDwgL0Zp
+bHRlciAvRmxhdGVEZWNvZGUKL0xlbmd0aCAxNTEgPj4Kc3RyZWFtCnic43IKUTA30DMwMFAwtrDQ
+MzYyUAhJUdB3M1IwNNQDstMUFDRyIoO9i0r9/HPyUyOTUwLyE8szvQ08DYITyxOTErNLiqtcDINN
+S7z8zZMzksyqyrOC0gJNEiMdk02cwwMiNRVCshRcQ7iQ7DE31TMzMMG0p9SiINkpJ6ok1dTFJydF
+Wzs5t7LUNyS1zNHWFmoKAD8+MIIKZW5kc3RyZWFtCmVuZG9iagoKeHJlZgowIDEyCjAwMDAwMDAw
+MDAgNjU1MzUgZiAKMDAwMDAwMDAyMyAwMDAwMCBuIAowMDAwMDAwMDg4IDAwMDAwIG4gCjAwMDAw
+MDAxMzQgMDAwMDAgbiAKMDAwMDAwMDI5OCAwMDAwMCBuIAowMDAwMDAwMzI3IDAwMDAwIG4gCjAw
+MDAwMDA0MzIgMDAwMDAgbiAKMDAwMDAwMDUxMyAwMDAwMCBuIAowMDAwMDAwODg0IDAwMDAwIG4g
+CjAwMDAwMDA5OTEgMDAwMDAgbiAKMDAwMDAwMTEwMyAwMDAwMCBuIAowMDAwMDAxMzUyIDAwMDAw
+IG4gCgp0cmFpbGVyCiAgPDwgL1NpemUgMTIKICAgICAvUm9vdCAxIDAgUgogICAgIC9JbmZvIDUg
+MCBSCiAgPj4Kc3RhcnR4cmVmCjE1NzcKJSVFT0YK
+
+--_007_BN6PR02MB3330B7A3BDB7900E025B0469EE079BN6PR02MB3330namp_--

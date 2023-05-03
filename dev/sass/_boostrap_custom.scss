@@ -1,0 +1,37 @@
+$position-values: (
+  0: 0,
+  10:10%,
+  15:15%,
+  20:20%,
+  30:30%,
+  50:50%,
+  75:75%,
+  90:90%,
+  100: 100%
+);
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);
+$secondary:#C4C4C4;
+$white: #fff;
+$green:   #1F4119;
+$sweetGray: #333333; 
+
+$theme-colors: (
+  "primary": #F5D600,
+  "danger": #ff4136,
+  "dark":#000,
+  "secondary":  $secondary,
+  "gray-modal": $sweetGray
+);
+
+$gradient: linear-gradient(90deg, rgba($white, .15), rgba($white, 0));
+$sizes-values: (
+  80:80%
+);
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

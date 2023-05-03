@@ -1,0 +1,154 @@
+Return-Path: <>
+Delivered-To: conta@grupohmantenimiento.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id wGCQHALbV1/rCwAAlvxoiw
+	(envelope-from <>)
+	for <conta@grupohmantenimiento.com>; Tue, 08 Sep 2020 14:26:58 -0500
+Return-path: <>
+Envelope-to: conta@grupohmantenimiento.com
+Delivery-date: Tue, 08 Sep 2020 14:26:58 -0500
+Received: from ex.anti-spam-premium.com ([67.227.206.138]:45326)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	id 1kFjGc-0001Bu-F2
+	for conta@grupohmantenimiento.com; Tue, 08 Sep 2020 14:26:58 -0500
+Received: from ts.anti-spam-premium.com ([67.227.206.171])
+	by ex.anti-spam-premium.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	id 1kFjGa-000PdB-Sv
+	for conta@grupohmantenimiento.com; Tue, 08 Sep 2020 15:26:58 -0400
+Received: from Debian-exim by ts.anti-spam-premium.com with local (Exim 4.92)
+	id 1kFjGZ-000vpm-NV
+	for conta@grupohmantenimiento.com; Tue, 08 Sep 2020 15:26:56 -0400
+X-Failed-Recipients: admonlogar_cancun@gmail.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@ts.anti-spam-premium.com>
+To: conta@grupohmantenimiento.com
+Content-Type: multipart/report; report-type=delivery-status; boundary=1599593215-eximdsn-1207316494
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1kFjGZ-000vpm-NV@ts.anti-spam-premium.com>
+Date: Tue, 08 Sep 2020 15:26:55 -0400
+X-Sender-Warning: ts.anti-spam-premium.com has no MX records
+Authentication-Results: ex.anti-spam-premium.com;
+	iprev=pass (ts.anti-spam-premium.com) smtp.remote-ip=67.227.206.171;
+	spf=pass (best guess record for domain) smtp.mailfrom=<>;
+	dmarc=pass header.from=ts.anti-spam-premium.com
+X-HospedandoAntiSpam-Class: ham
+X-HospedandoAntiSpam-Evidence: Combined (0.20)
+X-Recommended-Action: accept
+X-Filter-ID: Mvzo4OR0dZXEDF/gcnlw0Ux9i8jFyHj5FzBttN4d2CmpSDasLI4SayDByyq9LIhVjI7io6hicvLk
+ X4Q4Ry7tG0TNWdUk1Ol2OGx3IfrIJKywOmJyM1qr8uRnWBrbSAGDZVS5MIWBr7osWA+IvnaaKUd8
+ xSE/mHOlSHWELoQSbcG4Dcwf+CZK8NXgy3In+fX7H7uebV222L+qiVz4Q8ts7/7Hrzz3S1b48+29
+ eERTSEs6TEdNmL6BM0c96hHcOxYH+DvgX07r+8+Paa47FldzBichGSCm/FXtSCZ36Le4iRREz4VN
+ 4KEn3mdxUWXk16f98jQY1di0890+Cw+rbMRoV8XXrHOwv9b2Idmb5P2j3Z5pS3kh12fjrs8GsSc5
+ NpKB/Wolhpv46LSlmsDAxm/NRSJBMWvvvMwSgK4gfzxztd8LKxLyJWkqkKQpVxTf7pqOHsyjTe1r
+ 9fAdH2N5WzJ3hLYeyuVZmQBKvnk9fIkaxlj8pygy3RFWTNtaAOhKaquXAMBUTQsOpq9x5LoJQM6K
+ yC4LnipHQNcQebUHneXvKpVCOLQslcq8RTlLpw5iBv9WgEZDWN/K4Gc+oM+uI44kgj+fyLP6IcuA
+ kacUZbK4xYqtI4g+l6rCWbY0MZcgnbHstsb3Rg9OMuhEofBbzmYjgsA6JRyml8h3Ex9DvvpzSj3o
+ cB9ogflma7zbYS/i38wjDnxFmIj3pX1M92JBTjNz+1ypcT4KSE7kmVOJrnk6J4jN/cfP6jhi/aif
+ a3ZLKhVBwG6VXOZTWfaBDysbjkyAVwsEYoqGPiS/B/ezV+rUQgY1x1yJ31ZEn/BAH/jvMtfixK2S
+ ewxrnExw6iT9bM8eGTtKS54KjkN2GLQUP8gL7DxyPmy5aZrj8CJOJ6u7Jp55lS/FTdvsrnICtkSv
+ sAoiKjesibZqnyKRTV53Qh/Y3D9qocGTICmeD/g+HMRZqslFgYU5VXMuXZrm9DBbuDs71dG9r8rl
+ Ixn+QCUIx83JRTwxL7hrJSk60SF3F6RYOYr2
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+--1599593215-eximdsn-1207316494
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  admonlogar_cancun@gmail.com
+    host gmail-smtp-in.l.google.com [173.194.208.26]
+    SMTP error from remote mail server after RCPT TO:<admonlogar_cancun@gmail.com>:
+    550-5.1.1 The email account that you tried to reach does not exist. Please try
+    550-5.1.1 double-checking the recipient's email address for typos or
+    550-5.1.1 unnecessary spaces. Learn more at
+    550 5.1.1  https://support.google.com/mail/?p=NoSuchUser a15si179202qtj.302 - gsmtp
+
+--1599593215-eximdsn-1207316494
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; ts.anti-spam-premium.com
+
+Action: failed
+Final-Recipient: rfc822;admonlogar_cancun@gmail.com
+Status: 5.0.0
+Remote-MTA: dns; gmail-smtp-in.l.google.com
+Diagnostic-Code: smtp; 550-5.1.1 The email account that you tried to reach does not exist. Please try
+ 550-5.1.1 double-checking the recipient's email address for typos or
+ 550-5.1.1 unnecessary spaces. Learn more at
+ 550 5.1.1  https://support.google.com/mail/?p=NoSuchUser a15si179202qtj.302 - gsmtp
+
+--1599593215-eximdsn-1207316494
+Content-type: text/rfc822-headers
+
+Return-path: <conta@grupohmantenimiento.com>
+Received: from servidor1339.il.controladordns.com ([209.59.139.171])
+	by ts.anti-spam-premium.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <conta@grupohmantenimiento.com>)
+	id 1kFjGP-000vfc-VJ; Tue, 08 Sep 2020 15:26:51 -0400
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=grupohmantenimiento.com; s=default; h=To:References:Message-Id:Subject:Date
+	:Mime-Version:From:Content-Transfer-Encoding:Content-Type:Sender:Reply-To:Cc:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:List-Id:List-Help:
+	List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=01hmxfSJ/CW2CkNRg/9y4btS0ir3MNL2qAS4Wy6p3a4=; b=E1dz9VOgxN0RnADgEoX2y+UaWN
+	aB9GmVzciL2Q9GTrzkjrXm2/BibwJ+mRl2lYi+QtswzOkBb9LuycAdg1JU0WcQgDJFnd3whDm5dXe
+	Wqmo9m0I8GotBrTmEqcD9cQPLmqAaPDcRkEKe+2iiMy09qBupsi/CiLbNWuVov/xVEoFJpaKrUA2D
+	+mQPT6MjmOWupagqp/8AfrloqEstS7Vs6xj+Nc6oq1wOhsGG+zwiScvSS/kUUCElYxUE+DQeMEQKI
+	55naSPTalR4DWgzesrLA1Pq4pZ2lTNirflcNiRCT+npuGgNwwpEC3UQ29hHGqb34kZV+KNdLnUKMy
+	XXpktR2g==;
+Received: from [200.68.136.55] (port=38888 helo=[10.133.200.115])
+	by servidor1339.il.controladordns.com with esmtpsa  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <conta@grupohmantenimiento.com>)
+	id 1kFjGO-00019q-NC; Tue, 08 Sep 2020 14:26:45 -0500
+Content-Type: multipart/alternative; boundary=Apple-Mail-05B10454-6925-4986-A5BE-8896FC374988
+Content-Transfer-Encoding: 7bit
+From: Conta GrupoHM <conta@grupohmantenimiento.com>
+Mime-Version: 1.0 (1.0)
+Date: Tue, 8 Sep 2020 14:26:43 -0500
+Subject: =?utf-8?Q?Fwd:_FACTURA_Activaci=C3=B3n_de_sistema_hidr=C3=A1ulic?=
+ =?utf-8?Q?o_de_bodega?=
+Message-Id: <BC87F426-F194-4925-A066-A17DE7F3F391@grupohmantenimiento.com>
+References: <8148d5bf2ca509561e0e6d3000a38a63@grupohmantenimiento.com>
+To: Grupo Cancun <grupologar_cancun@hotmail.com>,
+ admonlogar_cancun@gmail.com
+X-Mailer: iPhone Mail (17G80)
+X-AuthUser: conta@grupohmantenimiento.com
+X-Originating-IP: 209.59.139.171
+X-HospedandoAntiSpam-Domain: out.anti-spam-premium.com
+X-HospedandoAntiSpam-Username: 209.59.139.171
+Authentication-Results: anti-spam-premium.com; auth=pass smtp.auth=209.59.139.171@out.anti-spam-premium.com
+X-HospedandoAntiSpam-Outgoing-Class: ham
+X-HospedandoAntiSpam-Outgoing-Evidence: Combined (0.13)
+X-Recommended-Action: accept
+X-Filter-ID: Mvzo4OR0dZXEDF/gcnlw0Ux9i8jFyHj5FzBttN4d2CmpSDasLI4SayDByyq9LIhV1/qvMiZBW81o
+ eBidTDhhSUTNWdUk1Ol2OGx3IfrIJKyP9eGNFz9TW9u+Jt8z2T3Kuph+j4l86wFh0t3Ct93ye+xI
+ fhLGhQOF9y9q8M7nukC91MSGj0h6wM8dOoDO03DIAwEJjshFGkrMUWk8R0Uhh0Glz8CJSOMrvzx9
+ TVg3RkW3iVHMQiNOkf4l5a6y2ViuAc0uXzxyDVCcVc2YNWS6fa0e4Dr6JQo1FBdIvNtEFOscMFTG
+ CfLJ8YoSCgpmQHfm4H0Mc4gEZrDmicGKc83WWdrJ6UFGORRuW+QgILNiph8CLHZnXFyqA+FXdiLo
+ cLH/ZK0EMmf3P50Ajf/tIX00Fuu2beRqilmjgQ6jA3UwYglfZumDFR1lul76uGCgSP2qTNkTu1zT
+ YtDr4fUjx2K/gPbUAnR2/bmemqIFocFMH3b2dK6UtSEdwn3yFtfkzf2gigSAzyUWEPzV1sceLnL5
+ r85Aw/K28mdX4k5YqB6R6AJWDdCskU7kal3ZomfJHyWrasuExWjuzmsL+LXEDqfC8bwqyT5p50x8
+ 1ZKcmzCu2U1un1vZ9LHhmFIgNrsKdLFuAam2/p4p7raHE7+hxolhwQ2QEetkvH00/xmn6oF5z8sk
+ uB4fLNdsm49znGEOwW1RyaT+fhnmPmZ+OUuV5BM6eyy5Vo6xOiF9lxkCbdmQZuSXdlj7ma24GhMz
+ ELVDx9tvsUtN6Zd4kJhNnLO7YVLjnv/M1eEqCc08H8dOUmpvVUpWhMaEviPICqJn5G3VnxVM0KbP
+ ZKtg1pIA66f3eAENCyzo6zsMBiN5CrtOSZw5b+46gQEmbn9iMnbdJKK9fTK00IYm0YOJ9Miinv9o
+ 8T7K2j9BfZGNHB6SigJfs25QjM9xfpYDjGTZ0x3acMshIoiRi4H0azjd4Hx8+tbWqZnDhojKFojr
+ vUjjKLsywQkk4eoR/KKkyslqIGeMXqxzDwpgv9M8ZmNzFJtZWPmQOAh48yUKRK6Obnxr/EH5cLWQ
+ JzrgNfdK9j+V4PQiIzqpuLagjSX327Xq+mXsgmbU+KJpi8YorHWj7X5mKUwTCmkcSUbLAWLtkM4g
+ e4Lj1T//77+HN6yJtmqfIpFNXndCH9jcP49yYjkgur7cbmMvzASyKBHVRB0s+7TPPOa9NiQGXyXP
+ tvDSt3oyx1+AC6yGKRm5sDEvuGslKTrRIXcXpFg5ivY=
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+X-Exim-DSN-Information: Due to administrative limits only headers are returned
+
+
+--1599593215-eximdsn-1207316494--

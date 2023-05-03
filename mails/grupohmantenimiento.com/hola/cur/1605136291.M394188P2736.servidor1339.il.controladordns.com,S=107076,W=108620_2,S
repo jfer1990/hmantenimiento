@@ -1,0 +1,1544 @@
+Return-Path: <n_lat_i_bounces@insideapple.apple.com>
+Delivered-To: hola@grupohmantenimiento.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id UFRKFqNvrF+wCgAAlvxoiw
+	(envelope-from <n_lat_i_bounces@insideapple.apple.com>)
+	for <hola@grupohmantenimiento.com>; Wed, 11 Nov 2020 17:11:31 -0600
+Return-path: <n_lat_i_bounces@insideapple.apple.com>
+Envelope-to: hola@grupohmantenimiento.com
+Delivery-date: Wed, 11 Nov 2020 17:11:31 -0600
+Received: from mx.anti-spam-premium.com ([67.227.144.30]:46216)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <n_lat_i_bounces@insideapple.apple.com>)
+	id 1kczH1-0001Z4-BF
+	for hola@grupohmantenimiento.com; Wed, 11 Nov 2020 17:11:31 -0600
+Received: from rn2-msbadger01101.apple.com ([17.179.250.41])
+	by mx.anti-spam-premium.com with esmtps (TLSv1.2:AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <n_lat_i_bounces@insideapple.apple.com>)
+	id 1kczGy-00033x-Le
+	for hola@grupohmantenimiento.com; Wed, 11 Nov 2020 18:11:31 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=insideapple.apple.com; s=insideapple0517; t=1605118216;
+	bh=n+569Js3WCoJ0CYbsQ1Ms9xghwThGPZ+GF844eNVoJU=;
+	h=Date:From:To:Message-ID:Subject:Content-Type;
+	b=xpxV7T6e+pLICZISvqJ05cj1mPDUQFo5OWo4qmzbe2Pcg/meCj3luvRQbeAcm7LCo
+	 P+1RGAw9Xwl/lcxW41uHhxStJ5Hee3CL5IOesPkxNGzGJl28EvbWTOGnHFQcwNrpWC
+	 kylbCKNMn2G50GrhG1EWMR1mJbMMIQ6/NhDWKix1U2Wy/1vVaTDu3Y2IpRJdNNJzrd
+	 uROo2o1PO5jIqlc061ZmdKyVr02rrUogEVY8+AzJuFcA7nLvIUtODdNe07Lbq1wHdi
+	 8CfLaQkIpCYwUI/1tZt6hxEZzqiHQXFWXOGncu+VbzDCK8GNn9DFHIitQcZsEaQdsc
+	 IVE9ot8Hvy0+g==
+Date: Wed, 11 Nov 2020 18:10:16 +0000 (GMT)
+From: Apple <News_Americas@InsideApple.Apple.com>
+To: hola@grupohmantenimiento.com
+Message-ID: <1587437490.723305042.1605118216080@Insideapple.apple.com>
+Subject: Chip M1 de Apple para Mac. Este chip lo cambia todo.
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_723305040_1198961298.1605118216080"
+X-Attach-Flag: N
+X-Sent-To: hola@grupohmantenimiento.com,2,lAuHzkIbFmGM9Tzgs%2F%2BlUVZ5gWj6iZtpvHFw3xdFVc%2BhwIQi9isps6IZ20tbsO2eqgqZGRKmQnp7IoLrwjx2anivV7t1Wwm1hqrtboQzEiHCCIK6eHYevrwHuvarN97XEp0ikm00MJSW9prunkXAoypcke8rawbPbWZtfBPTAjB7YtBb2EhHG%2ByD2ZLKN%2Bx71MomYDs2pf8jAV02R%2FpxiPN5LhZg7F0YE4tFl8sChGQ%3D
+X-TXN_ID: 458842bc-187c-44b2-a799-b95b4b9784ed
+X-DKIM_SIGN_REQUIRED: YES
+x-evs: YES
+X-EmailType-Id: 2104081
+X-Business-Group: cbx_wlm
+X-Broadcast-Id: 2104081
+List-Unsubscribe: <https://mynews.apple.com/subscriptions?v=2&la=es_mx&a=Sy4LzxA2RNQwsYwoelbw1lIKlCZV5HsmFK39P5pTr7SC6822zIzUyPR9NS1FD3wDEeR7p9EjBTgk%2F91REToM5m8ERFGl4hC4du9L5ep64rZOMR3FOtTZyrsOhHrDKADme52YXU5fpBpmhDVbqbqdp474NLzU0dr%2BzbscJXHh3Qi812cTopb%2B281EYuAVhgCWznRNtoJFJ1y77sxF%2FDYgAD1NbombKSvGw3Yl1UdED1yonEAaGIyHZNfX%2Bf6KasTa>
+X-mp: d
+Received-SPF: pass (mx.anti-spam-premium.com: domain of insideapple.apple.com designates 17.179.250.41 as permitted sender) client-ip=17.179.250.41; envelope-from=n_lat_i_bounces@insideapple.apple.com; helo=rn2-msbadger01101.apple.com;
+X-SPF-Result: mx.anti-spam-premium.com: domain of insideapple.apple.com designates 17.179.250.41 as permitted sender
+Authentication-Results: mx.anti-spam-premium.com;
+	iprev=pass (rn2-msbadger01101.apple.com) smtp.remote-ip=17.179.250.41;
+	spf=pass smtp.mailfrom=insideapple.apple.com;
+	dkim=pass header.d=insideapple.apple.com header.s=insideapple0517 header.a=rsa-sha256;
+	dmarc=pass header.from=InsideApple.Apple.com
+Authentication-Results:  anti-spam-premium.com; spf=pass smtp.mailfrom=n_lat_i_bounces@insideapple.apple.com; dkim=pass header.i=insideapple.apple.com
+X-Filter-Label: newsletter
+X-HospedandoAntiSpam-Class: ham
+X-HospedandoAntiSpam-Evidence: urlwl/url-14.rbl.spamrl.com
+X-Recommended-Action: accept
+X-Filter-ID: 8G1aH+8yearZuN6N5+X5bm6KuAmzEgFjeXz34jnHp0xpaawAQLCw41DX+7uxKx0P2LDkrRcqyp/p
+ /iw75DwQ0G8XO88BGELJmwiCIfZy97JMnxyxvOAWf1AnBf0oKo/bk/cVHsoUdPy/zp/YfDl/uS5V
+ wProGF/Fz21g4DQgqrLJC69aUlv05bRRJNLzCxII7OyNEBoJYD5vOIMgEOF81hEOEZGw/NaYXA0H
+ 2yVo64TaoKcz4Gtl48AnYeIPEdc64maInYwpBNVmONbRDhdKpwQVmeH5xNvbZQwGQKIcUA2J66VS
+ Ny7FSAK/mKhNlNonjm5T140Xa2K6sa9YeojKB8xj38iOH0fBg7BMyAdk4KT8pygy3RFWTNtaAOhK
+ aquXJC6qhj3YksWYqtRynjzfiYdpU1PrTsz2Rk0RohBJRyEsAABd/lyKIr4DIhyjeUTasUIlhFbG
+ H4//RO76JLgMLAt8jjCTW3JBMIP5j+hOGVG3q7SwgPWdEOiLMpF2c06Fw9/E9DrecWLkGWs9DVIz
+ sEMOr1lsPqK9OEBlXMBm/LnJR8SR5AVYwpRf8lOGl5bsaFiPzn/1tDTkljd1X9qcBETaYb8PLPGn
+ hP1lKCrFurFN0/CluzTPwwkf3yJdqBD6+DvgX07r+8+Paa47FldzBiRWpWba2insyftEWf64bOZ7
+ zDWo/XmcgwFIK4QSr/6bmyZ3TRbU6MXv/6vTeVorR8k9VKTW5UzOcqgmad8VkzvZGpU33B7B+7TE
+ 3FFmYJOz++DuIQUs/5JJj4C/n4CILv+Y+vqecdFYzbV60DAfC3qbZAPz2U/yIZ/eHs06VmhjEcJR
+ jEG7DUOq1JZveVZFAiSdrpRmSUiSVRMgGMuoGW36S5v8JKPBqLBEMhxhNd/ceROT+Xtj5yjOvquK
+ zsTHkFl7XXi1Hp1AG3zqV2igzuyxeJr75aipoXhLt5sc5zrnl/tzeF0cCIxoFWoDlItQRGUd4AHB
+ 6yiPXk7nseGkZNGOwA84OmdvBMzw80NsvGeBZuM7jUXIESohoO51xWmU8fkfM5ZmnVmz+RRySdUu
+ TyDZagGwck+ixNaGq/X7NmXrsA++s5hca9WbD/SLhXNCA/eyHPlUxY8z+r2R7MI4IEMuO20JL/Cd
+ wvv0lGOTFl8uOqxPz4U3I2IV7TvowkgKnQS0/gnKe2+jTPGoJAWeF9sUXBrwDJBiqM7upi2Jdv71
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+------=_Part_723305040_1198961298.1605118216080
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Content-Disposition: inline
+
+M1 de Apple
+
+Un chip peque=C3=B1o. Un avance enorme.
+
+Presentamos las nuevas MacBook Air, MacBook Pro de 13 pulgadas y Mac mini, =
+todas con el chip M1 de Apple.
+
+Bienvenidos al futuro de la Mac.
+
+Ver el evento
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7W4d3L8v
+
+-------------------
+
+MacBook Air
+
+Un nuevo poder toma vuelo.
+
+Nuestra notebook m=C3=A1s ligera y delgada vuelve completamente renovada po=
+r dentro. Gracias al chip M1 de Apple, el CPU es hasta 3.5 veces m=C3=A1s r=
+=C3=A1pido y el GPU hasta 5 veces m=C3=A1s veloz. El Neural Engine m=C3=A1s=
+ avanzado permite un aprendizaje autom=C3=A1tico hasta 9 veces superior.(1)=
+ La bater=C3=ADa es la de mayor duraci=C3=B3n en una MacBook Air. Y su dise=
+=C3=B1o sin ventilador es supersilencioso. Nunca hab=C3=ADa sido tan f=C3=
+=A1cil llevar tanto poder a todos lados.
+
+Consulta la disponibilidad m=C3=A1s adelante
+
+Ver precios
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dac5H6w6b8k
+
+M=C3=A1s informaci=C3=B3n
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7J9d9u9Y
+
+-------------------
+
+MacBook Pro de 13 pulgadas
+
+Una Pro entre Pros.
+
+Con el chip M1, la MacBook Pro de 13 pulgadas alcanza un nuevo nivel de pot=
+encia y velocidad. El CPU es hasta 2.8 veces m=C3=A1s r=C3=A1pido y los gr=
+=C3=A1ficos son hasta 5 veces m=C3=A1s veloces. El Neural Engine, el m=C3=
+=A1s avanzado hasta ahora, permite un aprendizaje autom=C3=A1tico hasta 11 =
+veces m=C3=A1s r=C3=A1pido.(1) Y la bater=C3=ADa te acompa=C3=B1a hasta por=
+ 20 horas, la mayor duraci=C3=B3n en una Mac.(2) Por fuera sigue siendo nue=
+stra notebook Pro m=C3=A1s conocida. Pero es lo de adentro lo que cambia la=
+ historia.
+
+Modelo con el chip M1 disponible m=C3=A1s adelante
+
+Ver precios
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dac5K2V2g9N
+
+M=C3=A1s informaci=C3=B3n
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dac5H0u9c5v
+
+-------------------
+
+Mac mini
+
+Cada vez m=C3=A1s grande por dentro.
+
+El nuevo chip M1 dise=C3=B1ado por Apple lleva nuestra computadora de escri=
+torio m=C3=A1s vers=C3=A1til a otra dimensi=C3=B3n. Ahora viene con un CPU =
+hasta 3 veces m=C3=A1s r=C3=A1pido, gr=C3=A1ficos hasta 6 veces m=C3=A1s ve=
+loces y nuestro Neural Engine m=C3=A1s avanzado, que permite un aprendizaje=
+ autom=C3=A1tico hasta 15 veces m=C3=A1s r=C3=A1pido.(1) Podr=C3=A1s trabaj=
+ar, jugar y crear con una velocidad y potencia que jam=C3=A1s hab=C3=ADas i=
+maginado. La Mac mini es poder para conquistarlo todo.
+
+Modelo con el chip M1 disponible m=C3=A1s adelante
+
+Ver precios
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7m5d0W4k
+
+M=C3=A1s informaci=C3=B3n
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7g0L7I4p
+
+-------------------
+
+Ahorra en una Mac con los precios especiales de Apple para la educaci=C3=B3=
+n.(*)
+
+Comprar
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dac5K4u1y9N
+
+-------------------
+
+Descubre los =C3=BAltimos accesorios para la Mac.
+
+Comprar
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7R9q8T6k
+
+-------------------
+
+Con todo el poder para llevar a tu empresa al siguiente nivel.
+
+M=C3=A1s informaci=C3=B3n sobre la Mac en la empresa
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7m9a2e2M
+
+Comprar para tu empresa
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7J6c2H5C
+
+-------------------
+
+Descubre por qu=C3=A9 Apple es el mejor lugar para comprar.
+
+Obt=C3=A9n cr=C3=A9dito para comprar una Mac nueva.(3)
+
+Descubre el valor de canje de tu dispositivo
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dac5H1d1C8C
+
+-------------------
+
+Hasta 18 pagos mensuales fijos con tarjetas de cr=C3=A9dito participantes.
+
+M=C3=A1s informaci=C3=B3n
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dac5K9G3e4v
+
+-------------------
+
+Habla con un Especialista y obt=C3=A9n ayuda al comprar.
+
+M=C3=A1s informaci=C3=B3n
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7J0B0V5C
+
+-------------------
+
+Env=C3=ADo sin costo en todos los pedidos.
+
+M=C3=A1s informaci=C3=B3n
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7J0n8b5Y
+
+-------------------
+
+Conoce tu nueva Mac con la ayuda de un Especialista en una sesi=C3=B3n pers=
+onalizada online.
+
+M=C3=A1s informaci=C3=B3n
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7W8B8l7v
+
+-------------------
+
+Comprar online
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dab7g5L7X9N
+
+Buscar una tienda
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJq=
+OcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyC=
+RJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG6%2FaDF5mytIknXUt=
+2by5sb%2F7deoCdmZfg1mrjfR0%2B3NR%2BsC85Bv4XqnGkSJtKvZ%2BSAdGm538H9Tre1a9FP4=
+FrJ4%3D&ct=3Dac5K1G4v9C
+
+001-800-692-7753
+
+Descargar la app Apple Store
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7e=
+cgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCB=
+MDYLhfZAWkteNrNYnAywFl7zMW%2FG8oImPV%2FxktNP3zEyTLkCbiw%3D%3D&ct=3Dab7m8x6V=
+1p
+
+-------------------
+
+* Los precios especiales para la educaci=C3=B3n est=C3=A1n disponibles para=
+ estudiantes que vayan a iniciar o ya est=C3=A9n en la universidad, as=C3=
+=AD como para sus padres, cuerpo docente, personal y profesores particulare=
+s de todos los niveles escolares. Para obtener m=C3=A1s informaci=C3=B3n, v=
+isita apple.com/mx-hed/shop.
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7e=
+cgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCB=
+MDYLhfZAWkteNrNYnAywFl7zMW%2FG8oImPV%2FxktNP3zEyTLkCbiw%3D%3D&ct=3Dab7g1E4a=
+4k
+
+1. Las afirmaciones sobre el rendimiento se basan en la comparaci=C3=B3n co=
+n la generaci=C3=B3n anterior.
+
+2. La duraci=C3=B3n de la bater=C3=ADa var=C3=ADa seg=C3=BAn el uso y la co=
+nfiguraci=C3=B3n. Para obtener m=C3=A1s informaci=C3=B3n, visita apple.com/=
+mx/batteries.
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7e=
+cgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCB=
+MDYLhfZAWkteNrNYnAywFl7zMW%2FG8oImPV%2FxktNP3zEyTLkCbiw%3D%3D&ct=3Dac5H4I1w=
+2N
+
+3. El valor de canje puede variar seg=C3=BAn la condici=C3=B3n, el a=C3=B1o=
+ y la configuraci=C3=B3n de tu dispositivo. Debes tener al menos 18 a=C3=B1=
+os de edad para poder canjear tu dispositivo por cr=C3=A9dito o por una tar=
+jeta de regalo del Apple Store. No todos los dispositivos pueden canjearse =
+por cr=C3=A9dito. Para obtener m=C3=A1s informaci=C3=B3n sobre los disposit=
+ivos elegibles para canje o reciclaje, consulta con un socio de Apple Trade=
+ In para Mac o de Apple Trade In para iPhone, iPad y Apple Watch. Sujeto a =
+restricciones y l=C3=ADmites. Para recibir el valor de canje, el estado del=
+ dispositivo debe coincidir con la descripci=C3=B3n indicada cuando se hizo=
+ el estimado. Apple se reserva el derecho de rechazar o limitar la cantidad=
+ de dispositivos seg=C3=BAn su criterio.
+
+-------------------
+
+TM y (c) 2020 Apple Inc. One Apple Park Way, MS 96-DM, Cupertino, CA 95014.
+
+-------------------
+
+Todos los derechos reservados
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7e=
+cgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCB=
+MDYLhfZAWkteNrNYnAywFl7zMW%2FG8oImPV%2FxktNP3zEyTLkCbiw%3D%3D&ct=3Dab7W6w9j=
+5p
+
+Pol=C3=ADtica de privacidad
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7e=
+cgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCB=
+MDYLhfZAWkteNrNYnAywFl7zMW%2FG8oImPV%2FxktNP3zEyTLkCbiw%3D%3D&ct=3Dab7W9I9T=
+7N
+
+Mi Apple ID
+https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7e=
+cgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCB=
+MDYLhfZAWkteNrNYnAywFl7zMW%2FG8oImPV%2FxktNP3zEyTLkCbiw%3D%3D&ct=3Dab7g3c1Q=
+8M
+
+-------------------
+
+Si prefieres no recibir correos electr=C3=B3nicos comerciales de Apple, o s=
+i has cambiado tu direcci=C3=B3n de email, haz clic aqu=C3=AD.
+https://mynews.apple.com/subscriptions?v=3D2&la=3Des_mx&a=3DSy4LzxA2RNQwsYw=
+oelbw1lIKlCZV5HsmFK39P5pTr7S5miDTcT2BLJm%2F7G2zkI%2B%2FF7dbRgdgbEhqHTFVmum0=
+jsWwFb8jmJCZFlgPxnu6Zp0JiBnbG44ejY9sS01rUFY1Evz1KNbYX2JrK2Rxu%2BTyTxYSRpcaa=
+xqLcPskWpZGAsAlIibMj6g492NQEORL4ObgmGog%2B2Me97DpRCV8QC%2Ft%2BPJnCV05mBlxpS=
+XIIzISyRvc6pbd%2BRFAp9%2BcrS8TYVCp
+
+-------------------
+------=_Part_723305040_1198961298.1605118216080
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Content-Disposition: inline
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head>=
+<title>P0020568-462332</title><meta name=3D"viewport" content=3D"width=3Dde=
+vice-width, initial-scale=3D1.0"><meta http-equiv=3D"content-type" content=
+=3D"text/html;charset=3Dutf-8"><meta name=3D"format-detection" content=3D"d=
+ate=3Dno"><meta name=3D"format-detection" content=3D"address=3Dno"><meta na=
+me=3D"format-detection" content=3D"email=3Dno"><!--[if gte mso 9]><style ty=
+pe=3D"text/css">table,td,tr,a,span,img,b,sup{line-height:normal !important;=
+ mso-line-height-rule: exactly;}sup{font-size:100% !important;}h1,h2,h3,h4,=
+h5,h6 {line-height: inherit !important; font-family:'Segoe UI SemiBold','Se=
+goe UI', Arial, sans-serif !important; font-weight: 400 !important; mso-lin=
+e-height-rule: exactly; mso-text-raise: 2px;}.outSemiBold, b,strong {line-h=
+eight: inherit !important; font-family:'Segoe UI SemiBold','Segoe UI', Aria=
+l, sans-serif !important; font-weight: 400 !important; mso-line-height-rule=
+: exactly; }.outBold {line-height: inherit !important; font-family: 'Segoe =
+UI', Arial, sans-serif !important; font-weight: 600 !important; mso-line-he=
+ight-rule: exactly; }.fallback { display: block !important}.animated { disp=
+lay: none !important}</style><xml><o:OfficeDocumentSettings><o:AllowPNG/><o=
+:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endi=
+f]--><!--[if gte mso 15]><style type=3D"text/css">h1 {mso-text-raise: 4px;}=
+h2,h3,h4,h5,h6 {mso-text-raise: 2px;}</style><![endif]--><style type=3D"tex=
+t/css">@media only screen and (max-device-width:568px){.m-0{display:none!im=
+portant}.m-1{display:block!important;width:100%!important;height:inherit!im=
+portant;overflow:visible!important}.m-1 .m-5 span.m-32{display:block}.m-1 .=
+m-5 span.m-33{margin-top:.8em;display:block}}</style><style type=3D"text/cs=
+s">@media screen and (max-device-width:568px){h1 a,h2 a,h3 a,h4 a,h5 a,h6 a=
+{color:inherit!important;font-weight:inherit!important}}</style><style type=
+=3D"text/css">@media only screen and (max-device-width:350px){.m-67.m-31.m-=
+24{text-align:center}.m-85.m-24{width:0;display:block!important}.m-69.m-30.=
+m-24{text-align:center;margin-top:18px}}</style><style type=3D"text/css">@m=
+edia only screen and (max-device-width:350px){.m-68.m-31.m-24{text-align:ce=
+nter}.m-84.m-24{width:0;display:block!important}.m-71.m-30.m-24{text-align:=
+center;margin-top:18px}}</style><style type=3D"text/css">@media only screen=
+ and (max-device-width:350px){.m-70.m-31.m-24{text-align:center}.m-83.m-24{=
+width:0;display:block!important}.m-66.m-24{text-align:center;margin-top:18p=
+x}}</style><style type=3D"text/css">.m-0,.m-1,td{font-size:17px;font-weight=
+:400;line-height:25px}.m-1,.m-1 div{box-sizing:border-box}.m-2 a,.m-3{white=
+-space:nowrap}.m-1 .m-4,img{max-width:100%}.m-0,.m-1,.m-5,a,p,td{font-famil=
+y:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',He=
+lvetica,Arial,sans-serif,'SF Pro Icons'}.m-6 sup,sup{position:relative}.m-7=
+ .m-8 .m-9,.m-10 .m-8 .m-9,.m-11 .m-8 .m-9,.m-12 .m-8 .m-9,.m-13 .m-8 .m-9,=
+.m-14 .m-8 .m-9,.m-15 .m-8 .m-9{overflow:hidden;background-position:center =
+top;background-repeat:no-repeat;max-width:414px}*{-webkit-font-smoothing:an=
+tialiased;text-rendering:optimizelegibility}.m-0,.m-1{width:100%!important}=
+table{border-spacing:0}sup{line-height:0;font-size:.65em;vertical-align:sup=
+er}b{font-weight:600}.m-1{display:none;margin:0 auto;max-width:100%}.m-1 .m=
+-16 img,.m-1 .m-17 img,img{display:block}.m-18,.m-19,.m-20,.m-21{max-width:=
+322px}.m-1 .m-4 .m-22{max-width:414px;margin:0 auto}.m-1 .m-23{font-size:0;=
+line-height:0;margin:0 auto}.m-1 .m-24,.m-1 .m-25{font-size:17px;line-heigh=
+t:25px}.m-1 .m-26{font-size:0;line-height:0}.m-6 img,.m-16 img,.m-17 img,.m=
+-27,.m-1 .m-26 .m-24{display:inline-block}.m-28,.m-4{margin:0 auto}.m-29{te=
+xt-align:center}.m-29 img,.m-30 img,img.m-29{margin-left:auto;margin-right:=
+auto}.m-30{text-align:left}.m-30 img{margin-left:0}.m-31 img,img.m-31{margi=
+n-right:0;margin-left:auto}.m-31{text-align:right}.m-34 a,.m-35 a{border:0;=
+outline:0}.m-36,.m-36>p,.m-37,.m-37>p,.m-38,.m-38>p,.m-35 .m-23{font-size:1=
+2px;line-height:16px}.m-39,.m-0,.m-1{background-color:#000}.m-39,.m-39 .m-4=
+0 a,.m-39 h1,.m-39 h2,.m-39 h3,.m-39 h4{color:#f5f5f7}.m-39{border-color:#0=
+00}.m-39 a,.m-39 a:hover,.m-39 a:visited,.m-41,.m-42,.m-43,.m-44,.m-45,.m-4=
+6{color:#2997ff}.m-39 .m-47{border-top-color:#424245}.m-39.m-34,.m-39.m-35,=
+.m-48 .m-39{color:#6e6e73;background-color:#1d1d1f}.m-39.m-34 .m-6,.m-39.m-=
+34 a,.m-39.m-34 a.m-6,.m-39.m-35 .m-6,.m-39.m-35 a,.m-39.m-35 a.m-6,.m-48 .=
+m-39 .m-6,.m-48 .m-39 a,.m-48 .m-39 a.m-6,.m-48 .m-39 a:hover,.m-48 .m-39 a=
+:visited{color:#a1a1a6}.m-35.m-49{background-color:transparent!important}.m=
+-39 .m-50,.m-39 .m-50 td,.m-39 .m-50>div,.m-39 td.m-50{border-color:#424245=
+;color:#424245}.m-5 a.m-51,a img,a.m-51,p a.m-51{border:0;outline:0}.m-6,a:=
+link{text-decoration:none}.m-5 a:focus,.m-5 a:hover,a.m-6:hover,a:focus,a:h=
+over,a:visited,a[x-apple-data-detectors]:hover,p a:focus,p a:hover{text-dec=
+oration:underline!important}.m-2 a,.m-2 a:focus,.m-2 a:hover,.m-2 a:visited=
+{text-decoration:none!important;cursor:text!important;pointer-events:none!i=
+mportant}.m-5 a,a,p a{cursor:pointer;text-decoration:none}.m-2 a{color:inhe=
+rit}img.m-30{margin-right:auto;margin-left:0}.m-52,.m-6+.m-53,a img,h1,h2,h=
+3,h4,h5,h6{display:inline-block}.m-54,.m-55,.m-56,.m-57,.m-58,.m-59,.m-60,.=
+m-61,.m-62,.m-63,.m-64,.m-65{vertical-align:top}.m-66,.m-67,.m-68,.m-69,.m-=
+70,.m-71{vertical-align:middle}.m-52,.m-72{vertical-align:bottom}.m-5,p{fon=
+t-size:17px;font-weight:400;line-height:25px;margin:0}.m-5 a.m-51,.m-5 a.m-=
+2:hover,.m-5 a[x-apple-data-detectors],a.m-51,a[x-apple-data-detectors],p a=
+.m-51,p a.m-2:hover,p a[x-apple-data-detectors]{text-decoration:none!import=
+ant}.m-6.m-50>div,.m-47{border-top-style:solid;border-top-width:1px}.m-5 a.=
+m-2,p a.m-2{color:inherit;cursor:text!important;font-size:inherit;line-heig=
+ht:inherit;pointer-events:none!important}.m-73{line-height:inherit}a>span{l=
+etter-spacing:inherit}.m-6 sup{font-size:.65em!important;line-height:0}.m-6=
++.m-53{font-size:12px;padding:0 4px}.m-6.m-50>div{height:0;line-height:0}.m=
+-35 .m-6{display:inline}h1,h2,h3,h4,h5,h6{margin:0;font-family:system-ui,-a=
+pple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Helvetica,Arial,=
+sans-serif;font-weight:600}h1 sup,h2 sup,h3 sup,h4 sup,h5 sup,h6 sup{line-h=
+eight:0;font-size:.6em;top:0;position:relative;vertical-align:super}h1.m-29=
+,h2.m-29,h3.m-29,h4.m-29,h5.m-29,h6.m-29{margin:0 auto;text-align:center}h1=
+.m-31,h2.m-31,h3.m-31,h4.m-31,h5.m-31,h6.m-31{margin-left:auto;margin-right=
+:0;text-align:right}.m-0 h1.m-74{font-size:48px;line-height:1.08349;letter-=
+spacing:-.003em}.m-0 h2.m-17,.m-1 h1.m-74{font-size:40px;line-height:1.1;le=
+tter-spacing:0}.m-0 h3.m-75,.m-1 h2.m-17{font-size:32px;line-height:1.125;l=
+etter-spacing:.004em}.m-1 h3.m-75{font-size:28px;line-height:1.14286;letter=
+-spacing:.007em}.m-0 h4.m-76{font-size:24px;line-height:1.16667;letter-spac=
+ing:.009em}.m-0 h5.m-16,.m-1 h5.m-16{font-size:21px;line-height:1.19048;let=
+ter-spacing:.011em}.m-18,.m-77,.m-78,.m-79,.m-20{background-color:#1d1d1f!i=
+mportant;vertical-align:top}.m-11 .m-8 .m-9{width:100%;margin:0;background-=
+image:url(https://images.apple.com/mx/dm/2020/201106_event_Recap/i/m_hero_2=
+x.jpg)!important;background-size:414px 504px;height:504px}.m-10 .m-8 .m-9{w=
+idth:100%;margin:0;background-image:url(https://images.apple.com/mx/dm/2020=
+/201106_event_Recap/i/m_hero_cta_2x.jpg)!important;background-size:414px 46=
+px;height:46px}.m-12 .m-8 .m-9{width:100%;margin:0;background-image:url(htt=
+ps://images.apple.com/mx/dm/2020/201106_event_Recap/i/m_macbook_air_2x.jpg)=
+!important;background-size:414px 303px;height:303px}.m-80,.m-81{padding-top=
+:2px;padding-right:37px;padding-left:37px}.m-82{padding-top:26px}.m-83,.m-8=
+4,.m-85{width:34px}.m-86 .m-6,.m-41 .m-6,.m-42 .m-6,.m-43 .m-6,.m-44 .m-6,.=
+m-45 .m-6,.m-46 .m-6,.m-87 .m-6{color:#2997ff!important}.m-86 img,.m-41 img=
+,.m-42 img,.m-88 img,.m-43 img,.m-44 img,.m-45 img,.m-89 img,.m-46 img,.m-8=
+7 img{width:12px;height:10px}.m-90,.m-91,.m-92{padding-top:20px;margin:0 au=
+to}.m-93,.m-94,.m-95,.m-96,.m-97,.m-98,.m-99,.m-100,.m-101,.m-102{padding-r=
+ight:6.25%;padding-left:6.25%}.m-13{padding-top:80px}.m-13 .m-8 .m-9{width:=
+100%;margin:0;background-image:url(https://images.apple.com/mx/dm/2020/2011=
+06_event_Recap/i/m_macbookpro_13_2x.jpg)!important;background-size:414px 25=
+6px;height:256px}.m-103{padding-top:24px}.m-15 .m-8 .m-9{width:100%;margin:=
+0;background-image:url(https://images.apple.com/mx/dm/2020/201106_event_Rec=
+ap/i/m_macmini_2x.jpg)!important;background-size:414px 333px;height:333px}.=
+m-104{padding-top:80px;vertical-align:top}.m-105{padding-top:4px;padding-ri=
+ght:25px;padding-left:25px}.m-106{padding-top:27px}.m-107{padding-right:6.2=
+5%;padding-bottom:80px;padding-left:6.25%}.m-14 .m-8 .m-9{width:100%;margin=
+:0;background-image:url(https://images.apple.com/mx/dm/2020/201106_event_Re=
+cap/i/m_education_pricing_2x.jpg)!important;background-size:322px 372px;hei=
+ght:372px}.m-108,.m-109{height:10px;line-height:10px}.m-110,.m-110>p{font-s=
+ize:19px;line-height:27px;font-weight:500}.m-7 .m-8 .m-9{width:100%;margin:=
+0;background-image:url(https://images.apple.com/mx/dm/2020/201106_event_Rec=
+ap/i/m_accessories_2x.jpg)!important;background-size:322px 384px;height:384=
+px}.m-19{width:100%}.m-111{padding-bottom:10px}.m-112,.m-113,.m-114,.m-21{b=
+ackground-color:#1d1d1f}.m-21{padding-top:35px;padding-bottom:35px}.m-115{p=
+adding-top:95px}.m-116{padding-top:46px}.m-110{padding-top:10px}.m-117 a,.m=
+-118 a,.m-110 a,.m-119 a,.m-120 a{font-size:19px}.m-42{font-size:14px;line-=
+height:22px}.m-117,.m-117>p,.m-120>p{font-size:19px;line-height:23px;font-w=
+eight:500}.m-121{padding-top:50px}.m-117{padding-top:16px;padding-right:20p=
+x;padding-left:20px}.m-41{padding-top:10px;padding-right:50px;padding-left:=
+50px;font-size:14px;line-height:22px}.m-122,.m-123,.m-124{padding-top:44px}=
+.m-120{padding-top:14px;padding-right:20px;padding-left:20px;font-size:19px=
+;font-weight:500;line-height:23px}.m-86,.m-87{color:#2997ff;padding-top:10p=
+x;font-size:14px;line-height:22px}.m-118,.m-118>p,.m-119,.m-119>p{font-size=
+:19px;line-height:23px}.m-118{padding-top:14px}.m-119{padding-top:18px;padd=
+ing-right:30px;padding-left:30px}.m-43{padding-top:12px;font-size:14px;line=
+-height:22px}.m-125{padding-bottom:94px}.m-126{font-size:12px;line-height:3=
+9px;height:39px;max-height:39px;min-height:39px;vertical-align:top}.m-127,.=
+m-128,.m-129{font-size:12px;line-height:39px;height:38px;max-height:38px;mi=
+n-height:38px}.m-130,.m-131,.m-132{padding-top:1px;padding-right:6.25%;padd=
+ing-left:6.25%}.m-130,.m-131{padding-top:2px}.m-114{padding-bottom:19px}.m-=
+133 .m-40 a,.m-134 .m-40 a,.m-135 .m-40 a{color:#6e6e73!important}.m-36 a,.=
+m-37 a,.m-38 a{font-size:12px}.m-136,.m-137{background-color:#1d1d1f;paddin=
+g-bottom:9px}.m-138 .m-6,.m-139 .m-6{margin-right:6px}.m-138 .m-53,.m-139 .=
+m-53{color:#424245!important;line-height:20px}.m-138,.m-139{padding-right:6=
+px}.m-140,.m-138,.m-139{font-size:12px;line-height:20px}.m-113{padding-righ=
+t:6.25%;padding-left:6.25%}.m-112{padding-top:9px;padding-bottom:25px}.m-14=
+1{background-color:#1d1d1f!important}body{background-color:#000!important}<=
+/style></head><body id=3D"body" style=3D"margin: 0; padding: 0;"><i style=
+=3D"overflow: hidden; position: absolute; max-height: 0; font-size: 0; back=
+ground-color: #000"><img src=3D"https://c.apple.com/img/APPLE_EMAIL_LINK/sp=
+acer2.gif?v=3D2&a=3DlAuHzkIbFmGM9Tzgs%2F%2BlUVZ5gWj6iZtpvHFw3xdFVc%2BhwIQi9=
+isps6IZ20tbsO2eqgqZGRKmQnp7IoLrwjx2anivV7t1Wwm1hqrtboQzEiHCCIK6eHYevrwHuvar=
+N97XEp0ikm00MJSW9prunkXAoypcke8rawbPbWZtfBPTAjAe%2BNFQj%2B1vC25FW99es0Oe%2F=
+6Ri2YsVCpu1weGBb0bZgg%3D%3D" alt=3D"" width=3D"1" height=3D"1" ></i><div st=
+yle=3D"display: none; max-height: 0px; overflow: hidden;">Un chip peque=C3=
+=B1o. Un avance enorme. Presentamos las nuevas MacBook Air, MacBook Pro de =
+13 pulgadas y Mac mini, todas con el chip M1 de Apple. Bienvenidos al futur=
+o de la Mac.</div><!-- Adding spaces to prevent email copy from being visib=
+le --><div style=3D"display: none; max-height: 0px; overflow: hidden;">=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=
+=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C=C2=A0=E2=80=8C</d=
+iv><div class=3D"m-1" style=3D"display:none;width:0;height:0;overflow:hidde=
+n;"><div class=3D"m-4 m-39 m-125"><div class=3D"m-22"><div class=3D"m-23"><=
+div class=3D"m-24 m-29 m-56"><div class=3D"m-11"><div class=3D"m-8"><div cl=
+ass=3D"m-9 m-29"><span role=3D"img" aria-label=3D"Un chip peque=C3=B1o. Un =
+avance enorme. Presentamos las nuevas MacBook Air, MacBook Pro de 13 pulgad=
+as y Mac mini, todas con el chip M1 de Apple. Bienvenidos al futuro de la M=
+ac. Ver el evento"></span><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=
+=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqp=
+sY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48H=
+IMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2=
+FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dac5K3L6g3M" style=3D"displa=
+y: block; max-width: 414px; height: 504px;"></a></div></div></div></div></d=
+iv><div class=3D"m-23"><div class=3D"m-24 m-29 m-57"><div class=3D"m-12"><d=
+iv class=3D"m-8"><div class=3D"m-9 m-29"><!----></div></div></div></div></d=
+iv><div class=3D"m-23 m-95"><div class=3D"m-24 m-29 m-55"><div class=3D"m-2=
+5 m-29 m-81" style=3D"padding-top: 22px;"><p class=3D"m-5">Nuestra notebook=
+ m=C3=A1s ligera y delgada vuelve completamente renovada por dentro. Gracia=
+s al chip=C2=A0M1 de Apple, el CPU es hasta 3.5 veces m=C3=A1s r=C3=A1pido =
+y el GPU=C2=A0hasta=C2=A05 veces m=C3=A1s veloz. El=C2=A0Neural=C2=A0Engine=
+ m=C3=A1s avanzado permite un aprendizaje autom=C3=A1tico hasta 9=C2=A0vece=
+s superior.<sup>1</sup> La=C2=A0bater=C3=ADa es la de mayor duraci=C3=B3n e=
+n una MacBook=C2=A0Air. Y=C2=A0su=C2=A0dise=C3=B1o sin ventilador es supers=
+ilencioso. Nunca hab=C3=ADa sido tan f=C3=A1cil llevar tanto poder a todos=
+=C2=A0lados.</p></div><div class=3D"m-25 m-29 m-82"><p class=3D"m-5">Consul=
+ta la disponibilidad m=C3=A1s=C2=A0adelante</p></div><div class=3D"m-26 m-2=
+9 m-91"><div class=3D"m-24 m-31 m-67"><div data-generate-transparent class=
+=3D"m-31" style=3D"text-align: right;"><a href=3D"https://c.apple.com/r?v=
+=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5h=
+z1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZE=
+SyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOP=
+Jq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7m4l8a1C">=
+<img alt=3D"Ver precios" src=3D"https://images.apple.com/mx/dm/2020/201106_=
+event_Recap/i/buy_button_small_2x.png" class=3D"m-52" height=3D"36" width=
+=3D"132"></a><!----></div></div><div class=3D"m-24 m-85"><!----></div><div =
+class=3D"m-24 m-30 m-69"><div class=3D"m-28 m-30 m-46" style=3D"color: #299=
+7ff; text-align: left; font-size: 17px; line-height: 25px;"><!----><a href=
+=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYN=
+xEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdey=
+pkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2F=
+XAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia=
+6LEwds%3D&ct=3Dab7m9c3u6Y" class=3D"m-6" style=3D"color: #2997ff;">M=C3=A1s=
+ <span class=3D"m-3">informaci=C3=B3n<img src=3D"https://images.apple.com/m=
+x/dm/2020/201106_event_Recap/i/17_chevron_2997ff_2x.png" width=3D"12" heigh=
+t=3D"10" style=3D"display:inline; margin:0;" alt=3D" "></span></a><!----><!=
+----></div></div></div></div></div><div class=3D"m-23"><div class=3D"m-24 m=
+-29 m-61"><div class=3D"m-13"><div class=3D"m-8"><div class=3D"m-9 m-29"><!=
+----></div></div></div></div></div><div class=3D"m-23 m-94"><div class=3D"m=
+-24 m-29 m-54"><div class=3D"m-25 m-29 m-80"><p class=3D"m-5">Con el chip M=
+1, la MacBook=C2=A0Pro de 13=C2=A0pulgadas alcanza un nuevo nivel de potenc=
+ia y velocidad. El=C2=A0CPU es hasta=C2=A02.8 veces m=C3=A1s r=C3=A1pido y =
+los gr=C3=A1ficos son hasta 5 veces m=C3=A1s veloces. El=C2=A0Neural=C2=A0E=
+ngine, el m=C3=A1s avanzado hasta ahora, permite un aprendizaje autom=C3=A1=
+tico hasta 11=C2=A0veces m=C3=A1s <span style=3D"white-space: nowrap;">r=C3=
+=A1pido.<sup>1</sup></span> Y la bater=C3=ADa te acompa=C3=B1a hasta por 20=
+=C2=A0horas, la mayor duraci=C3=B3n en una Mac.<sup>2</sup> Por=C2=A0fuera =
+sigue siendo nuestra notebook Pro m=C3=A1s conocida. Pero=C2=A0es lo de ade=
+ntro lo que cambia la=C2=A0historia.</p></div><div class=3D"m-25 m-29 m-103=
+"><p class=3D"m-5">Modelo con el chip M1 disponible=C2=A0m=C3=A1s=C2=A0adel=
+ante</p></div><div class=3D"m-26 m-29 m-92"><div class=3D"m-24 m-31 m-68"><=
+div data-generate-transparent class=3D"m-31" style=3D"text-align: right;"><=
+a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziy=
+JtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPG=
+QJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%=
+2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%=
+2Fwaia6LEwds%3D&ct=3Dab7W5x8T7M"><img alt=3D"Ver precios" src=3D"https://im=
+ages.apple.com/mx/dm/2020/201106_event_Recap/i/buy_button_small_2x.png" cla=
+ss=3D"m-52" height=3D"36" width=3D"132"></a><!----></div></div><div class=
+=3D"m-24 m-84"><!----></div><div class=3D"m-24 m-30 m-71"><div class=3D"m-2=
+8 m-30 m-44" style=3D"color: #2997ff; text-align: left; font-size: 17px; li=
+ne-height: 25px;"><!----><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=
+=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqp=
+sY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48H=
+IMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2=
+FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7m5i4A7P" class=3D"m-6" s=
+tyle=3D"color: #2997ff;">M=C3=A1s <span class=3D"m-3">informaci=C3=B3n<img =
+src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/17_chevron_=
+2997ff_2x.png" width=3D"12" height=3D"10" style=3D"display:inline; margin:0=
+;" alt=3D" "></span></a><!----><!----></div></div></div></div></div><div cl=
+ass=3D"m-23"><div class=3D"m-24 m-29 m-104"><div class=3D"m-15"><div class=
+=3D"m-8"><div class=3D"m-9 m-29"><!----></div></div></div></div></div><div =
+class=3D"m-23 m-107"><div class=3D"m-24 m-29 m-59"><div class=3D"m-25 m-29 =
+m-105"><p class=3D"m-5">El nuevo chip M1 dise=C3=B1ado por Apple lleva nues=
+tra computadora de escritorio m=C3=A1s vers=C3=A1til a otra dimensi=C3=B3n.=
+ Ahora viene con un CPU hasta 3 veces m=C3=A1s r=C3=A1pido, gr=C3=A1ficos h=
+asta 6 veces m=C3=A1s veloces y nuestro Neural=C2=A0Engine m=C3=A1s avanzad=
+o, que permite un aprendizaje autom=C3=A1tico hasta 15=C2=A0veces m=C3=A1s =
+r=C3=A1pido.<sup>1</sup> Podr=C3=A1s trabajar, jugar y crear con una veloci=
+dad y potencia que jam=C3=A1s hab=C3=ADas imaginado. La=C2=A0Mac=C2=A0mini =
+es poder para conquistarlo=C2=A0todo.</p></div><div class=3D"m-25 m-106"><p=
+ class=3D"m-5">Modelo con el chip M1 disponible=C2=A0m=C3=A1s=C2=A0adelante=
+</p></div><div class=3D"m-26 m-29 m-90"><div class=3D"m-24 m-29 m-70"><div =
+data-generate-transparent class=3D"m-31" style=3D"text-align: right;"><a hr=
+ef=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbR=
+YNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXd=
+eypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%=
+2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwa=
+ia6LEwds%3D&ct=3Dac5K8n1Q6h"><img alt=3D"Ver precios" src=3D"https://images=
+.apple.com/mx/dm/2020/201106_event_Recap/i/buy_button_small_2x.png" class=
+=3D"m-52" height=3D"36" width=3D"132"></a><!----></div></div><div class=3D"=
+m-24 m-83"><!----></div><div class=3D"m-24 m-66"><div class=3D"m-28 m-30 m-=
+45" style=3D"color: #2997ff; text-align: left; font-size: 17px; line-height=
+: 25px;"><!----><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=
+=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlc=
+c3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMT=
+PP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ=
+4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7J5b1m1N" class=3D"m-6" style=3D"=
+color: #2997ff;">M=C3=A1s <span class=3D"m-3">informaci=C3=B3n<img src=3D"h=
+ttps://images.apple.com/mx/dm/2020/201106_event_Recap/i/17_chevron_2997ff_2=
+x.png" width=3D"12" height=3D"10" style=3D"display:inline; margin:0;" alt=
+=3D" "></span></a><!----><!----></div></div></div></div></div><div class=3D=
+"m-19 m-23"><div class=3D"m-18 m-24 m-29"><div class=3D"m-14"><div class=3D=
+"m-8"><div class=3D"m-9 m-29"><span role=3D"img" aria-label=3D"Ahorra en un=
+a Mac con los precios especiales de Apple para la educaci=C3=B3n.(*) Compra=
+r"></span><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2B=
+nb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK=
+%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuh=
+hIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT=
+84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7J4u2C9C" style=3D"display: block; max-wi=
+dth: 414px; height: 372px;"></a></div></div></div></div><div class=3D"m-24"=
+><div class=3D"m-109"></div></div><div class=3D"m-20 m-24 m-29"><div class=
+=3D"m-7"><div class=3D"m-8"><div class=3D"m-9 m-29"><span role=3D"img" aria=
+-label=3D"Descubre los =C3=BAltimos accesorios para la Mac. Comprar"></span=
+><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHz=
+iyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSH=
+PGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xk=
+c%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJ=
+E%2Fwaia6LEwds%3D&ct=3Dab7m2x8d8k" style=3D"display: block; max-width: 414p=
+x; height: 384px;"></a></div></div></div></div></div><div class=3D"m-23 m-1=
+01"><div class=3D"m-24"><div class=3D"m-108"></div></div></div><div class=
+=3D"m-21 m-23"><div class=3D"m-24 m-29 m-79"><div class=3D"m-29 m-111"><h5 =
+class=3D"m-16">Con todo el poder para<br> llevar a tu empresa al<br> siguie=
+nte=C2=A0nivel.</h5></div><div class=3D"m-26"><div class=3D"m-24 m-29 m-78"=
+><div class=3D"m-28 m-89" style=3D"font-size: 17px; line-height: 25px;"><!-=
+---><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWC=
+oHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8Zn=
+cSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u=
+4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9U=
+eyJE%2Fwaia6LEwds%3D&ct=3Dab7W5G5G1v" class=3D"m-6">M=C3=A1s informaci=C3=
+=B3n<br> sobre la Mac <span class=3D"m-3">en la empresa<img src=3D"https://=
+images.apple.com/mx/dm/2020/201106_event_Recap/i/17_chevron_2997ff_2x.png" =
+width=3D"12" height=3D"10" style=3D"display:inline; margin:0;" alt=3D" "></=
+span></a><!----><!----></div></div><div class=3D"m-24 m-29 m-77"><div class=
+=3D"m-28 m-88" style=3D"font-size: 17px; line-height: 25px;"><!----><a href=
+=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYN=
+xEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdey=
+pkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2F=
+XAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia=
+6LEwds%3D&ct=3Dac5H1c0K6P" class=3D"m-6">Comprar para tu <span class=3D"m-3=
+">empresa<img src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap=
+/i/17_chevron_2997ff_2x.png" width=3D"12" height=3D"10" style=3D"display:in=
+line; margin:0;" alt=3D" "></span></a><!----><!----></div></div></div></div=
+></div><div class=3D"m-23 m-102"><div class=3D"m-24 m-29 m-63"><div class=
+=3D"m-29 m-115"><h3 class=3D"m-75">Descubre por qu=C3=A9 Apple es el mejor =
+lugar para comprar.</h3></div><div class=3D"m-116"><div class=3D"m-29"><img=
+ src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/icon_trade=
+in_2x.png" data-dynamic-variable class=3D"m-65" height=3D"42" width=3D"42" =
+alt=3D" "></div></div><div class=3D"m-25 m-29 m-110"><p class=3D"m-5">Obt=
+=C3=A9n cr=C3=A9dito<br> para comprar<br> una Mac=C2=A0nueva.<sup>3</sup></=
+p></div><div class=3D"m-28 m-29 m-42"><a href=3D"https://c.apple.com/r?v=3D=
+2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1E=
+e0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyv=
+D7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0=
+vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7R7c5q1p" cla=
+ss=3D"m-6">Descubre el valor de canje<br> <span class=3D"m-3">de tu disposi=
+tivo<img src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/17=
+_chevron_2997ff_2x.png" width=3D"12" height=3D"10" style=3D"display:inline;=
+ margin:0;" alt=3D" "></span></a></div></div></div><div class=3D"m-23 m-100=
+"><div class=3D"m-24 m-29 m-62"><div class=3D"m-121"><div class=3D"m-29"><i=
+mg src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/icon_app=
+lecard_2x.png" data-dynamic-variable class=3D"m-65" height=3D"42" width=3D"=
+42" alt=3D" "></div></div><div class=3D"m-25 m-29 m-117"><p class=3D"m-5">H=
+asta 18 pagos mensuales<br> fijos con tarjetas de cr=C3=A9dito<br> particip=
+antes.</p></div><div class=3D"m-28 m-29 m-41"><a href=3D"https://c.apple.co=
+m/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%=
+2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2Fzx=
+CwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYt=
+rzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dac5H6u3=
+A8v" class=3D"m-6">M=C3=A1s <span class=3D"m-3">informaci=C3=B3n<img src=3D=
+"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/17_chevron_2997ff=
+_2x.png" width=3D"12" height=3D"10" style=3D"display:inline; margin:0;" alt=
+=3D" "></span></a></div></div><div class=3D"m-24 m-29 m-58"><div class=3D"m=
+-122"><div class=3D"m-29"><img src=3D"https://images.apple.com/mx/dm/2020/2=
+01106_event_Recap/i/icon_specialist_2x.png" data-dynamic-variable class=3D"=
+m-65" height=3D"46" width=3D"52" alt=3D" "></div></div><div class=3D"m-25 m=
+-29 m-120"><p class=3D"m-5">Habla con un Especialista y<br> obt=C3=A9n ayud=
+a al=C2=A0comprar.</p></div><div class=3D"m-28 m-29 m-87"><a href=3D"https:=
+//c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12=
+xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8s=
+vwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ0=
+57adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&=
+ct=3Dab7W7I9H8C" class=3D"m-6">M=C3=A1s <span class=3D"m-3">informaci=C3=B3=
+n<img src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/17_ch=
+evron_2997ff_2x.png" width=3D"12" height=3D"10" style=3D"display:inline; ma=
+rgin:0;" alt=3D" "></span></a></div></div></div><div class=3D"m-23 m-99"><d=
+iv class=3D"m-24 m-29 m-64"><div class=3D"m-123"><div class=3D"m-29"><img s=
+rc=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/icon_deliver=
+y_2x.png" data-dynamic-variable class=3D"m-65" height=3D"44" width=3D"41" a=
+lt=3D" "></div></div><div class=3D"m-25 m-29 m-118"><p class=3D"m-5">Env=C3=
+=ADo sin costo<br> en todos=C2=A0los=C2=A0pedidos.</p></div><div class=3D"m=
+-28 m-29 m-86"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3D=
+z2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3r=
+tr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9=
+RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQ=
+zS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7W4c9u4T" class=3D"m-6">M=C3=A1s <sp=
+an class=3D"m-3">informaci=C3=B3n<img src=3D"https://images.apple.com/mx/dm=
+/2020/201106_event_Recap/i/17_chevron_2997ff_2x.png" width=3D"12" height=3D=
+"10" style=3D"display:inline; margin:0;" alt=3D" "></span></a></div></div><=
+div class=3D"m-24 m-29 m-60"><div class=3D"m-124"><div class=3D"m-29"><img =
+src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/icon_sessio=
+n_2x.png" data-dynamic-variable class=3D"m-65" height=3D"36" width=3D"53" a=
+lt=3D" "></div></div><div class=3D"m-25 m-29 m-119"><p class=3D"m-5">Conoce=
+ tu nueva Mac con la ayuda de un Especialista en una sesi=C3=B3n personaliz=
+ada online.</p></div><div class=3D"m-28 m-29 m-43"><a href=3D"https://c.app=
+le.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofY=
+jHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F=
+%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfq=
+mVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dac=
+5K1x3B8N" class=3D"m-6">M=C3=A1s <span class=3D"m-3">informaci=C3=B3n<img s=
+rc=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/17_chevron_2=
+997ff_2x.png" width=3D"12" height=3D"10" style=3D"display:inline; margin:0;=
+" alt=3D" "></span></a></div></div></div></div></div><div class=3D"m-4 m-35=
+ m-39 m-141"><div class=3D"m-22"><div class=3D"m-23 m-114"><div class=3D"m-=
+24 m-97"><div class=3D"m-28 m-29 m-126"><a href=3D"https://c.apple.com/r?v=
+=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5h=
+z1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZE=
+SyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOP=
+Jq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7J1a7J4v" =
+class=3D"m-6">Comprar <span class=3D"m-3">online</span></a><div class=3D"m-=
+47"></div></div></div><div class=3D"m-24 m-132"><div class=3D"m-28 m-29 m-1=
+27"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWC=
+oHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8Zn=
+cSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u=
+4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9U=
+eyJE%2Fwaia6LEwds%3D&ct=3Dab7J8L7H2C" class=3D"m-6">Buscar una <span class=
+=3D"m-3">tienda</span></a><div class=3D"m-47"></div></div></div><div class=
+=3D"m-24 m-130"><div class=3D"m-28 m-29 m-129"><a href=3D"tel:001-800-692-7=
+753" data-cid-disabled=3D"true" class=3D"m-6">001-800-692-7753</a><div clas=
+s=3D"m-47"></div></div></div><div class=3D"m-24 m-131"><div class=3D"m-28 m=
+-29 m-128"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0Zp=
+uE6PQO5xmnQSMTLEBpeW7ecgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ=
+2CD3d0jh9bCY1WGagrVsCBMDYLhfZCvkbZHdwASnL5XO%2FrGyo%2B1v80BnBITdJ0D%2By%2F8=
+FUcvgw%3D%3D&ct=3Dab7R1w0j0Y" class=3D"m-6">Descargar la app Apple Store</a=
+><div class=3D"m-47"></div></div></div></div><div class=3D"m-23 m-137"><div=
+ class=3D"m-24 m-96"><div class=3D"m-25 m-30 m-38"><p class=3D"m-5"><span c=
+lass=3D"m-32"><span>*</span> Los precios especiales para la educaci=C3=B3n =
+est=C3=A1n disponibles para estudiantes que vayan a iniciar o ya est=C3=A9n=
+ en la universidad, as=C3=AD como para sus padres, cuerpo docente, personal=
+ y profesores particulares de todos los niveles escolares. Para obtener m=
+=C3=A1s informaci=C3=B3n, visita <a href=3D"https://c.apple.com/r?v=3D2&la=
+=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7ecgCU9h74cUK41WHDhdk5lKCvACaOD7=
+GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCBMDYLhfZCvkbZHdwASnL5XO%2FrGyo%=
+2B1v80BnBITdJ0D%2By%2F8FUcvgw%3D%3D&ct=3Dac5K0B9N5Y" style=3D"white-space: =
+nowrap;">apple.com/mx=E2=80=91hed/shop</a>.</span><span class=3D"m-33"><spa=
+n>1.</span> Las afirmaciones sobre el rendimiento se basan en la comparaci=
+=C3=B3n con la generaci=C3=B3n anterior.</span><span class=3D"m-33"><span>2=
+.</span> La duraci=C3=B3n de la bater=C3=ADa var=C3=ADa seg=C3=BAn el uso y=
+ la configuraci=C3=B3n. Para obtener m=C3=A1s informaci=C3=B3n, visita <a h=
+ref=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTL=
+EBpeW7ecgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WG=
+agrVsCBMDYLhfZCvkbZHdwASnL5XO%2FrGyo%2B1v80BnBITdJ0D%2By%2F8FUcvgw%3D%3D&ct=
+=3Dab7g1E9E2k" style=3D"white-space: nowrap;">apple.com/mx/batteries</a>.</=
+span><span class=3D"m-33"><span>3.</span> El valor de canje puede variar se=
+g=C3=BAn la condici=C3=B3n, el a=C3=B1o y la configuraci=C3=B3n de tu dispo=
+sitivo. Debes tener al menos 18 a=C3=B1os de edad para poder canjear tu dis=
+positivo por cr=C3=A9dito o por una tarjeta de regalo del Apple=C2=A0Store.=
+ No todos los dispositivos pueden canjearse por cr=C3=A9dito. Para obtener =
+m=C3=A1s informaci=C3=B3n sobre los dispositivos elegibles para canje o rec=
+iclaje, consulta con un socio de Apple=C2=A0Trade=C2=A0In para Mac o de App=
+le=C2=A0Trade=C2=A0In para iPhone, iPad y Apple=C2=A0Watch. Sujeto a restri=
+cciones y l=C3=ADmites. Para recibir el valor de canje, el estado del dispo=
+sitivo debe coincidir con la descripci=C3=B3n indicada cuando se hizo el es=
+timado. Apple se reserva el derecho de rechazar o limitar la cantidad de di=
+spositivos seg=C3=BAn su criterio.</span></p></div></div></div><div class=
+=3D"m-23 m-136"><div class=3D"m-24 m-98"><div class=3D"m-25 m-30 m-36"><p c=
+lass=3D"m-5">TM y =C2=A9 2020 Apple Inc. One Apple Park Way, <span class=3D=
+"m-3" style=3D"white-space: nowrap">MS 96-DM</span>, Cupertino, CA 95014.</=
+p></div></div></div><div class=3D"m-23 m-30 m-113"><div class=3D"m-24 m-27"=
+><div class=3D"m-28 m-30 m-138"><a href=3D"https://c.apple.com/r?v=3D2&la=
+=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7ecgCU9h74cUK41WHDhdk5lKCvACaOD7=
+GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCBMDYLhfZCvkbZHdwASnL5XO%2FrGyo%=
+2B1v80BnBITdJ0D%2By%2F8FUcvgw%3D%3D&ct=3Dac5H1x0R7Y" class=3D"m-6">Todos lo=
+s derechos <span class=3D"m-3">reservados</span></a></div></div><br><div cl=
+ass=3D"m-24 m-27"><div class=3D"m-28 m-30 m-139"><a href=3D"https://c.apple=
+.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7ecgCU9h74cUK41WH=
+Dhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCBMDYLhfZCvkbZHdw=
+ASnL5XO%2FrGyo%2B1v80BnBITdJ0D%2By%2F8FUcvgw%3D%3D&ct=3Dab7R7G5t8h" class=
+=3D"m-6">Pol=C3=ADtica de <span class=3D"m-3">privacidad</span></a><span cl=
+ass=3D"m-53">|</span></div></div><div class=3D"m-24 m-27"><div class=3D"m-2=
+8 m-30 m-140"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR=
+0ZpuE6PQO5xmnQSMTLEBpeW7ecgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%=
+2FQ2CD3d0jh9bCY1WGagrVsCBMDYLhfZCvkbZHdwASnL5XO%2FrGyo%2B1v80BnBITdJ0D%2By%=
+2F8FUcvgw%3D%3D&ct=3Dab7W7d8B6h" class=3D"m-6">Mi Apple <span class=3D"m-3"=
+>ID</span></a></div></div></div><div class=3D"m-23 m-112"><div class=3D"m-2=
+4 m-93"><div class=3D"m-25 m-30 m-37"><p class=3D"m-5">Si prefieres no reci=
+bir correos electr=C3=B3nicos comerciales de Apple, o si has cambiado tu di=
+recci=C3=B3n de email, haz=C2=A0<a href=3D"https://mynews.apple.com/subscri=
+ptions?v=3D2&la=3Des_mx&a=3DSy4LzxA2RNQwsYwoelbw1lIKlCZV5HsmFK39P5pTr7SC682=
+2zIzUyPR9NS1FD3wDEeR7p9EjBTgk%2F91REToM5m8ERFGl4hC4du9L5ep64rZOMR3FOtTZyrsO=
+hHrDKADme52YXU5fpBpmhDVbqbqdp474NLzU0dr%2BzbscJXHh3Qi812cTopb%2B281EYuAVhgC=
+WznRNtoJFJ1y77sxF%2FDYgAD1NbombKSvGw3Yl1UdED1yonEAaGIyHZNfX%2Bf6KasTa" styl=
+e=3D"border: 0; outline: 0; text-decoration: none;">clic=C2=A0aqu=C3=AD</a>=
+.</p></div></div></div></div></div></div><div class=3D"m-0"><table width=3D=
+"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" ro=
+le=3D"presentation"><tbody><tr><td align=3D"center" style=3D"text-align: ce=
+nter;"><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"=
+0" align=3D"center" role=3D"presentation"><tbody><tr class=3D"m-4"><td alig=
+n=3D"center" class=3D"m-39" style=3D"background-color: #000000;"><table cel=
+lpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" role=3D"pres=
+entation" width=3D"712" style=3D"width: 712px; background-color: #000000;">=
+<tbody><tr class=3D"m-23"><td style=3D"padding-top: 26px;"><table width=3D"=
+100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" rol=
+e=3D"presentation"><tbody><tr><td align=3D"center" valign=3D"top" width=3D"=
+100%" class=3D"m-24" style=3D"vertical-align: top;"><table align=3D"center"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" wid=
+th=3D"100%" class=3D"m-24" style=3D"text-align: center;"><tbody><tr><td ali=
+gn=3D"center" style=3D"text-align: center; vertical-align: bottom;"><a href=
+=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYN=
+xEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdey=
+pkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2F=
+XAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia=
+6LEwds%3D&ct=3Dab7m0c1h2h" style=3D"display: inline-block; color: #2997ff;"=
+><img alt=3D"Un chip peque=C3=B1o. Un avance enorme. Presentamos las nuevas=
+ MacBook Air, MacBook Pro de 13 pulgadas y Mac mini, todas con el chip M1 d=
+e Apple. Bienvenidos al futuro de la Mac. Ver el evento" src=3D"https://ima=
+ges.apple.com/mx/dm/2020/201106_event_Recap/i/hero_2x.jpg" border=3D"0" dat=
+a-dynamic-variable class=3D"m-29" height=3D"650" width=3D"712" style=3D"ver=
+tical-align: bottom; display: inline-block;"></a></td></tr></tbody></table>=
+</td></tr></tbody></table></td></tr><tr class=3D"m-23"><td><table width=3D"=
+100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" rol=
+e=3D"presentation"><tbody><tr><td align=3D"center" valign=3D"top" width=3D"=
+100%" class=3D"m-24" style=3D"vertical-align: top;"><table align=3D"center"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" wid=
+th=3D"100%" class=3D"m-24" style=3D"text-align: center;"><tbody><tr><td ali=
+gn=3D"center" style=3D"text-align: center; vertical-align: top;"><img alt=
+=3D"MacBook Air. Un nuevo poder toma vuelo." src=3D"https://images.apple.co=
+m/mx/dm/2020/201106_event_Recap/i/macbook_air_2x.jpg" border=3D"0" data-dyn=
+amic-variable class=3D"m-29" height=3D"470" width=3D"712" style=3D"display:=
+ block;"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr =
+class=3D"m-23"><td><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" align=3D"center" role=3D"presentation"><tbody><tr><td align=
+=3D"center" valign=3D"top" width=3D"100%" class=3D"m-24" style=3D"vertical-=
+align: top;"><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" role=3D"presentation" width=3D"100%" class=3D"m-24" style=3D"tex=
+t-align: center;"><tbody><tr><td class=3D"m-25" style=3D"text-align: center=
+; padding: 34px 85px 0px; margin: 0px;"><p class=3D"m-5" style=3D"margin: 0=
+px auto; color: #f5f5f7;">Nuestra notebook m=C3=A1s ligera y delgada vuelve=
+ completamente renovada por dentro. Gracias al chip=C2=A0M1 de Apple, el CP=
+U es hasta 3.5=C2=A0veces m=C3=A1s r=C3=A1pido y el GPU hasta 5=C2=A0veces =
+m=C3=A1s veloz. El=C2=A0Neural=C2=A0Engine m=C3=A1s avanzado permite un apr=
+endizaje autom=C3=A1tico hasta 9=C2=A0veces superior.<sup>1</sup> La bater=
+=C3=ADa es la de mayor duraci=C3=B3n en una MacBook=C2=A0Air. Y=C2=A0su dis=
+e=C3=B1o sin ventilador es supersilencioso. Nunca hab=C3=ADa sido tan f=C3=
+=A1cil llevar tanto poder a todos=C2=A0lados.</p></td></tr><tr><td class=3D=
+"m-25" style=3D"text-align: center; padding: 14px 0px 0px; margin: 0px;"><p=
+ class=3D"m-5" style=3D"margin: 0px auto; color: #f5f5f7;">Consulta la disp=
+onibilidad m=C3=A1s=C2=A0adelante</p></td></tr><tr class=3D"m-26"><td align=
+=3D"center" class=3D"m-29" style=3D"padding-top: 20px;"><table align=3D"cen=
+ter" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation"=
+ width=3D"100%"><tbody><tr><td align=3D"right" valign=3D"top" width=3D"339"=
+ class=3D"m-24" style=3D"vertical-align: top; width: 339px;"><table align=
+=3D"right" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"present=
+ation" width=3D"339" class=3D"m-24" style=3D"text-align: right;"><tbody><tr=
+ data-generate-transparent style><td align=3D"right" class=3D"m-31" style=
+=3D"text-align: right; line-height: 0px;"><a href=3D"https://c.apple.com/r?=
+v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5=
+hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZ=
+ESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIO=
+PJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dac5K2b3v0p"=
+ style=3D"font-size: 0px; color: #2997ff;"><img alt=3D"Ver precios" src=3D"=
+https://images.apple.com/mx/dm/2020/201106_event_Recap/i/buy_button_medium_=
+2x.png" height=3D"37" width=3D"120"></a></td></tr></tbody></table></td><td =
+align width=3D"34" class=3D"m-24" style=3D"width: 34px;"><table align borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"=
+34" class=3D"m-24"><tbody><tr><td><table align=3D"left" border=3D"0" cellsp=
+acing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"34px"><tbody><=
+tr><td height=3D"0" width=3D"34" style=3D"height: 0px; width: 34px; font-si=
+ze: 0px;">=C2=A0</td></tr></tbody></table></td></tr></tbody></table></td><t=
+d align=3D"left" valign=3D"top" width=3D"339" class=3D"m-24" style=3D"verti=
+cal-align: top; width: 339px;"><table align=3D"left" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"339" class=3D"m-2=
+4" style=3D"text-align: left;"><tbody><tr><td class=3D"m-30" style=3D"color=
+: #2997ff; text-align: left; font-size: 17px; padding-top: 5px; line-height=
+: 25px;"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bn=
+b8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%=
+2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhh=
+IjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT8=
+4RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7W8l1W6M" class=3D"m-5 m-6" style=3D"color=
+: #2997ff; font-size: 17px; line-height: 25px;">M=C3=A1s <span style=3D"whi=
+te-space:nowrap;">informaci=C3=B3n<img src=3D"https://images.apple.com/mx/d=
+m/2020/201106_event_Recap/i/17_chevron_2997ff_2x.png" width=3D"12" height=
+=3D"10" border=3D"0" style=3D"font-size: 0; display:inline; margin:0;" alt=
+=3D" "></span></a></td></tr></tbody></table></td></tr></tbody></table></td>=
+</tr></tbody></table></td></tr></tbody></table></td></tr><tr class=3D"m-23"=
+><td><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ align=3D"center" role=3D"presentation"><tbody><tr><td align=3D"center" val=
+ign=3D"top" width=3D"100%" class=3D"m-24" style=3D"vertical-align: top;"><t=
+able align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=
+=3D"presentation" width=3D"100%" class=3D"m-24" style=3D"text-align: center=
+;"><tbody><tr><td align=3D"center" style=3D"padding-top: 85px; text-align: =
+center; vertical-align: top;"><img alt=3D"MacBook Pro de 13 pulgadas. Una P=
+ro entre Pros." src=3D"https://images.apple.com/mx/dm/2020/201106_event_Rec=
+ap/i/macbookpro_13_2x.jpg" border=3D"0" data-dynamic-variable class=3D"m-29=
+" height=3D"386" width=3D"712" style=3D"display: block;"></td></tr></tbody>=
+</table></td></tr></tbody></table></td></tr><tr class=3D"m-23"><td><table w=
+idth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"cen=
+ter" role=3D"presentation"><tbody><tr><td align=3D"center" valign=3D"top" w=
+idth=3D"100%" class=3D"m-24" style=3D"vertical-align: top;"><table align=3D=
+"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentat=
+ion" width=3D"100%" class=3D"m-24" style=3D"text-align: center;"><tbody><tr=
+><td class=3D"m-25" style=3D"text-align: center; padding: 10px 105px 0px; m=
+argin: 0px;"><p class=3D"m-5" style=3D"margin: 0px auto; color: #f5f5f7;">C=
+on el chip M1, la MacBook=C2=A0Pro de 13=C2=A0pulgadas alcanza un nuevo niv=
+el de potencia y velocidad. El=C2=A0CPU es hasta=C2=A02.8 veces m=C3=A1s r=
+=C3=A1pido y los gr=C3=A1ficos son hasta 5 veces m=C3=A1s veloces. El=C2=A0=
+Neural=C2=A0Engine, el m=C3=A1s avanzado hasta ahora, permite un aprendizaj=
+e autom=C3=A1tico hasta 11=C2=A0veces m=C3=A1s r=C3=A1pido.<sup>1</sup> Y l=
+a bater=C3=ADa te acompa=C3=B1a hasta por 20=C2=A0horas, la mayor duraci=C3=
+=B3n en una Mac.<sup>2</sup> Por=C2=A0fuera sigue siendo nuestra notebook P=
+ro m=C3=A1s conocida. Pero=C2=A0es lo de adentro lo que cambia la=C2=A0hist=
+oria.</p></td></tr><tr><td class=3D"m-25" style=3D"text-align: center; padd=
+ing: 14px 0px 0px; margin: 0px;"><p class=3D"m-5" style=3D"margin: 0px auto=
+; color: #f5f5f7;">Modelo con el chip M1 disponible=C2=A0m=C3=A1s=C2=A0adel=
+ante</p></td></tr><tr class=3D"m-26"><td align=3D"center" class=3D"m-29" st=
+yle=3D"padding-top: 20px;"><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"100%"><tbody><tr><t=
+d align=3D"right" valign=3D"top" width=3D"339" class=3D"m-24" style=3D"vert=
+ical-align: top; width: 339px;"><table align=3D"right" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"339" class=3D"m=
+-24" style=3D"text-align: right;"><tbody><tr data-generate-transparent styl=
+e><td align=3D"right" class=3D"m-31" style=3D"text-align: right; line-heigh=
+t: 0px;"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bn=
+b8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%=
+2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhh=
+IjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT8=
+4RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7J7w5g4M" style=3D"font-size: 0px; color: =
+#2997ff;"><img alt=3D"Ver precios" src=3D"https://images.apple.com/mx/dm/20=
+20/201106_event_Recap/i/buy_button_medium_2x.png" height=3D"37" width=3D"12=
+0"></a></td></tr></tbody></table></td><td align width=3D"34" class=3D"m-24"=
+ style=3D"width: 34px;"><table align border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" role=3D"presentation" width=3D"34" class=3D"m-24"><tbody><tr><td=
+><table align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" rol=
+e=3D"presentation" width=3D"34px"><tbody><tr><td height=3D"0" width=3D"34" =
+style=3D"height: 0px; width: 34px; font-size: 0px;">=C2=A0</td></tr></tbody=
+></table></td></tr></tbody></table></td><td align=3D"left" valign=3D"top" w=
+idth=3D"339" class=3D"m-24" style=3D"vertical-align: top; width: 339px;"><t=
+able align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=
+=3D"presentation" width=3D"339" class=3D"m-24" style=3D"text-align: left;">=
+<tbody><tr><td class=3D"m-30" style=3D"color: #2997ff; text-align: left; fo=
+nt-size: 17px; line-height: 25px; padding-top: 5px;"><a href=3D"https://c.a=
+pple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoo=
+fYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%=
+2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adH=
+fqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3D=
+ac5H6L8a6P" class=3D"m-5 m-6" style=3D"color: #2997ff; font-size: 17px; lin=
+e-height: 25px;">M=C3=A1s <span style=3D"white-space:nowrap;">informaci=C3=
+=B3n<img src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/17=
+_chevron_2997ff_2x.png" width=3D"12" height=3D"10" border=3D"0" style=3D"fo=
+nt-size: 0; display:inline; margin:0;" alt=3D" "></span></a></td></tr></tbo=
+dy></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr><tr class=3D"m-23"><td><table width=3D"100%" cellsp=
+acing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" role=3D"present=
+ation"><tbody><tr><td align=3D"center" valign=3D"top" width=3D"100%" class=
+=3D"m-24" style=3D"vertical-align: top;"><table align=3D"center" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"100%"=
+ class=3D"m-24" style=3D"text-align: center;"><tbody><tr><td align=3D"cente=
+r" style=3D"padding-top: 85px; text-align: center; vertical-align: top;"><i=
+mg alt=3D"Mac mini. Cada vez m=C3=A1s grande por dentro." src=3D"https://im=
+ages.apple.com/mx/dm/2020/201106_event_Recap/i/mini_2x.jpg" border=3D"0" da=
+ta-dynamic-variable class=3D"m-29" height=3D"470" width=3D"712" style=3D"di=
+splay: block;"></td></tr></tbody></table></td></tr></tbody></table></td></t=
+r><tr class=3D"m-23"><td><table width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0" border=3D"0" align=3D"center" role=3D"presentation"><tbody><tr><td =
+align=3D"center" valign=3D"top" width=3D"100%" class=3D"m-24" style=3D"vert=
+ical-align: top;"><table align=3D"center" border=3D"0" cellspacing=3D"0" ce=
+llpadding=3D"0" role=3D"presentation" width=3D"100%" class=3D"m-24" style=
+=3D"text-align: center;"><tbody><tr><td class=3D"m-25" style=3D"text-align:=
+ center; padding: 10px 90px 0px; margin: 0px;"><p class=3D"m-5" style=3D"ma=
+rgin: 0px auto; color: #f5f5f7;">El nuevo chip=C2=A0M1 dise=C3=B1ado por Ap=
+ple lleva nuestra computadora de escritorio m=C3=A1s vers=C3=A1til a otra d=
+imensi=C3=B3n. Ahora viene con un CPU hasta 3 veces m=C3=A1s r=C3=A1pido, g=
+r=C3=A1ficos hasta 6 veces m=C3=A1s veloces y nuestro Neural=C2=A0Engine m=
+=C3=A1s avanzado, que permite un aprendizaje autom=C3=A1tico hasta 15=C2=A0=
+veces m=C3=A1s r=C3=A1pido.<sup>1</sup> Podr=C3=A1s trabajar, jugar y crear=
+ con una velocidad y potencia que jam=C3=A1s hab=C3=ADas imaginado. La=C2=
+=A0Mac=C2=A0mini es poder para conquistarlo todo.</p></td></tr><tr><td clas=
+s=3D"m-25" style=3D"text-align: center; padding: 14px 0px 0px; margin: 0px;=
+"><p class=3D"m-5" style=3D"margin: 0px auto; color: #f5f5f7;">Modelo con e=
+l chip M1 disponible=C2=A0m=C3=A1s=C2=A0adelante</p></td></tr><tr class=3D"=
+m-26"><td align=3D"center" class=3D"m-29" style=3D"padding-top: 20px;"><tab=
+le align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=
+=3D"presentation" width=3D"100%"><tbody><tr><td align=3D"right" valign=3D"t=
+op" width=3D"339" class=3D"m-24" style=3D"vertical-align: top; width: 339px=
+;"><table align=3D"right" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" =
+role=3D"presentation" width=3D"339" class=3D"m-24" style=3D"text-align: rig=
+ht;"><tbody><tr data-generate-transparent style><td align=3D"right" class=
+=3D"m-31" style=3D"text-align: right; line-height: 0px;"><a href=3D"https:/=
+/c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12x=
+bGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8sv=
+wAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ05=
+7adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&c=
+t=3Dab7m8G9r1Y" style=3D"font-size: 0px; color: #2997ff;"><img alt=3D"Ver p=
+recios" src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/buy=
+_button_medium_2x.png" height=3D"37" width=3D"120"></a></td></tr></tbody></=
+table></td><td align width=3D"34" class=3D"m-24" style=3D"width: 34px;"><ta=
+ble align border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presenta=
+tion" width=3D"34" class=3D"m-24"><tbody><tr><td><table align=3D"left" bord=
+er=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D=
+"34px"><tbody><tr><td height=3D"0" width=3D"34" style=3D"height: 0px; width=
+: 34px; font-size: 0px;">=C2=A0</td></tr></tbody></table></td></tr></tbody>=
+</table></td><td align=3D"left" valign=3D"top" width=3D"339" class=3D"m-24"=
+ style=3D"vertical-align: top; width: 339px;"><table align=3D"left" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"3=
+39" class=3D"m-24" style=3D"text-align: left;"><tbody><tr><td class=3D"m-30=
+" style=3D"color: #2997ff; text-align: left; font-size: 17px; line-height: =
+25px; padding-top: 5px;"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=
+=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqp=
+sY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48H=
+IMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2=
+FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dac5H4w5h0C" class=3D"m-5 m-=
+6" style=3D"color: #2997ff; font-size: 17px; line-height: 25px;">M=C3=A1s <=
+span style=3D"white-space:nowrap;">informaci=C3=B3n<img src=3D"https://imag=
+es.apple.com/mx/dm/2020/201106_event_Recap/i/17_chevron_2997ff_2x.png" widt=
+h=3D"12" height=3D"10" border=3D"0" style=3D"font-size: 0; display:inline; =
+margin:0;" alt=3D" "></span></a></td></tr></tbody></table></td></tr></tbody=
+></table></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr =
+class=3D"m-23"><td><table width=3D"660" cellspacing=3D"0" cellpadding=3D"0"=
+ border=3D"0" align=3D"center" role=3D"presentation"><tbody><tr><td style=
+=3D"padding-top: 122px;"><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"660"><tbody><tr><td=
+ align=3D"center" valign=3D"bottom" width=3D"325" class=3D"m-24" style=3D"b=
+ackground-color: #1d1d1f; vertical-align: bottom; width: 325px;"><table ali=
+gn=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"pres=
+entation" width=3D"325" class=3D"m-24" style=3D"text-align: center;"><tbody=
+><tr><td align=3D"right" style=3D"text-align: right; vertical-align: bottom=
+;"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCo=
+HziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8Znc=
+SHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4=
+Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9Ue=
+yJE%2Fwaia6LEwds%3D&ct=3Dab7W8I2K6v" style=3D"display: inline-block; color:=
+ #2997ff;"><img alt=3D"Ahorra en una Mac con los precios especiales de Appl=
+e para la educaci=C3=B3n.(*) Comprar" src=3D"https://images.apple.com/mx/dm=
+/2020/201106_event_Recap/i/education_pricing_2x.jpg" border=3D"0" data-dyna=
+mic-variable class=3D"m-31" height=3D"404" width=3D"325" style=3D"vertical-=
+align: bottom; display: inline-block;"></a></td></tr></tbody></table></td><=
+td align width=3D"10" class=3D"m-24" style=3D"width: 10px;"><table align bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=
+=3D"10" class=3D"m-24"><tbody><tr><td><table align=3D"left" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"10px"><tbo=
+dy><tr><td height=3D"0" width=3D"10" style=3D"height: 0px; width: 10px; fon=
+t-size: 0px;">=C2=A0</td></tr></tbody></table></td></tr></tbody></table></t=
+d><td align=3D"center" valign=3D"bottom" width=3D"325" class=3D"m-24" style=
+=3D"background-color: #1d1d1f; vertical-align: bottom; width: 325px;"><tabl=
+e align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D=
+"presentation" width=3D"325" class=3D"m-24" style=3D"text-align: center;"><=
+tbody><tr><td align=3D"left" style=3D"text-align: left; vertical-align: bot=
+tom;"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8H=
+WCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8=
+ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG=
+3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP=
+9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7g9w6j4P" style=3D"display: inline-block; col=
+or: #2997ff;"><img alt=3D"Descubre los =C3=BAltimos accesorios para la Mac.=
+ Comprar" src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/a=
+cessories_2x.jpg" border=3D"0" data-dynamic-variable class=3D"m-30" height=
+=3D"404" width=3D"325" style=3D"vertical-align: bottom; display: inline-blo=
+ck;"></a></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr><tr class=3D"m-23"><td><table width=3D"100%" cellspac=
+ing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" role=3D"presentat=
+ion"><tbody><tr><td align width=3D"100%" class=3D"m-24"><table align border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"1=
+00%" class=3D"m-24"><tbody><tr><td><table align=3D"left" border=3D"0" cells=
+pacing=3D"0" cellpadding=3D"0" role=3D"presentation"><tbody><tr><td height=
+=3D"10" width=3D"0" style=3D"height: 10px; width: 0px; font-size: 0px; line=
+-height: 10px;">=C2=A0</td></tr></tbody></table></td></tr></tbody></table><=
+/td></tr></tbody></table></td></tr><tr class=3D"m-23"><td><table width=3D"6=
+60" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" style=
+=3D"background-color: #1d1d1f;" role=3D"presentation"><tbody><tr><td style=
+=3D"padding-top: 40px; padding-bottom: 30px;"><table align=3D"center" borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"=
+660"><tbody><tr><td align=3D"center" valign=3D"top" width=3D"100%" class=3D=
+"m-24" style=3D"background-color: #1d1d1f; vertical-align: top;"><table ali=
+gn=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"pres=
+entation" width=3D"100%" class=3D"m-24" style=3D"text-align: center;"><tbod=
+y><tr><td style=3D"text-align: center;"><h4 class=3D"m-76" style=3D"font-si=
+ze: 24px; letter-spacing: 0.009em; line-height: 28px; color: #f5f5f7;">Con =
+todo el poder para llevar<br> a tu empresa al siguiente nivel.</h4></td></t=
+r><tr class=3D"m-26"><td align=3D"center"><table align=3D"center" border=3D=
+"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"100%=
+"><tbody><tr><td align=3D"left" valign=3D"top" width=3D"660" class=3D"m-24"=
+ style=3D"background-color: #1d1d1f; vertical-align: top; width: 660px;"><t=
+able align=3D"right" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=
+=3D"presentation" width=3D"660" class=3D"m-24" style=3D"text-align: center;=
+"><tbody><tr><td style=3D"padding-top: 14px;"><a href=3D"https://c.apple.co=
+m/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%=
+2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2Fzx=
+CwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYt=
+rzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7W6c4=
+J8h" class=3D"m-5 m-6" style=3D"color: #2997ff;">M=C3=A1s informaci=C3=B3n =
+sobre la Mac en la <span style=3D"white-space:nowrap;">empresa<img src=3D"h=
+ttps://images.apple.com/mx/dm/2020/201106_event_Recap/i/17_chevron_2997ff_2=
+x.png" width=3D"12" height=3D"10" border=3D"0" style=3D"font-size: 0; displ=
+ay:inline; margin:0;" alt=3D" "></span></a></td></tr></tbody></table></td><=
+/tr><tr><td align=3D"left" valign=3D"top" width=3D"660" class=3D"m-24" styl=
+e=3D"background-color: #1d1d1f; vertical-align: top; width: 660px;"><table =
+align=3D"left" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" width=3D"660" class=3D"m-24" style=3D"text-align: center;"><tbod=
+y><tr><td><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2B=
+nb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK=
+%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuh=
+hIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT=
+84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7m0b3l2p" class=3D"m-5 m-6" style=3D"colo=
+r: #2997ff;">Comprar para tu <span style=3D"white-space:nowrap;">empresa<im=
+g src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/17_chevro=
+n_2997ff_2x.png" width=3D"12" height=3D"10" border=3D"0" style=3D"font-size=
+: 0; display:inline; margin:0;" alt=3D" "></span></a></td></tr></tbody></ta=
+ble></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody><=
+/table></td></tr></tbody></table></td></tr><tr class=3D"m-23"><td><table wi=
+dth=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"cent=
+er" role=3D"presentation"><tbody><tr><td align=3D"center" valign=3D"top" wi=
+dth=3D"100%" class=3D"m-24" style=3D"padding-top: 94px; vertical-align: top=
+;"><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0"=
+ role=3D"presentation" width=3D"100%" class=3D"m-24" style=3D"text-align: c=
+enter;"><tbody><tr><td style=3D"text-align: center;"><h3 class=3D"m-75" sty=
+le=3D"font-size: 32px; letter-spacing: 0.004em; line-height: 36px; color: #=
+f5f5f7;">Descubre por qu=C3=A9 Apple es<br> el mejor lugar para comprar.</h=
+3></td></tr><tr><td align=3D"center" style=3D"padding-top: 55px; text-align=
+: center; vertical-align: top;"><img src=3D"https://images.apple.com/mx/dm/=
+2020/201106_event_Recap/i/icon_tradein_2x.png" border=3D"0" data-dynamic-va=
+riable class=3D"m-29" height=3D"42" width=3D"42" style=3D"display: block;" =
+alt=3D" "></td></tr><tr><td class=3D"m-25" style=3D"text-align: center; pad=
+ding: 12px 0px 0px; margin: 0px;"><p class=3D"m-5 m-73" style=3D"font-size:=
+ 15px; font-weight: 500; line-height: 21px; margin: 0px auto; color: #f5f5f=
+7;">Obt=C3=A9n cr=C3=A9dito para comprar una Mac=C2=A0nueva.<sup>3</sup></p=
+></td></tr><tr><td class=3D"m-29" style=3D"color: #2997ff; padding-top: 10p=
+x; text-align: center; font-size: 14px;"><a href=3D"https://c.apple.com/r?v=
+=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5h=
+z1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZE=
+SyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOP=
+Jq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7J8E7r2N" =
+class=3D"m-5 m-6" style=3D"color: #2997ff; font-size: 14px;">Descubre el va=
+lor de canje de tu <span style=3D"white-space:nowrap;">dispositivo<img src=
+=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/14_chevron_299=
+7ff_2x.png" width=3D"12" height=3D"8" border=3D"0" style=3D"font-size: 0; d=
+isplay:inline; margin:0;" alt=3D" "></span></a></td></tr></tbody></table></=
+td></tr></tbody></table></td></tr><tr class=3D"m-23"><td style=3D"padding-r=
+ight: 42px; padding-left: 42px;"><table width=3D"100%" cellspacing=3D"0" ce=
+llpadding=3D"0" border=3D"0" align=3D"center" role=3D"presentation"><tbody>=
+<tr><td align=3D"center" valign=3D"top" width=3D"314" class=3D"m-24" style=
+=3D"vertical-align: top; width: 314px;"><table align=3D"center" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"314" c=
+lass=3D"m-24" style=3D"text-align: center;"><tbody><tr><td align=3D"center"=
+ style=3D"padding-top: 44px; text-align: center; vertical-align: top;"><img=
+ src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/icon_apple=
+card_2x.png" border=3D"0" data-dynamic-variable class=3D"m-29" height=3D"42=
+" width=3D"42" style=3D"display: block;" alt=3D" "></td></tr><tr><td class=
+=3D"m-25" style=3D"text-align: center; padding: 14px 45px 0px; margin: 0px;=
+"><p class=3D"m-5 m-73" style=3D"font-size: 15px; font-weight: 500; line-he=
+ight: 21px; margin: 0px auto; color: #f5f5f7;">Hasta 18 pagos mensuales<br>=
+ fijos con tarjetas de cr=C3=A9dito<br> participantes.</p></td></tr><tr><td=
+ class=3D"m-29" style=3D"color: #2997ff; padding-top: 10px; padding-right: =
+45px; padding-left: 45px; text-align: center; font-size: 14px; line-height:=
+ 21px;"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb=
+8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2=
+B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhI=
+jG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84=
+RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dac5H6u3A8v" class=3D"m-5 m-6" style=3D"color:=
+ #2997ff; font-size: 14px; line-height: 21px;">M=C3=A1s <span style=3D"whit=
+e-space:nowrap;">informaci=C3=B3n<img src=3D"https://images.apple.com/mx/dm=
+/2020/201106_event_Recap/i/14_chevron_2997ff_2x.png" width=3D"12" height=3D=
+"8" border=3D"0" style=3D"font-size: 0; display:inline; margin:0;" alt=3D" =
+"></span></a></td></tr></tbody></table></td><td align=3D"center" valign=3D"=
+top" width=3D"314" class=3D"m-24" style=3D"vertical-align: top; width: 314p=
+x;"><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0=
+" role=3D"presentation" width=3D"314" class=3D"m-24" style=3D"text-align: c=
+enter;"><tbody><tr><td align=3D"center" style=3D"padding-top: 40px; text-al=
+ign: center; vertical-align: top;"><img src=3D"https://images.apple.com/mx/=
+dm/2020/201106_event_Recap/i/icon_specialist_2x.png" border=3D"0" data-dyna=
+mic-variable class=3D"m-29" height=3D"46" width=3D"52" style=3D"display: bl=
+ock;" alt=3D" "></td></tr><tr><td class=3D"m-25" style=3D"text-align: cente=
+r; padding: 14px 53px 0px; margin: 0px;"><p class=3D"m-5 m-73" style=3D"fon=
+t-size: 15px; font-weight: 500; line-height: 21px; margin: 0px auto; color:=
+ #f5f5f7;">Habla con un Especialista y obt=C3=A9n ayuda al comprar.</p></td=
+></tr><tr><td class=3D"m-29" style=3D"color: #2997ff; padding-top: 10px; te=
+xt-align: center; font-size: 14px; line-height: 21px;"><a href=3D"https://c=
+.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbG=
+oofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwA=
+d%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057a=
+dHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=
+=3Dab7W6w2P7Y" class=3D"m-5 m-6" style=3D"color: #2997ff; font-size: 14px; =
+line-height: 21px;">M=C3=A1s <span style=3D"white-space:nowrap;">informaci=
+=C3=B3n<img src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i=
+/14_chevron_2997ff_2x.png" width=3D"12" height=3D"8" border=3D"0" style=3D"=
+font-size: 0; display:inline; margin:0;" alt=3D" "></span></a></td></tr></t=
+body></table></td></tr></tbody></table></td></tr><tr class=3D"m-23"><td sty=
+le=3D"padding-right: 42px; padding-left: 42px; padding-bottom: 97px;"><tabl=
+e width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"=
+center" role=3D"presentation"><tbody><tr><td align=3D"center" valign=3D"top=
+" width=3D"314" class=3D"m-24" style=3D"vertical-align: top; width: 314px;"=
+><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" r=
+ole=3D"presentation" width=3D"314" class=3D"m-24" style=3D"text-align: cent=
+er;"><tbody><tr><td align=3D"center" style=3D"padding-top: 49px; text-align=
+: center; vertical-align: top;"><img src=3D"https://images.apple.com/mx/dm/=
+2020/201106_event_Recap/i/icon_delivery_2x.png" border=3D"0" data-dynamic-v=
+ariable class=3D"m-29" height=3D"44" width=3D"41" style=3D"display: block;"=
+ alt=3D" "></td></tr><tr><td class=3D"m-25" style=3D"text-align: center; pa=
+dding: 14px 0px 0px; margin: 0px;"><p class=3D"m-5 m-73" style=3D"font-size=
+: 15px; font-weight: 500; line-height: 21px; margin: 0px auto; color: #f5f5=
+f7;">Env=C3=ADo sin costo<br> en todos los pedidos.</p></td></tr><tr><td cl=
+ass=3D"m-29" style=3D"color: #2997ff; padding-top: 10px; text-align: center=
+; font-size: 14px; line-height: 21px;"><a href=3D"https://c.apple.com/r?v=
+=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5h=
+z1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZE=
+SyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOP=
+Jq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dac5K1l6v1N" =
+class=3D"m-5 m-6" style=3D"color: #2997ff; font-size: 14px; line-height: 21=
+px;">M=C3=A1s <span style=3D"white-space:nowrap;">informaci=C3=B3n<img src=
+=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/14_chevron_299=
+7ff_2x.png" width=3D"12" height=3D"8" border=3D"0" style=3D"font-size: 0; d=
+isplay:inline; margin:0;" alt=3D" "></span></a></td></tr></tbody></table></=
+td><td align=3D"center" valign=3D"top" width=3D"314" class=3D"m-24" style=
+=3D"vertical-align: top; width: 314px;"><table align=3D"center" border=3D"0=
+" cellspacing=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"314" c=
+lass=3D"m-24" style=3D"text-align: center;"><tbody><tr><td align=3D"center"=
+ style=3D"padding-top: 51px; text-align: center; vertical-align: top;"><img=
+ src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/icon_sessi=
+on_2x.png" border=3D"0" data-dynamic-variable class=3D"m-29" height=3D"36" =
+width=3D"53" style=3D"display: block;" alt=3D" "></td></tr><tr><td class=3D=
+"m-25" style=3D"text-align: center; padding: 20px 50px 0px; margin: 0px;"><=
+p class=3D"m-5 m-73" style=3D"font-size: 15px; font-weight: 500; line-heigh=
+t: 21px; margin: 0px auto; color: #f5f5f7;">Conoce tu nueva Mac con la ayud=
+a de un Especialista en una sesi=C3=B3n personalizada online.</p></td></tr>=
+<tr><td class=3D"m-29" style=3D"color: #2997ff; padding-top: 10px; text-ali=
+gn: center; font-size: 14px; line-height: 21px;"><a href=3D"https://c.apple=
+.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjH=
+A7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2=
+FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmV=
+RYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dac5K=
+4G9U0T" class=3D"m-5 m-6" style=3D"color: #2997ff; font-size: 14px; line-he=
+ight: 21px;">M=C3=A1s <span style=3D"white-space:nowrap;">informaci=C3=B3n<=
+img src=3D"https://images.apple.com/mx/dm/2020/201106_event_Recap/i/14_chev=
+ron_2997ff_2x.png" width=3D"12" height=3D"8" border=3D"0" style=3D"font-siz=
+e: 0; display:inline; margin:0;" alt=3D" "></span></a></td></tr></tbody></t=
+able></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr clas=
+s=3D"m-4 m-48"><td align=3D"center" class=3D"m-34 m-39" style=3D"background=
+-color: #1d1d1f;"><table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" a=
+lign=3D"center" role=3D"presentation" width=3D"712" style=3D"width: 712px; =
+background-color: #1d1d1f;"><tbody><tr class=3D"m-23"><td><table width=3D"6=
+60" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" role=
+=3D"presentation"><tbody><tr><td style=3D"padding-top: 7px; padding-bottom:=
+ 16px;"><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" role=3D"presentation" width=3D"660"><tbody><tr><td align width=3D"10=
+0%" class=3D"m-24"><table align border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" role=3D"presentation" width=3D"100%" class=3D"m-24"><tbody><tr><td c=
+lass=3D"m-25" style=3D"color: #a1a1a6; text-align: center; padding: 8px 0px=
+ 0px; margin: 0px;"><p class=3D"m-5" style=3D"color: #a1a1a6; font-size: 14=
+px; line-height: 18px; margin: 0px auto;"><a href=3D"https://c.apple.com/r?=
+v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8HWCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5=
+hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZ=
+ESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIO=
+PJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP9UeyJE%2Fwaia6LEwds%3D&ct=3Dab7g9x7c8C"=
+ data-footer-eyebrow=3D"eyebrow" style=3D"border: 0px; outline: 0px; text-d=
+ecoration: none; color: #a1a1a6;">Comprar online</a>=C2=A0=C2=A0=C2=A0=C2=
+=A0<span class=3D"m-53" style=3D"color: #424245">|</span>=C2=A0=C2=A0=C2=A0=
+=C2=A0<a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3Dz2%2Bnb8H=
+WCoHziyJtbRYNxEJqOcwA12xbGoofYjHA7%2Fp5hz1Ee0oY37Z1XAqpsY2fYWlcc3rtr8xK%2B8=
+ZncSHPGQJXdeypkyCRJBH8svwAd%2F%2FzxCwaZESyvD7oWHraYC48HIMi6fLMTPP9RVFuhhIjG=
+3u4Xkc%2F2%2FXAYFJ6tCZ057adHfqmVRYtrzIOPJq0vrsYtacpzD%2FYmV1aDQ4aQzS1NT84RP=
+9UeyJE%2Fwaia6LEwds%3D&ct=3Dac5H3q1I2k" data-footer-eyebrow=3D"eyebrow" sty=
+le=3D"border: 0px; outline: 0px; text-decoration: none; color: #a1a1a6;">Bu=
+scar una tienda</a>=C2=A0=C2=A0=C2=A0=C2=A0<span class=3D"m-53" style=3D"co=
+lor: #424245">|</span>=C2=A0=C2=A0=C2=A0=C2=A0<a data-footer-eyebrow=3D"eye=
+brow" data-cid-disabled=3D"true" class=3D"m-2 m-5" style=3D"font-size: 14px=
+; line-height: 18px; white-space: nowrap; color: #a1a1a6;">001-800-692-7753=
+</a>=C2=A0=C2=A0=C2=A0=C2=A0<span class=3D"m-53" style=3D"color: #424245">|=
+</span>=C2=A0=C2=A0=C2=A0 <a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=
+=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7ecgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8=
+iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCBMDYLhfZCvkbZHdwASnL5XO%2FrGyo%2B1v80Bn=
+BITdJ0D%2By%2F8FUcvgw%3D%3D&ct=3Dab7R0u9p0M" data-footer-eyebrow=3D"eyebrow=
+-last" style=3D"border: 0px; outline: 0px; text-decoration: none; color: #a=
+1a1a6;">Descargar la app Apple Store</a></p></td></tr></tbody></table></td>=
+</tr></tbody></table></td></tr></tbody></table></td></tr><tr class=3D"m-23"=
+><td><table width=3D"660" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+align=3D"center" role=3D"presentation"><tbody><tr><td style=3D"padding-bott=
+om: 17px;"><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" role=3D"presentation" width=3D"660"><tbody><tr><td align width=3D"=
+100%" class=3D"m-24"><table align border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" role=3D"presentation" width=3D"100%" class=3D"m-24"><tbody><tr><td =
+class=3D"m-50" style=3D"border-top-width: 1px; border-color: #424245; width=
+: 660px;"><table cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"p=
+resentation"><tbody><tr><td width=3D"660" valign=3D"top" align=3D"center" c=
+lass=3D"m-50" style=3D"border-color: #424245; border-top-style: solid; bord=
+er-top-width: 1px; font-size: 0px; line-height: 0; width: 660px; margin: 0p=
+x auto;"></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table></td></tr></tbody></table></td></tr><tr class=3D"m-23"><td><tab=
+le width=3D"660" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"=
+center" role=3D"presentation"><tbody><tr><td style=3D"padding-bottom: 9px;"=
+><table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" r=
+ole=3D"presentation" width=3D"660"><tbody><tr><td align width=3D"100%" clas=
+s=3D"m-24"><table align border=3D"0" cellspacing=3D"0" cellpadding=3D"0" ro=
+le=3D"presentation" width=3D"100%" class=3D"m-24"><tbody><tr><td class=3D"m=
+-25" style=3D"color: #6e6e73; text-align: left; padding: 0px; margin: 0px;"=
+><p style=3D"color: #6e6e73; font-size: 12px; line-height: 16px; margin: 0p=
+x auto 0px 0px; padding: 0px;"><span>*</span> Los precios especiales para l=
+a educaci=C3=B3n est=C3=A1n disponibles para estudiantes que vayan a inicia=
+r o ya est=C3=A9n en la universidad, as=C3=AD como para sus padres, cuerpo =
+docente, personal y profesores particulares de todos los niveles escolares.=
+ Para obtener m=C3=A1s informaci=C3=B3n, visita <a href=3D"https://c.apple.=
+com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7ecgCU9h74cUK41WHD=
+hdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCBMDYLhfZCvkbZHdwA=
+SnL5XO%2FrGyo%2B1v80BnBITdJ0D%2By%2F8FUcvgw%3D%3D&ct=3Dac5K0B9N5Y" style=3D=
+"white-space: nowrap; color: #a1a1a6;">apple.com/mx=E2=80=91hed/shop</a>.</=
+p><p style=3D"color: #6e6e73; font-size: 12px; line-height: 16px; margin: 9=
+px auto 0px 0px; padding: 0px;"><span>1.</span> Las afirmaciones sobre el r=
+endimiento se basan en la comparaci=C3=B3n con la generaci=C3=B3n anterior.=
+</p><p style=3D"color: #6e6e73; font-size: 12px; line-height: 16px; margin:=
+ 9px auto 0px 0px; padding: 0px;"><span>2.</span> La duraci=C3=B3n de la ba=
+ter=C3=ADa var=C3=ADa seg=C3=BAn el uso y la configuraci=C3=B3n. Para obten=
+er m=C3=A1s informaci=C3=B3n, visita=C2=A0<a href=3D"https://c.apple.com/r?=
+v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7ecgCU9h74cUK41WHDhdk5lK=
+CvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCBMDYLhfZCvkbZHdwASnL5XO=
+%2FrGyo%2B1v80BnBITdJ0D%2By%2F8FUcvgw%3D%3D&ct=3Dab7g1E9E2k" style=3D"white=
+-space: nowrap; color: #a1a1a6;">apple.com/mx/batteries</a>.</p><p style=3D=
+"color: #6e6e73; font-size: 12px; line-height: 16px; margin: 9px auto 0px 0=
+px; padding: 0px;"><span>3.</span> El valor de canje puede variar seg=C3=BA=
+n la condici=C3=B3n, el a=C3=B1o y la configuraci=C3=B3n de tu dispositivo.=
+ Debes tener al menos 18 a=C3=B1os de edad para poder canjear tu dispositiv=
+o por cr=C3=A9dito o por una tarjeta de regalo del Apple=C2=A0Store. No tod=
+os los dispositivos pueden canjearse por cr=C3=A9dito. Para obtener m=C3=A1=
+s informaci=C3=B3n sobre los dispositivos elegibles para canje o reciclaje,=
+ consulta con un socio de Apple=C2=A0Trade=C2=A0In para Mac o de Apple=C2=
+=A0Trade=C2=A0In para iPhone, iPad y Apple=C2=A0Watch. Sujeto a restriccion=
+es y l=C3=ADmites. Para recibir el valor de canje, el estado del dispositiv=
+o debe coincidir con la descripci=C3=B3n indicada cuando se hizo el estimad=
+o. Apple se reserva el derecho de rechazar o limitar la cantidad de disposi=
+tivos seg=C3=BAn su criterio.</p></td></tr></tbody></table></td></tr></tbod=
+y></table></td></tr></tbody></table></td></tr><tr class=3D"m-23"><td><table=
+ width=3D"660" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"ce=
+nter" role=3D"presentation"><tbody><tr><td style=3D"padding-bottom: 9px;"><=
+table align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" rol=
+e=3D"presentation" width=3D"660"><tbody><tr><td align width=3D"100%" class=
+=3D"m-24"><table align border=3D"0" cellspacing=3D"0" cellpadding=3D"0" rol=
+e=3D"presentation" width=3D"100%" class=3D"m-24"><tbody><tr><td class=3D"m-=
+25 m-133" style=3D"color: #6e6e73; text-align: left; padding: 0px; margin: =
+0px;"><p class=3D"m-5" style=3D"color: #6e6e73; font-size: 12px; line-heigh=
+t: 16px; margin: 0px auto 0px 0px;">TM y =C2=A9 2020 Apple Inc. One Apple P=
+ark Way, <span class=3D"m-3" style=3D"white-space: nowrap">MS 96-DM</span>,=
+ Cupertino, CA 95014.</p></td></tr></tbody></table></td></tr></tbody></tabl=
+e></td></tr></tbody></table></td></tr><tr class=3D"m-23"><td><table width=
+=3D"660" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" align=3D"center" =
+role=3D"presentation"><tbody><tr><td style=3D"padding-bottom: 9px;"><table =
+align=3D"center" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"p=
+resentation" width=3D"660"><tbody><tr><td align width=3D"100%" class=3D"m-2=
+4"><table align border=3D"0" cellspacing=3D"0" cellpadding=3D"0" role=3D"pr=
+esentation" width=3D"100%" class=3D"m-24"><tbody><tr><td class=3D"m-25" sty=
+le=3D"color: #6e6e73; text-align: left; padding: 0px; margin: 0px;"><p clas=
+s=3D"m-5" style=3D"color: #6e6e73; font-size: 12px; line-height: 16px; marg=
+in: 0px auto 0px 0px;"><a href=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3D=
+mex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7ecgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV=
+4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCBMDYLhfZCvkbZHdwASnL5XO%2FrGyo%2B1v80BnBIT=
+dJ0D%2By%2F8FUcvgw%3D%3D&ct=3Dac5H1x0R7Y" data-footer-legal=3D"legal" style=
+=3D"border: 0px; outline: 0px; text-decoration: none; color: #a1a1a6;">Todo=
+s los derechos reservados</a>=C2=A0=C2=A0=C2=A0<span class=3D"m-53" style=
+=3D"color: #424245;">|</span>=C2=A0=C2=A0=C2=A0<a href=3D"https://c.apple.c=
+om/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBpeW7ecgCU9h74cUK41WHDh=
+dk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagrVsCBMDYLhfZCvkbZHdwAS=
+nL5XO%2FrGyo%2B1v80BnBITdJ0D%2By%2F8FUcvgw%3D%3D&ct=3Dab7R7G5t8h" data-foot=
+er-legal=3D"legal" style=3D"border: 0px; outline: 0px; text-decoration: non=
+e; color: #a1a1a6;">Pol=C3=ADtica de privacidad</a>=C2=A0=C2=A0=C2=A0<span =
+class=3D"m-53" style=3D"color: #424245;">|</span>=C2=A0=C2=A0=C2=A0<a href=
+=3D"https://c.apple.com/r?v=3D2&la=3Des&lc=3Dmex&a=3DR0ZpuE6PQO5xmnQSMTLEBp=
+eW7ecgCU9h74cUK41WHDhdk5lKCvACaOD7GQ38XDA8iKV4JDbd7na%2FQ2CD3d0jh9bCY1WGagr=
+VsCBMDYLhfZCvkbZHdwASnL5XO%2FrGyo%2B1v80BnBITdJ0D%2By%2F8FUcvgw%3D%3D&ct=3D=
+ab7W7d8B6h" data-footer-legal=3D"legal" style=3D"border: 0px; outline: 0px;=
+ text-decoration: none; color: #a1a1a6;">Mi Apple ID</a></p></td></tr></tbo=
+dy></table></td></tr></tbody></table></td></tr></tbody></table></td></tr><t=
+r class=3D"m-23"><td><table width=3D"660" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0" align=3D"center" role=3D"presentation"><tbody><tr><td style=
+=3D"padding-bottom: 25px;"><table align=3D"center" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"660"><tbody><tr><td=
+ align width=3D"100%" class=3D"m-24"><table align border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" role=3D"presentation" width=3D"100%" class=3D"m-24=
+"><tbody><tr><td class=3D"m-25 m-134" style=3D"color: #6e6e73; text-align: =
+left; padding: 0px; margin: 0px;"><p class=3D"m-5" style=3D"color: #6e6e73;=
+ font-size: 12px; line-height: 16px; margin: 0px auto 0px 0px;">Si prefiere=
+s no recibir correos electr=C3=B3nicos comerciales de Apple, o si has cambi=
+ado tu direcci=C3=B3n de email, haz=C2=A0<a href=3D"https://mynews.apple.co=
+m/subscriptions?v=3D2&la=3Des_mx&a=3DSy4LzxA2RNQwsYwoelbw1lIKlCZV5HsmFK39P5=
+pTr7SC6822zIzUyPR9NS1FD3wDEeR7p9EjBTgk%2F91REToM5m8ERFGl4hC4du9L5ep64rZOMR3=
+FOtTZyrsOhHrDKADme52YXU5fpBpmhDVbqbqdp474NLzU0dr%2BzbscJXHh3Qi812cTopb%2B28=
+1EYuAVhgCWznRNtoJFJ1y77sxF%2FDYgAD1NbombKSvGw3Yl1UdED1yonEAaGIyHZNfX%2Bf6Ka=
+sTa" style=3D"border: 0px; outline: 0px; text-decoration: none; color: #a1a=
+1a6;">clic=C2=A0aqu=C3=AD</a>.</p></td></tr></tbody></table></td></tr></tbo=
+dy></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></=
+tbody></table></td></tr></tbody></table></div></body></html>
+------=_Part_723305040_1198961298.1605118216080--

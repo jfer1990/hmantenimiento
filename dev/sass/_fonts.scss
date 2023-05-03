@@ -1,0 +1,98 @@
+@import '../../src/css/fonts';
+@import '../../src/assets/fonts/BebasNeue/stylesheet.css';
+@import '../../src/assets/fonts/Montserrat/stylesheet.css';
+@import '../../src/assets/fonts/SofiaProRegular/stylesheet.css';
+@import '../../src/assets/fonts/Helvetica/stylesheet.css';
+@import '../../src/assets/icomoon/style.css';
+
+
+
+$tablet-width:992px;
+$cellphone-width:680px;
+
+html *
+{
+   font-family: sofiaPro;
+}
+.f-sofia{
+    font-family: sofiaPro;
+}
+.f-helv{
+    font-family: helveticaAnaphase;
+}
+.f-mont{
+    font-family:'Montserrat';
+}
+.f-bebas{
+  font-family: 'Bebas Neue';
+}
+h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 51px;
+}
+h2{
+    font-family:'Helvetica Neue';
+    font-size: 58px;
+}
+h3,h4{
+  font-family: 'Helvetica Neue';
+}
+h6{
+  font-weight: bolder;
+}
+a{
+  text-decoration: none;
+}
+
+// /*Icomoon related info */
+  
+// .icon-Search-fancy:before {
+//   content: "\e900";
+//   }
+// .icon-Register:before {
+//   content: "\e901";
+//   }
+// .icon-Spider-grid:before {
+//   content: "\e902";
+//   }
+// .icon-Globe:before {
+//   content: "\e903";
+//   }
+// .icon-facebook1:before {
+//   content: "\ea91";
+//   }
+// .icon-instagram1:before {
+//   content: "\ea94";
+//   }
+// .icon-whatsapp1:before {
+//   content: "\ea95";
+//   }
+// .icon-skype1:before {
+//   content: "\eac6";
+//   }
+// .icon-linkedin21:before {
+//   content: "\eacb";
+//   }
+  
+
+
+:root{
+    font-size: 10.01px;
+    @media only screen and (min-width: 250px){
+        font-size:  calc(0.479vw + 8.812px);
+    }
+    @media only screen and (min-width: $cellphone-width){
+        font-size:  calc(0.311vw + 9.958px);
+    }
+    @media only screen and (min-width: $tablet-width){
+        font-size:  calc(0.28vw + 10.566px);
+    }
+    @media only screen and (min-width:2000px) {
+        font-size: calc(16.17px);
+    }
+}
+h1{font-size: 3rem;}
+h2{font-size: 3rem;}
+h3{font-size: 2rem;}

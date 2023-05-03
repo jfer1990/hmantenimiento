@@ -1,0 +1,112 @@
+Return-Path: <daniel.miriel@gmail.com>
+Delivered-To: hola@grupohmantenimiento.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id 2OmGOX3MHV/NKgAAlvxoiw
+	(envelope-from <daniel.miriel@gmail.com>)
+	for <hola@grupohmantenimiento.com>; Sun, 26 Jul 2020 13:33:33 -0500
+Return-path: <daniel.miriel@gmail.com>
+Envelope-to: hola@grupohmantenimiento.com
+Delivery-date: Sun, 26 Jul 2020 13:33:33 -0500
+Received: from mx.anti-spam-premium.com ([67.227.144.30]:32886)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <daniel.miriel@gmail.com>)
+	id 1jzlSn-0002xu-Uf
+	for hola@grupohmantenimiento.com; Sun, 26 Jul 2020 13:33:33 -0500
+Received: from mail-vs1-f51.google.com ([209.85.217.51])
+	by mx.anti-spam-premium.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <daniel.miriel@gmail.com>)
+	id 1jzlSl-0007aZ-Al
+	for hola@grupohmantenimiento.com; Sun, 26 Jul 2020 14:33:33 -0400
+Received: by mail-vs1-f51.google.com with SMTP id a17so7173643vsq.6
+        for <hola@grupohmantenimiento.com>; Sun, 26 Jul 2020 11:33:31 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:references:in-reply-to:from:date:message-id:subject:to;
+        bh=E+7DTc7i+Sbae58QC6KIEy+E6iA4sQUTZ0gDQIrUBNo=;
+        b=aa9/wegPrC2QC2wnfwK6OFNzdeycRIZKZSnxB09mObHhIy+Eq5YiuknspSxudiSDI6
+         YCUyM/5dPnsSDm8Eo5r4LaoJZp5x2F+LQqMa1ZXGKYvdUB8bCXlqPsUGv6/K3IxuzJbZ
+         RRL9CoVE+UQKffIgpIcZYMugsLFJLEPFX2PfjT306Fn6Mm/FNm8cZQVsYEa5ofr2AbW7
+         fyFkSajPezF/zPl3buQSlUoTx/oaXic/58umepphawFH4F+3Mx6S6tcf1hLVdqa/g6mH
+         Kz113THNOJx0b1DvzBQrn37sQnsm8M51OdArfKqXXCk7hoOL28E5zmuO4Qe9M02s3i2R
+         rUnQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:references:in-reply-to:from:date
+         :message-id:subject:to;
+        bh=E+7DTc7i+Sbae58QC6KIEy+E6iA4sQUTZ0gDQIrUBNo=;
+        b=tFIMZ/Mz/NJm+jhIEE/K9fGck1C5t3dnJRJSrAArIeGFUZm23RjxjaVlco0dhSA10n
+         vcaCSlAahljuvL8DQRKMeW10xNrsUGCTekPCfDJ6gS8x/fJCahjz8cefGAMA+oYJIo4I
+         LummBgSVtbjrdqBOpr3t/tibDDG5vkyarLtbhEoZ4ICMLdmwrXjelZJFSnNKyqMDE7FJ
+         /cJg9rgMdOqkMSCRRmDK7wmTCLS+/FDm0FLzEqRso2SV6w4nGa7gp8PZtNEDl+97H3p+
+         J8QrvDgKJ+4qJWBYb93TYjFK0EbAbtO95FaQXkAr1Kf7wQkmArsuyL8nVtI/JOFMm/5L
+         nwfw==
+X-Gm-Message-State: AOAM533coLBkTkrA4koU7u98DdA7LztlFcbCDUcvO6qwkIG+PYiq18zt
+	6kYU4hnbCUBfjF4S4vCS0Sc/beV8uN+iRPs4gzSCBI9Y
+X-Google-Smtp-Source: ABdhPJzao+KxMwl/ZgJPT3BKXoVPSz+j11cpZbb8/82IvR/odQ57K5aeNu3FMvQJXLUmXuA6TgloW4iUc+V5F4cV8kc=
+X-Received: by 2002:a67:d717:: with SMTP id p23mr14616079vsj.194.1595788410168;
+ Sun, 26 Jul 2020 11:33:30 -0700 (PDT)
+MIME-Version: 1.0
+References: <dc311750989f5cd362af9fa5f8e92250@grupohmantenimiento.com>
+In-Reply-To: <dc311750989f5cd362af9fa5f8e92250@grupohmantenimiento.com>
+From: Daniel Miriel <daniel.miriel@gmail.com>
+Date: Sun, 26 Jul 2020 13:33:18 -0500
+Message-ID: <CAHgtct+L04Xv+hDV84uVrOfL-TB6m5rQefFoZGDW0iby2vehzw@mail.gmail.com>
+Subject: Re: prueba
+To: hola@grupohmantenimiento.com
+Content-Type: multipart/alternative; boundary="0000000000005326d805ab5c7195"
+Received-SPF: pass (mx.anti-spam-premium.com: domain of gmail.com designates 209.85.217.51 as permitted sender) client-ip=209.85.217.51; envelope-from=daniel.miriel@gmail.com; helo=mail-vs1-f51.google.com;
+X-SPF-Result: mx.anti-spam-premium.com: domain of gmail.com designates 209.85.217.51 as permitted sender
+Authentication-Results: mx.anti-spam-premium.com;
+	iprev=pass (mail-vs1-f51.google.com) smtp.remote-ip=209.85.217.51;
+	spf=pass smtp.mailfrom=gmail.com;
+	dkim=pass header.d=gmail.com header.s=20161025 header.a=rsa-sha256;
+	dmarc=pass header.from=gmail.com
+Authentication-Results:  anti-spam-premium.com; spf=pass smtp.mailfrom=daniel.miriel@gmail.com; dkim=pass header.i=gmail.com
+X-HospedandoAntiSpam-Class: unsure
+X-HospedandoAntiSpam-Evidence: Combined (0.42)
+X-Recommended-Action: accept
+X-Filter-ID: 8G1aH+8yearZuN6N5+X5bm6KuAmzEgFjeXz34jnHp0xyyEdPR1/6twe+mTkrBnCJKblbTtNaIm47
+ 8fUglFDUgVEQyVzDVZOlehQ3EiJLhbu6MUJz+GxbCDglqhkRwcUjKQo/2IWWoqwgSxCTc4NIMOaV
+ SkZaB3v/IqidIfBMgc9B6OVrbcgmqxifXRVtHoIIzkDD8rbyZ1fiTlioHpHoAk/fcQAu5dEEvnLy
+ V3rlRUap7PnMu/4kh0BwBhLXt9/+Xwwc5YpyhDGx04hSTzwBPa89jJvJeHY9KTDbWRQ4iAWI9HP5
+ 0EgsydFmSCXRPHlc8fxa0iDy+hOfIR1/S/4TIQEbMp8Qx9A/kiwyVnREl87dx5QS1wGtE3dw5kR1
+ xA9PdcJZTMWMSOVLPYLJlY85sWBPo/+fpjWfntLK7g904te60PseN37m+kfOdGBu+PqnMymSODw8
+ j7YMZM8n75h6Kec1XqsJJizQTGWSt8XpEMVva2WSLRVqlDu6tQLsPwewrqq9GopDryQPg7s3heG/
+ sptwIRuNuppYmJAhwWaToKKnOLgkNYSIm5/jKyA2MtlgLn2efiPUZ4Jco4VO+wR3zOws3jpxDZKe
+ YU78iMx4jQ6L4UiXG51/x0Ki/1/azQiQnOohEibyptTVfIJK/lrvEm1UBximbGhYkB1pvElHgCva
+ oKcz4Gtl48AnYeIPEdc6Btir76EFsN3IRes6QYmyLzVZQn8nun/O0C2AfbsYweNZCO0ooX+IaQgo
+ tkjIPjh5RqcDssN+PMBRU8yl6Nj6mZQNAZagNH4Uvw/4t8ePOQ2t2fzPaKJ98px0wWcuXEJ4fcDv
+ RtIHaxKPsqWFNAbl2a77PTm0HfRUBA6TKnvhXDNGZ+B33FU9ztQMlG9DXDzufWUXzsde2QHW8uLg
+ f2Ko24yWUh5Hwm5cvrRrbwLL+YQJd9sbBWGgxea/nQAeooTcPHSptnPrqQzppq+eW4t7LD+uTBZc
+ XcQdYz8yb34JLgR+pvlHhV6a5QjptwQBGybQoYBCM7A1X18RCSz1E1tkJorgvVQDncxLuDi6XMTV
+ F3PNXNE75cxzy6ByzFhFeNkYceACW/CdtR1jfFe6bbe2TRH2yzd+f+MMNZ3EIRuf42I=
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+--0000000000005326d805ab5c7195
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+test
+
+El dom., 26 jul. 2020 a las 13:33, <hola@grupohmantenimiento.com> escribi=
+=C3=B3:
+
+> listo
+>
+
+--0000000000005326d805ab5c7195
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">test</div><br><div class=3D"gmail_quote"><div dir=3D"ltr" =
+class=3D"gmail_attr">El dom., 26 jul. 2020 a las 13:33, &lt;<a href=3D"mail=
+to:hola@grupohmantenimiento.com">hola@grupohmantenimiento.com</a>&gt; escri=
+bi=C3=B3:<br></div><blockquote class=3D"gmail_quote" style=3D"margin:0px 0p=
+x 0px 0.8ex;border-left:1px solid rgb(204,204,204);padding-left:1ex">listo<=
+br>
+</blockquote></div>
+
+--0000000000005326d805ab5c7195--

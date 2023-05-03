@@ -1,0 +1,572 @@
+Return-Path: <noreply@apple.com>
+Delivered-To: hola@grupohmantenimiento.com
+Received: from servidor1339.il.controladordns.com
+	by servidor1339.il.controladordns.com with LMTP
+	id 2Fw3FhmrQV82EQAAlvxoiw
+	(envelope-from <noreply@apple.com>)
+	for <hola@grupohmantenimiento.com>; Sat, 22 Aug 2020 18:32:41 -0500
+Return-path: <noreply@apple.com>
+Envelope-to: hola@grupohmantenimiento.com
+Delivery-date: Sat, 22 Aug 2020 18:32:41 -0500
+Received: from mx.anti-spam-premium.com ([67.227.144.30]:37668)
+	by servidor1339.il.controladordns.com with esmtps  (TLS1.2) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.93)
+	(envelope-from <noreply@apple.com>)
+	id 1k9d05-0001bx-BW
+	for hola@grupohmantenimiento.com; Sat, 22 Aug 2020 18:32:41 -0500
+Received: from nwk-txn-msbadger0103.apple.com ([17.151.1.33])
+	by mx.anti-spam-premium.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <noreply@apple.com>)
+	id 1k9d03-0003K3-Pl
+	for hola@grupohmantenimiento.com; Sat, 22 Aug 2020 19:32:41 -0400
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=apple.com;
+	s=apple0517; t=1598139158;
+	bh=ubtDDmDrxiFN/e8SMUkJt+uxSKJXw2VUH0P8qCbpacc=;
+	h=Date:From:To:Message-ID:Subject:Content-Type;
+	b=VPQLCdN0nE1kGjrmHdylCHEe7TcB+aTUFrw72/Q10GLSn5DwGTYO2DASTc/wkpiaJ
+	 /n4I+QxpbvhE/gIrWRBEzgTbsM+IVKOJAclj3qBgl8xR8A2KOb6SirNOWKEhn0yWl9
+	 KTn7I/9GRNa0BwObjsvMCCOEu9jYhNGeuPmE5dKDDrpVNQY+8RlbzeUZq0Qt1hExU1
+	 zVdPmiWs85i92/4Q3arrN/zvlTuvTcN4W/+6vLALs9f0izfGjF4S900RWlnekIvgNh
+	 5uA9YTXDAX3nLod8ZEEoi5n+6w2T1HrFt5WjVFjoyem9uvizio38zUR3s7y0tjHXiK
+	 23gHOKCMIrCoA==
+Date: Sat, 22 Aug 2020 23:32:38 +0000 (GMT)
+From: Apple <noreply@apple.com>
+Reply-To: noreply@apple.com
+To: hola@grupohmantenimiento.com
+Message-ID: <1742210643.46129990.1598139158135@email.apple.com>
+Subject: =?UTF-8?Q?Verifica_tu_direcci=C3=B3n_de_correo_electr=C3=B3nico?=
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_46129988_1770655953.1598139158135"
+X-Attach-Flag: N
+X-COMMS-C: N
+X-Sent-To: hola@grupohmantenimiento.com,2,FqtWKHs9EiRzY8ASC42YuzaZLxoMIO1wBNQIf0QfYfdIUZNdkxlyJLn4BGgNXpxuzK%2BBiqZJzhbdGgXT2Aps%2BnTffNWkvi5kp4c64s49DeV%2BKRUc4CR2uIcmjZPBsWB86UhTNKMkljO8glLee6HRDUeWivOHYLIMdy57uWIK68Cb46bbGCCNkWrgqtEQqaOKWKHJArpw79kE0sJUjZ5FbznMQmWLoQmoom8cOYT9N9qWo%2BqU%2FCDX6mdFQR8xG1QhNW8FspoC2S12BbUZWcnI3CvajuY3R2IBeL5LjScKx2E1bwWymgLZLXYFtRlZycjcdg%2Fi2y4Gp6tRq1GJkXPXA2fP0hXnsEf5JvIknFFo%2FXAqdLoDN7kwfOob6pVZ6qUd6RqHXJ9A6Eez2W%2BvQqGWXudnnyeUPxbbYL9tH%2B9C7yW%2BkoUrkTJYv5fYYEbz9PFAfTwZrgX1LNruH7fJt2oUs2OP2C7I73xtfdND8v8OZ8nsGe5OLcW8bVrWgPSoTkWcN%2BFzfuRw%2FC%2B7LZw1S0YnHg%3D%3D
+X-TXN_ID: 49337623-2b96-459a-9581-a5cc228052e6
+X-DKIM_SIGN_REQUIRED: YES
+X-EmailType-Id: 1000107221
+X-Business-Group: DS
+Received-SPF: pass (mx.anti-spam-premium.com: domain of apple.com designates 17.151.1.33 as permitted sender) client-ip=17.151.1.33; envelope-from=noreply@apple.com; helo=nwk-txn-msbadger0103.apple.com;
+X-SPF-Result: mx.anti-spam-premium.com: domain of apple.com designates 17.151.1.33 as permitted sender
+Authentication-Results: mx.anti-spam-premium.com;
+	iprev=pass (nwk-txn-msbadger0103.apple.com) smtp.remote-ip=17.151.1.33;
+	spf=pass smtp.mailfrom=apple.com;
+	dkim=pass header.d=apple.com header.s=apple0517 header.a=rsa-sha256;
+	dmarc=pass header.from=apple.com
+Authentication-Results:  anti-spam-premium.com; spf=pass smtp.mailfrom=noreply@apple.com; dkim=pass header.i=apple.com
+X-HospedandoAntiSpam-Class: whitelisted
+X-HospedandoAntiSpam-Evidence: global-sender
+X-Recommended-Action: accept
+X-Filter-ID: 8G1aH+8yearZuN6N5+X5bm6KuAmzEgFjeXz34jnHp0zCSyJQtWTeE7lB31h2XXpNIc4i7ucT6Qux
+ 65qZKP3b/1r47Ob5fF1Y7JH4JXbWXMxnkvLQdDbYJK5AHrVHRxaSU1OGsiW8IyKzQadApR779rWB
+ +vnIq4ixA3y/QXLwWHWkrsAM6vDVApLJLWde5aMtHDBUxgnyyfGKEgoKZkB35jGpPUvNaoGAUX0y
+ 9Y3jISN8qC/MZUh2dTmjiIatI5fHa/qrv+zMp4F0RZkQK30dni8bk8KB62rFRHWC6Ce3NS9MpMwa
+ 4nqmXI0w2s3P3lQG+DvgX07r+8+Paa47FldzBgUhA60cwsuL3J532GiYulv2bBIZ81oGZp+J9MlI
+ wzA47a33V4L+CCFgdQUxya7JxMXXrHOwv9b2Idmb5P2j3Z5Ms3WBHoxhdXlZXeSPqOfTER4zamkH
+ 8mRc25Om5zlejRTNiVv4XLc2S+qMJRMlUYjtnzIlGK+YGyIYI8NeXUaUvdZmLXgIQw5ngal5RGS4
+ LT34Z/NzkhX5yRkVwLtKUonlgTl6fJxyntEfhZCKje4Zfkao3iDBOZPB2kfCWjFN3CraGncMAleV
+ pX7YdSO71SSd6+6AB9mEpRX5vy67WwDjehIqUczFWeS6sE8e1b5/UldfUO8kJp/tADZFHBzyJ+na
+ 5tVOVW3c3HAdY715xyClGvVgbeLneQlOSj2G6wilxFKZS75Cfc2UD7tMojfHQEF8EqNtLYAmTUQ+
+ +jNitdyWeQZkbTwF266pK6U54BkdZPTATcrihT1y4Jos7tBvSqYixw7Ra2kD1MaJIkJa5TSIDgYe
+ 5kn1G7zcFTefoUpYnY4N0j4u6BH/coXnXBL/+/aO7eoJGriJP3m+QbPiKqpbWlt+IT5US1ldqZB4
+ tBSucvu/LBNSs6kqU0+vDn5hX2cogcd/T45YNJZ8+ZhGdHIil9UvxdUuxhgy1UgE7lWmoyG4Zvve
+ IJWzwwGCLCjk1vDrjuU3A3io6xJmD59iFVkbPo8iCd55qLfDNASI5pdiq3CFsBcV4SyFNBsjwRWj
+ JE+QJo9qexrqnmQy5c8dpdIAZNZ7iiig7X7v3KQ5nSvKCjesibZqnyKRTV53Qh/Y3D/HKlSFZnsN
+ X9C2FSfjBOMW
+X-Report-Abuse-To: spam@mx.anti-spam-premium.com
+
+------=_Part_46129988_1770655953.1598139158135
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Content-Disposition: inline
+
+Recientemente seleccionaste hola@grupohmantenimiento.com como tu nuevo Appl=
+e ID. Para verificar que esta direcci=C3=B3n te pertenece, ingresa el sigui=
+ente c=C3=B3digo en la p=C3=A1gina de verificaci=C3=B3n de correo electr=C3=
+=B3nico:
+325583
+
+Por qu=C3=A9 recibiste este correo electr=C3=B3nico.
+Apple requiere verificar cualquier direcci=C3=B3n de correo electr=C3=B3nic=
+o que sea seleccionada como tu Apple ID. Tu correo electr=C3=B3nico no podr=
+=C3=A1 ser utilizado hasta que lo verifiques.
+
+Si no realizaste esta modificaci=C3=B3n o si crees que alguien ha accedido =
+a tu cuenta sin autorizaci=C3=B3n deber=C3=A1s cambiar tu contrase=C3=B1a i=
+nmediatamente en la p=C3=A1gina de la cuenta de tu Apple ID en https://appl=
+eid.apple.com.
+
+Atentamente,
+Soporte t=C3=A9cnico de Apple
+
+-------------------------------------------------------------
+
+Apple ID
+https://appleid.apple.com
+
+Soporte
+https://support.apple.com/es-mx
+
+Pol=C3=ADtica de privacidad
+https://www.apple.com/legal/privacy
+
+Copyright (c) 2020 One Apple Park Way, Cupertino, CA 95014, United States T=
+odos los derechos reservados.
+------=_Part_46129988_1770655953.1598139158135
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Content-Disposition: inline
+
+<!DOCTYPE html>
+<html lang=3D"en">
+<head>
+=09<meta charset=3D"utf-8" />
+=09<title>[[PAGE_NAME]]</title>
+=09<meta name=3D"generator" content=3D"BBEdit 10.5" />
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width" />
+=09
+<link rel=3D"stylesheet" href=3D"//www.apple.com/wss/fonts?families=3DSF+Pr=
+o,v1|SF+Pro+Icons" type=3D"text/css"/>
+   <link rel=3D"stylesheet" href=3D"//www.apple.com/wss/fonts?families=3DSF=
++Pro,v1|SF+Pro+Icons,v1|SF+Pro+Gulf,v1" type=3D"text/css"/>
+   <link rel=3D"stylesheet" href=3D"//www.apple.com/wss/fonts?families=3DSF=
++Pro,v1|SF+Pro+Icons,v1|SF+Pro+HK,v1" type=3D"text/css"/>
+   <link rel=3D"stylesheet" href=3D"//www.apple.com/wss/fonts?families=3DSF=
++Pro,v1|SF+Pro+Icons,v1|SF+Pro+TC,v1" type=3D"text/css"/>
+   <link rel=3D"stylesheet" href=3D"//www.apple.com/wss/fonts?families=3DSF=
++Pro,v1|SF+Pro+Icons,v1|SF+Pro+KR,v1" type=3D"text/css"/>
+   <link rel=3D"stylesheet" href=3D"//www.apple.com/wss/fonts?families=3DSF=
++Pro,v1|SF+Pro+Icons,v1|SF+Pro+TH,v1" type=3D"text/css"/>
+   <link rel=3D"stylesheet" href=3D"//www.apple.com/wss/fonts?families=3DSF=
++Pro,v1|SF+Pro+Icons,v1|SF+Pro+JP,v1" type=3D"text/css"/>
+   <link rel=3D"stylesheet" href=3D"//www.apple.com/wss/fonts?families=3DSF=
++Pro,v1|SF+Pro+Icons,v1|SF+Pro+SC,v1" type=3D"text/css"/>
+
+<style>
+
+   body#message {
+   font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica=
+', 'Arial', sans-serif !important;
+   font-size: 17px;
+   line-height: 25px;
+   font-weight: normal;
+   color: #333 !important;
+   background-color: #ffffff !important;
+   margin:0 !important;
+   padding:0 !important;
+   width:100% /* !important */;
+   /* was 685px */;
+}
+
+       /*
+       same width as body, because Rover adds this div
+       */
+
+       body/*, .main*/ {
+       }
+       .main {
+           width: 685px;
+       }
+
+       #apple-logo-left-margin {
+           width: 538px !important;
+       }
+       #logo-row-box {
+           width:100% !important;
+           /* text-align:right; */
+           padding-bottom:20px !important;
+       }
+
+       div[dir=3D"rtl"] #logo-row-box {
+          /*  text-align:left !important; */
+       }
+
+h1 {
+  font-size: 32px;
+  line-height:36px;
+  padding-bottom: 10px;
+  border: 0 !important;
+  color: 333 !important;
+}
+
+b {
+    font-weight:500 !important;
+       }
+
+p {
+   margin-top: 0 !important;
+   word-wrap: break-word;
+  color: #333;
+}
+
+       td.h1-header {
+           padding:0px 0px 0px !important;
+       }
+       td.signature {
+           padding-right:0 !important;
+           padding-left:0 !important;
+       }
+       td.no-padding-bottom {
+           padding-bottom:0 !important;
+       }
+       #signature {
+           padding-top:18px !important; /* was 41px */
+           padding-bottom:50px !important;
+       }
+
+       em a {
+           color: #333 !important;
+       }
+       a {
+           color: #0070c9;
+           text-decoration: none;
+       }
+       span.unlink a,
+       em a,
+       b a,
+       td.unlink a {
+           color:#333 !important;
+           cursor: text;
+           pointer-events: none;
+           padding-top:0 !important;
+           margin-top:0 !important;
+       }
+       #main {
+           margin-top: 40px;
+           padding-right:15px;
+           padding-left:15px;
+           padding-bottom:30px;
+       }
+
+       footer,
+       footer p,
+       footer span.unlink a,
+       footer td.paragraph {
+               font-size:12px;
+               line-height:18px;
+               font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue"=
+, "Helvetica", "Arial", sans-serif;
+               color:#888 !important;
+       }
+       .center-text,
+       footer nav,
+
+       footer a:hover {
+           text-decoration: underline;
+       }
+ a:hover, a:focus {
+     text-decoration: underline !important;
+   }
+       .no-margin-bottom {
+           margin-bottom: 0 !important;
+       }
+       td.spacer-36 {
+           padding-bottom:36px;
+       }
+       html[dir=3Drtl] #apple-logo {
+           left:0;
+           right:538px;
+       }
+       p#copyright {
+           margin-bottom: 0;
+       }
+       .display-block {
+           display: block;
+       }
+       .nowrap {
+           white-space: nowrap;
+       }
+       #apple-logo-margin-bottom {
+           height: 44px !important;
+       }
+       #left-align-on-reply {
+           /* moved from body */
+           margin:0px auto 50px;
+           padding:0;
+           width: 685px;
+       }
+       #apple-logo-cell {
+           width:100%;
+           padding-top:40px;
+           padding-bottom:44px;
+       }
+       #apple-logo-in-cell {
+           height: 28px !important;
+           width: 24px !important;
+       }
+       #apple-logo-in-row-box-mobile {
+           display: none;
+           height: 20px !important;
+           width: 17px !important;
+       }
+       /* If the email client is reading the style element: */
+       /* - then we don't need spacer divs */
+       div.paragraph-spacer {
+           display:none;
+           height:0px !important;
+           margin-bottom:0px !important;
+       }
+       /* - and margin-top already is in effect on #main */
+       #apple-logo-margin-top {
+           height:0px !important;
+       }
+       #logo-row-box {
+           padding-top:0 !important;
+       }
+       div[dir=3D"rtl"] #logo-row-box {
+         /*  text-align:left !important;  */
+       }
+/* normally max-width: 320px */
+@media ( max-width :320px) {
+/* body[yahoo] prevents Yahoo! Mail from reading these rules, because it ca=
+nnot read attribute selectors */
+body[yahoo]#message {
+-webkit-text-size-adjust: none;
+}
+body[yahoo] #apple-logo-left-margin {
+width: 275px !important;
+}
+body[yahoo] #main {
+margin-top: 18px;
+padding-right: 0;
+padding-left: 0;
+}
+body[yahoo] #apple-logo-in-row-box {
+/* Not using hide and show approach between small and large imgs because Ou=
+tlook Express 6 shows both imgs on reply */
+/*
+display:none !important;
+height:0px !important;
+width:0px !important;
+*/
+height: 20px !important;
+width: 17px !important;
+}
+body[yahoo] #apple-logo-in-row-box-mobile {
+/* display:inline-block !important; Not using hide and show approach betwee=
+n small and large imgs because Outlook Express 6 shows both imgs on reply *=
+/
+
+}
+body[yahoo] #apple-logo-margin-bottom {
+height: 6px !important;
+}
+body[yahoo] #logo-row-box {
+padding-bottom: 9px !important;
+}
+body[yahoo] p {
+margin-bottom: 20px;
+}
+body[yahoo] td.paragraph {
+padding: 0 0 20px !important;
+}
+body[yahoo] td.no-padding-bottom {
+padding-bottom: 0 !important;
+}
+body[yahoo] p#signature {
+margin-top: 36px !important;
+margin-bottom: 28px !important;
+}
+body[yahoo] td#signature {
+padding-top: 18px !important; /* was 36px */
+padding-bottom: 28px !important;
+}
+body[yahoo] td#footer-links {
+padding-bottom: 12px !important;
+}
+body[yahoo] #copyright #apple-address, body[yahoo]  #copyright #all-rights-=
+reserved
+{
+display: block;
+}
+body[yahoo] #left-align-on-reply {
+/* moved from body  */
+padding-right: 16px;
+padding-left: 16px;
+width: 300px;
+}
+body[yahoo] footer {
+font: 11px/15px 'Helvetica Neue', Helvetica, Geneva, Verdana, Arial,
+sans-serif;
+}
+}
+       /* typography-body */
+
+ .warning-list
+       {
+           font-size: 17px;
+           line-height: 25px;
+           font-weight: normal;
+           font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "H=
+elvetica", "Arial", sans-serif;
+           color: #333333;
+       }
+
+ .email-header
+       {
+         font-size: 32px;
+  line-height:36px;
+  padding-bottom: 10px;
+  border: 0 !important;
+       }
+
+.email-body
+       {
+           font-size: 17px;
+           line-height: 25px;
+           font-weight: normal;
+           font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "H=
+elvetica", "Arial", sans-serif;
+           color: #333333;
+       }
+
+       .email-signature
+       {
+           margin-top: 1.5em;
+       }
+       /* block-link */
+       a
+       {
+           color: #0070c9;
+           cursor: pointer;
+       }
+       a:link, a:visited
+       {
+           text-decoration: none;
+       }
+
+       .form-alert.form-alert-warning {
+           border: 0;
+           border-left: 6px solid #fee450;
+           background-color: #fbf8e8!important;
+       }
+       .form-alert {
+           border-radius: 4px;
+       }
+       .form-alert {
+           font-size: 17px;
+           line-height: 25px;
+           font-weight: normal;
+           font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,A=
+rial,sans-serif;
+           background-color: hsla(0,0%,95%,.4);
+           background-clip: padding-box;
+           border: 1px solid #e3e3e3;
+           padding: 15px 15px 7px 15px;
+           margin-bottom: 20px;
+           margin-top: 20px;
+       }
+
+.email-header
+ {
+   font-size: 32px;
+   line-height: 36px;
+   font-weight: 500;
+   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvet=
+ica", "Arial", sans-serif;
+   margin-bottom: 0.5em;
+  text-align:center;
+ }
+
+   </style>
+<![endif]--> =20
+
+</head>
+
+<!-- body[yahoo] is being used to prevent Yahoo! Mail from reading these ru=
+les, because it cannot read attribute selectors -->
+<body id=3D"message" style=3D"background-color:#fff;" yahoo=3D"fix">
+=09<div id=3D"left-align-on-reply" dir=3D"ltr">
+=09=09<div id=3D"main" style=3D"margin-top: 40px;padding-right:15px;padding=
+-left:15px;padding-bottom:30px;">
+=09=09=09<!--<div id=3D"apple-logo-margin-top" style=3D"height:40px;"></div=
+>-->
+=09=09=09=09=09=09<div id=3D"logo-row-box" style=3D"width:95%;text-align:le=
+ft ;padding-top:6%;padding-bottom:6%;">
+           <img id=3D"apple-logo-in-row-box" src=3D"https://statici.icloud.=
+com/emailimages/v4/common/apple_logo_web@2x.png" style=3D"display:inline-bl=
+ock;height:24px;width:20px;right:0px;" alt=3D"Apple"><!--<img id=3D"apple-l=
+ogo-in-row-box-mobile" src=3D"https://statici.icloud.com/emailimages/v4/com=
+mon/apple_logo_web.png" style=3D"display:none;height:0;width:0;right:0px;" =
+height=3D"0" width=3D"0">--><!--Two logos are appearing on reply in Windows=
+ XP Outlook-->
+       </div>
+
+<div class=3D"container">
+<h1 class=3D"email-header" style=3D"font-size:32px;line-height:36px;font-we=
+ight:500;padding-bottom:10px;color:#333;text-align:center;">Verifica tu dir=
+ecci=C3=B3n de correo electr=C3=B3nico</h1>
+<div class=3D"email-body" style=3D"font-size:17px;line-height:25px;color:#3=
+33;font-weight:normal;">
+
+<p>
+</p>
+<p>
+Recientemente seleccionaste <b>hola@grupohmantenimiento.com</b> como tu nue=
+vo <span style=3D"white-space: nowrap">Apple ID</span>. Para verificar que =
+esta direcci=C3=B3n te pertenece, ingresa el siguiente c=C3=B3digo en la p=
+=C3=A1gina de verificaci=C3=B3n de correo electr=C3=B3nico:</p>
+<div class=3D"email-body" style=3D"font-size:23px;line-height:25px;color:#3=
+33;font-weight:normal;">
+=09=09=09=09=09=09<b><p>325583</p></b></div>
+=09=09=09=09=09=09<p><b>Por qu=C3=A9 recibiste este correo electr=C3=B3nico=
+.</b><br>
+Apple requiere verificar cualquier direcci=C3=B3n de correo electr=C3=B3nic=
+o que sea seleccionada como tu <span style=3D"white-space: nowrap">Apple ID=
+</span>. Tu correo electr=C3=B3nico no podr=C3=A1 ser utilizado hasta que l=
+o verifiques.</p>
+=09=09=09=09=09=09<p>Si no realizaste esta modificaci=C3=B3n o si crees que=
+ alguien ha accedido a tu cuenta sin autorizaci=C3=B3n deber=C3=A1s cambiar=
+ tu contrase=C3=B1a inmediatamente en la p=C3=A1gina de la cuenta de tu <sp=
+an style=3D"white-space: nowrap">Apple ID</span> en https://appleid.apple.c=
+om.</p>
+=09=09=09=09=09=09=09=09=09=09=09=09<p>=09=09=09=09=09=09Atentamente,
+=09=09=09=09=09=09</p>
+=09=09=09=09=09=09<p>Soporte t=C3=A9cnico de Apple</p>
+=09=09=09=09=09</div>
+</div>
+=09=09</div><!--end #main -->
+
+=09=09<footer style=3D"width:100%; background-color: #f2f2f2;">
+       <table id=3D"footer-paragraphs" width=3D"100%" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" style=3D"background:#f2f2f2; padding:20px 15px =
+20px 15px;">
+
+           <tr>
+               <td id=3D"footer-links" style=3D"padding:0;font-size:12px;li=
+ne-height:18px;color:#888 !important;">
+
+<a href=3D"https://appleid.apple.com" style=3D"color:#555;text-decoration:n=
+one;" role=3D"link">Apple ID</a> | <a href=3D"https://support.apple.com/es-=
+mx" style=3D"color:#555;text-decoration:none;" role=3D"link">Soporte</a> | =
+<a href=3D"https://www.apple.com/legal/privacy" style=3D"color:#555;text-de=
+coration:none;" role=3D"link">Pol=C3=ADtica de privacidad</a>
+</td>
+</tr>
+
+           <tr>
+
+<td id=3D"copyright-cell" style=3D"padding:0;font-size:12px;line-height:18p=
+x;color:#888 !important;">Copyright &copy; 2020 <span id=3D"apple-address" =
+class=3D"unlink">One Apple Park Way, Cupertino, CA 95014, United States&#x2=
+00E;</span> <span id=3D"all-rights-reserved" style=3D"white-space:nowrap;">=
+Todos los derechos reservados.</span>
+</td>
+
+</tr>
+
+       </table>
+</footer>
+=09</div><!--end #left-align-on-reply-->
+</body>
+<img src=3D'https://outsideapple.apple.com/img/APPLE_EMAIL_LINK/spacer4.gif=
+?v=3D2&a=3DFqtWKHs9EiRzY8ASC42YuzaZLxoMIO1wBNQIf0QfYfdIUZNdkxlyJLn4BGgNXpxu=
+zK%2BBiqZJzhbdGgXT2Aps%2BnTffNWkvi5kp4c64s49DeV%2BKRUc4CR2uIcmjZPBsWB86UhTN=
+KMkljO8glLee6HRDUeWivOHYLIMdy57uWIK68Cb46bbGCCNkWrgqtEQqaOKWKHJArpw79kE0sJU=
+jZ5FbznMQmWLoQmoom8cOYT9N9qWo%2BqU%2FCDX6mdFQR8xG1QhNW8FspoC2S12BbUZWcnI3Cv=
+ajuY3R2IBeL5LjScKx2E1bwWymgLZLXYFtRlZycjcdg%2Fi2y4Gp6tRq1GJkXPXA2fP0hXnsEf5=
+JvIknFFo%2FXAqdLoDN7kwfOob6pVZ6qUd6RqHXJ9A6Eez2W%2BvQqGWXudnnyeUPxbbYL9tH%2=
+B9C7yW%2BkoUrkTJYv5fYYEbz9PFAfTwZrgX1LNruH7fJt2oUs2OP2C7I73xtfdND8v8OZ8nsGe=
+5OLcW8bVrWgPSoTkWcN%2BFzfuRw%2FC%2B7LZw1S0YnHg%3D%3D'/>
+</html>
+------=_Part_46129988_1770655953.1598139158135--

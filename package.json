@@ -4,18 +4,25 @@
   "description": "Desarrollo del sitio de la landing HM",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx gulp watch",
+    "build": "npx gulp build"
   },
   "author": "Juan Fernando Rodríguez",
   "license": "ISC",
   "devDependencies": {
+    "gulp-imagemin": "^7.1.0",
+    "gulp-replace": "^1.1.4",
     "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
     "sass": "^1.62.0"
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
     "bootstrap": "^5.0.1",
     "browser-sync": "^2.29.1",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "swiper": "^6.7.0"

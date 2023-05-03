@@ -320,41 +320,7 @@ header{
             }
         }
     }
-    .box-plan-wrapper{
-        display: flex;
-        justify-content: flex-start;
-        left:80px; 
-        gap:53px; 
-        background-color: transparent;
-        position: absolute;
-        bottom:calc(-87px / 2 + 15px); 
-        .box-plan{
-            width:315px; 
-            height:87px; 
-            position:relative; 
-            border-radius: 12px;
-            background-color: white;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 20px;
-            line-height: 28px;
-            color: #000;
-            p{
-                padding: 15px 35px;
-                color:#000!important; 
-            }
-            &::before{
-                position:absolute; 
-                content:''; 
-                top: 50%;
-                transform: translateY(-50%);
-                left:-2px; 
-                width: 4px;
-                background-color: #F5D600;
-                height:60%; 
-            }
-        }
-    }
+
     
 }
 
@@ -431,6 +397,55 @@ header{
     
   }
 main{
+    .little-cards{
+        display: flex;
+        flex-direction: column;
+        padding:32px 100px 40px 100px;
+        p{
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 23px;
+            color: #292929;
+        }
+        .box-plan-wrapper{
+            display: flex;
+            justify-content: space-between;
+            gap:53px; 
+            background-color: transparent;
+            .box-plan{
+                display: flex;
+                gap:1em;
+                align-items: center;
+                width:315px; 
+                height:87px; 
+                position:relative; 
+                border-radius: 12px;
+                background-color: white;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+                color: #000;
+                span{
+                    font-size: 35px;
+                }
+                h3{
+                    font-size: 13px!important;
+                    font-weight: 900;
+                    line-height: 19.63px;
+                    color: #000;
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: 12px;
+                    font-weight: 700;
+                    color:#000!important; 
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
     .cards-ventajas{
         width: 317px; 
         span{

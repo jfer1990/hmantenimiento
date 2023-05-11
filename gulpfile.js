@@ -15,6 +15,7 @@ function style() {
     .pipe(sass().on('error',sass.logError))
     .pipe(cleanCSS())
     .pipe(sourcemaps.write('.'))
+    .pipe(replace(/(URL\(['"]?)(.*?\.(jpg|png))(['"]?\))/g, '$1$2.webp')) // Convert URLs with JPG/PNG extensions to WebP
     .pipe(gulp.dest('src/css'))
     .pipe(browserSync.stream());
 }
@@ -45,7 +46,7 @@ function convertImages() {
       .pipe(gulp.dest('dist'));
   }
   function build(callback) {
-    return gulp.series(style, 'minify-css', copyHtml, moveAssets, convertImages, cleanAssets)(callback);
+    return gulp.series(style, 'minify-css', copyHtml, moveAssets, convertImages)(callback);
   }
 function watch() {
     browserSync.init({

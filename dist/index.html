@@ -16,17 +16,29 @@
 </head>
 <body class="">
   <div class="container-fluid fixed-top" id="nav-container">
-      <div class="container">
+      <div class="">
         <nav class="navbar navbar-expand-lg navbar-light ">
-          <div class="container-fluid px-0">
+          <div class="container-fluid px-0 justify-content-between justify-content-md-start gap-4">
             <div class="logo">
-                <img Loading="lazy" src="./assets/ img/logo1.webp" alt="">
+                <img Loading="lazy" src="assets/img/logo.webp" alt="">
             </div>
-            <button class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="btnMenu"  data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center flex-grow" id="navbarTogglerDemo02">
-              <ul class="ps-5 ps-lg-0 navbar-nav d-flex justify-content-between w-75">
+            <script>
+              const btn = document.querySelector('#btnMenu');
+              btn.addEventListener('click', function() {
+                const nav = document.querySelector('#nav-container');
+                if (!this.classList.contains('collapsed')) {
+                  nav.classList.add('bg-white');
+                } else {
+                  setTimeout(()=>{nav.classList.remove('bg-white')},250); 
+                 
+                }
+              });
+            </script>
+            <div class="collapse navbar-collapse justify-content-start flex-grow" id="navbarTogglerDemo02">
+              <ul class="ps-5 ps-lg-0 navbar-nav d-flex justify-content-between w-75 gap-4">
                 <li class="nav-item">
                   <a class="nav-link " href="#">INICIO</a>
                 </li>
@@ -177,7 +189,7 @@
       <section id="overall-info" class="py-5">
         <article>
           <div class="cotizacion-box">
-            <span>Tu empresa funcionando a la perfección</span>
+            <span class="adorno">Tu empresa funcionando a la perfección</span>
             <h2>Poliza de mantenimiento industrial</h2>
             <p>Brindar un entorno seguro y eficaz a tus clientes
               cuidando la rentabilidad de tu negocio</p>
@@ -190,7 +202,7 @@
             </ul>
             <a class="cotizacion-btn" href="">Solicitar Cotización</a>
           </div>
-          <div>
+          <div class="inverse">
             <img src="./assets/img/worker.webp" alt="">
           </div>
         </article>
@@ -199,7 +211,7 @@
             <img src="./assets/img/family.webp" alt="">
           </div>
           <div class="cotizacion-box">
-            <span>Cuida tu plusvalía </span>
+            <span class="adorno">Cuida tu plusvalía </span>
             <h2>Administración de inmuebles</h2>
             <p>Plan de mantenimiento a la medida, mantenimiento preventivo y correctivo, supervisión externa, control de presupuesto y seguimiento de consumo energetico, limpieza y seguridad, </p>
             <ul>
@@ -214,7 +226,7 @@
         </article>
         <article>
           <div class="cotizacion-box">
-            <span>Cuida tu plusvalía</span>
+            <span class="adorno">Cuida tu plusvalía</span>
             <h2>Administración de inmuebles</h2>
             <p>Plan de mantenimiento a la medida, mantenimiento preventivo y correctivo, supervisión externa, control de presupuesto y seguimiento de consumo energetico, limpieza y seguridad, </p>
             <ul>
@@ -226,7 +238,7 @@
             </ul>
             <a href="">Solicitar Cotización</a>
           </div>
-          <div>
+          <div class="inverse">
             <img src="./assets/img/pool.webp" alt="">
           </div>
         </article>
@@ -263,13 +275,23 @@
           <div class="container-fluid ">
             <div class="row h-100 align-items-center">
 
-              <div class="col-12">
-                <h3 class="p-3 ">
-                  Nuestros trabajos actuales
-                </h3>
-                <div class="controls">
-                  <div class="prev fs-1 icon-arrow-left d-flex justify-content-center align-items-center"></div>
-                  <div class="next fs-1 icon-arrow-right d-flex justify-content-center align-items-center"></div>
+              <div class="col-12 p-3 slider-title max-size left-adjust">
+                <div class="ps-2">
+                  <div class="d-flex flex-column">
+                  <span class="adorno">Experiencia</span>
+                  <h3 class="">
+                    Nuestros trabajos actuales
+                  </h3>
+                  </div>
+                  <div class="controls">
+                    <div class="prev fs-1 icon-arrow-left d-flex justify-content-center align-items-center"></div>
+                    <div class="next fs-1 icon-arrow-right d-flex justify-content-center align-items-center"></div>
+                  </div>
+                </div>
+                <div class="info">
+                  <p>
+                    Somos una empresa de administración de propiedades <br>inmobiliarias, en Quintana Roo.
+                  </p>
                 </div>
               </div>
 
@@ -345,7 +367,7 @@
         <!--   -->
 
         <section class="py-5" >
-          <div class="planes-mantenimiento">
+          <div class="planes-mantenimiento max-size">
           <div class="d-flex justify-content-center">
             <div class="card-price">
               <div class="d-flex justify-content-between">
@@ -455,13 +477,14 @@
     <div class="pre-footer">
       <section>
         <div class="accordion" id="faqAccordion">
+          <div class="ps-3 ps-md-0">
+            <h5 class="adorno">Preguntas Frecuentes</h5>
+          </div>
           
-          <h5>Preguntas Frecuentes</h5>
 
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                
                 <span class="accordion-title">
                   ¿Cúales son los servicios de mantenimeinto?  
                 </span>
@@ -575,10 +598,10 @@
       </section>
 
       <section>
-        <article>
-          <div class="cotizacion-box dark-mode">
+        <article class="max-size">
+          <div class="cotizacion-box dark-mode"> 
             <img src="./assets/img/logo-small.webp">
-            <h2>Administración de inmuebles</h2>
+            <h2 class="adorno">Administración de inmuebles</h2>
             <p>Plan de mantenimiento a la medida, mantenimiento preventivo y correctivo, supervisión externa, control de presupuesto y seguimiento de consumo energetico, limpieza y seguridad, </p>
             <ul>
               <li>Conjunto de departamentos</li>
@@ -596,7 +619,8 @@
 
       <section class="py-5">
         <div class="container-fluid">
-          <h4 class="text-white  pt-5 ps-5">Nuestros clientes</h4>
+          <div class=" left-adjust "><h4 class="text-white adorno">Nuestros clientes</h4></div>
+          
         <div class=" py-5 d-flex justify-content-evenly align-items-center" id="clientes">
           <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/anderson.webp" alt=""></div>
           <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/cancun.webp" alt=""></div>

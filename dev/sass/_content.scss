@@ -50,7 +50,10 @@ h3{
 
 }
 .left-adjust{
-    padding-left: 118px;
+    padding-left: 118px!important;
+    @media screen and (max-width:900px) {
+        padding-left: 10px!important;
+    }
 }
 .adorno{
     position: relative;

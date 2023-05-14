@@ -1,0 +1,1 @@
+const anchors=document.querySelectorAll(".solicitar-cotizacion"),cardInterestField=document.getElementById("card-interest");anchors.forEach(c=>{c.addEventListener("click",function(e){var t=c.getAttribute("data-service");cardInterestField.value=t})});

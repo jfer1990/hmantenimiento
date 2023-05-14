@@ -8,6 +8,7 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const replace = require('gulp-replace');
 const del = require('del');
+const uglify = require('gulp-uglify'); // Import the 'uglify' module
 //compile scss into css
 function style() {
     return gulp.src('dev/sass/**/style.scss')
@@ -39,14 +40,18 @@ function convertImages() {
       .pipe(webp())
       .pipe(gulp.dest('dist/assets'));
   }
-  
+  function minifyJs() {
+    return gulp.src('src/js/**/*.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('dist/js'));
+  }
   function copyHtml() {
     return gulp.src('src/index.html')
         .pipe(replace(/(img\/.*).(jpg|png)/g, '$1.webp'))
       .pipe(gulp.dest('dist'));
   }
   function build(callback) {
-    return gulp.series(style, 'minify-css', copyHtml, moveAssets, convertImages)(callback);
+    return gulp.series(style, 'minify-css', copyHtml, moveAssets, convertImages, minifyJs)(callback);
   }
 function watch() {
     browserSync.init({

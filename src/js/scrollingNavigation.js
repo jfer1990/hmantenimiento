@@ -49,3 +49,63 @@ for(let currentItem of menuElements){
     } 
   })
 }
+
+
+//updated function may/2023
+if (window.innerWidth < 772) {
+let prevScrollPos = window.pageYOffset;
+let isAtTop = true;
+const navbar = document.querySelector('#nav-container');
+let timeoutId;
+
+function showNavbar() {
+  navbar.style.transform = 'translateY(0)';
+  navbar.style.backgroundColor = 'black';
+}
+
+function hideNavbar() {
+  navbar.style.transform = `translateY(-${navbar.offsetHeight}px)`;
+  navbar.style.backgroundColor = 'transparent';
+}
+
+function resetTimeout() {
+  clearTimeout(timeoutId);
+  if (!isAtTop) {
+    timeoutId = setTimeout(hideNavbar, 4000);
+  }
+}
+
+function handleScroll() {
+  const currentScrollPos = window.pageYOffset;
+  const isScrollingUp = prevScrollPos > currentScrollPos;
+
+  if (isScrollingUp) {
+    showNavbar();
+  } else {
+    if (isAtTop && currentScrollPos === 0) {
+      navbar.style.backgroundColor = 'transparent';
+    } else {
+      hideNavbar();
+    }
+  }
+
+  isAtTop = currentScrollPos <= 0;
+  prevScrollPos = currentScrollPos;
+
+  if(currentScrollPos<5){
+      navbar.style.backgroundColor = 'transparent';
+  }
+
+  resetTimeout();
+}
+
+window.addEventListener('scroll', handleScroll);
+
+window.addEventListener('resize', function() {
+  isAtTop = window.pageYOffset <= 0;
+  resetTimeout();
+});
+
+handleScroll();
+resetTimeout();
+}

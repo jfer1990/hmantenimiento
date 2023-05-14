@@ -16,13 +16,14 @@ require 'PHPMailer/PHPMailer.php';
 require 'PHPMailer/SMTP.php';
 
 
-$email = $_POST['email'];
-$name  = $_POST['name'];
-$lastname  = $_POST['lastname'];
-$tel = $_POST['tel'];
-$location = $_POST['location'];
-$company = $_POST['company'];
-$message = $_POST['message']; 
+// $email = $_POST['email'];
+// $name  = $_POST['name'];
+// $lastname  = $_POST['lastname'];
+// $tel = $_POST['tel'];
+// $location = $_POST['location'];
+// $company = $_POST['company'];
+// $message = $_POST['message']; 
+// $cardInterest = $_POST['card-interest']; // Retrieve the value of the hidden input field
 
 
 //Create a new PHPMailer instance
@@ -83,12 +84,20 @@ $mail->CharSet = 'UTF-8';
 //Set the subject line
 $mail->Subject = 'Contacto desde formulario';
 
+
+// Validate required fields
+if (empty($_POST['nombre-completo']) || empty($_POST['email']) || empty($_POST['telefono'])) {
+    http_response_code(400);
+    echo 'Missing required fields (nombre-completo or email or telefono)';
+    exit();
+}
+
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
 // $mail->msgHTML(file_get_contents('contents.html'), __DIR__);
 
 //Replace the plain text body with one created manually
-$mail->Body = 'Datos del contacto:<br>Nombre: '.$name.' '.$lastname.'<br>Teléfono: '.$tel.'<br>Email: '.$email.'<br>Empresa: '.$company.'<br>Direccion: '.$location.'<br>Mensaje: '.$message;
+$mail->Body = 'Datos del contacto:<br>Nombre: '.$_POST['nombre-completo'].'<br>Teléfono: '.$_POST['telefono'].'<br>Email: '.$_POST['email'].'<br>Mensaje: '.$_POST['mensaje'].'<br><br>El usuario se interesó por la sección de: '.$_POST['card-interest'].'<br>Servicio: '.$_POST['servicio'].'<br>Interés: '.$_POST['interes'];
 
 //Attach an image file
 // $mail->addAttachment('images/phpmailer_mini.png');
@@ -96,16 +105,12 @@ $mail->Body = 'Datos del contacto:<br>Nombre: '.$name.' '.$lastname.'<br>Teléfo
 //send the message, check for errors
 if (!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
-    var_dump(http_response_code(404));
-
+    http_response_code(500); // Internal Server Error
+    exit();
 } else {
     echo 'Message sent!';
-    // var_dump(http_response_code(200));
-    //Section 2: IMAP
-    //Uncomment these to save your message in the 'Sent Mail' folder.
-    #if (save_mail($mail)) {
-    #    echo "Message saved!";
-    #}
+    http_response_code(200); // OK
+    exit();
 }
 
 //Section 2: IMAP

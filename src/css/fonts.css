@@ -27,20 +27,48 @@
 
 @font-face {
   font-family: 'Gilroy';
-  src: url('../assets/fonts/Type_HM/Gilroy-ExtraBold.otf'),
-        url('../assets/fonts/Type_HM/Gilroy-Medium.ttf'),
-      url('../assets/fonts/Type_HM/Gilroy-Light.otf');
-  font-weight: 700, 500 , 300;
+  src: url('../assets/fonts/Type_HM/Gilroy-ExtraBold.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/fonts/Type_HM/Gilroy-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../assets/fonts/Type_HM/Gilroy-Light.otf');
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Pilat Wide';
-  src: url('../assets/fonts/Type_HM/PilatWide-Light.ttf'),
-      url('../assets/fonts/Type_HM/PilatWide-Regular.ttf'),
-      url('../assets/fonts/Type_HM/PilatWide-Heavy.ttf');
-  font-weight: 300, 500 , 700;
+  src: url('../assets/fonts/Type_HM/PilatWide-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pilat Wide';
+  src: url('../assets/fonts/Type_HM/PilatWide-Regular.ttf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pilat Wide';
+  src: url('../assets/fonts/Type_HM/PilatWide-Heavy.ttf');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }

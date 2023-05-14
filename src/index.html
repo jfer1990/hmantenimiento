@@ -15,7 +15,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"> -->
 </head>
 <body class="">
-  <div class="container-fluid fixed-top" id="nav-container">
+  <div class="container-fluid fixed-top" id="nav-container" style="z-index: 99999;">
       <div class="">
         <nav class="navbar navbar-expand-lg navbar-light ">
           <div class="container-fluid px-0 justify-content-between justify-content-md-start gap-4">
@@ -23,16 +23,24 @@
                 <img Loading="lazy" src="assets/img/logo.png" alt="">
             </div>
             <button class="navbar-toggler" id="btnMenu"  data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <!-- <span class="navbar-toggler-icon"></span> -->
+              <svg id="btnIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
             </button>
             <script>
               const btn = document.querySelector('#btnMenu');
               btn.addEventListener('click', function() {
                 const nav = document.querySelector('#nav-container');
+                const btnIcon = document.querySelector('#btnIcon'); 
                 if (!this.classList.contains('collapsed')) {
                   nav.classList.add('bg-white');
+                  btnIcon.classList.add('black'); 
                 } else {
-                  setTimeout(()=>{nav.classList.remove('bg-white')},250); 
+                  setTimeout(()=>{
+                    nav.classList.remove('bg-white'); 
+                    btnIcon.classList.remove('black'); 
+                  },250); 
                  
                 }
               });
@@ -94,7 +102,7 @@
         </div>
         <div  class="d-flex justify-content-center align-items-center">
           <div class="form-container">
-            <form>
+            <form id="contactForm">
               <div class="form-group">
                 <input type="text" placeholder="Nombre completo" id="nombre-completo" name="nombre-completo" tabindex="1" autofocus required>
               </div>
@@ -131,8 +139,16 @@
               <div class="form-group">
                 <button class="cotizacion-btn" type="submit" tabindex="6">Solicitar cotización</button>
               </div>
-    
-              <span class="protected-info">Tu información está 100% protegida</span>
+
+              <!-- Hidden input field for storing the card interest -->
+              <input type="hidden" id="card-interest" name="card-interest" value="">
+              <div class="d-flex justify-content-center align-items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                </svg>
+                <span class="protected-info" >Tu información está 100% protegida</span>
+              </div>
+              
             </form>
           </div>
         </div>
@@ -148,7 +164,7 @@
     <main class="">
       <section >
         <div class="little-cards">
-         <p>¿Por qué contratar nuestra <br> póliza de mantenimiento?</p>
+         <p class="f-pilate">¿Por qué contratar nuestra <br> póliza de mantenimiento?</p>
           <div class="box-plan-wrapper">
             <div class="box-plan">
                 <span class="icon-Optimisamos"></span>
@@ -253,7 +269,7 @@
           <div class="container-fluid ">
             <div class="row h-100 align-items-center">
 
-              <div class="col-12 p-3 slider-title max-size ">
+              <div class="col-12 p-0 p-lg-3 slider-title max-size ">
                 <div class="ps-2 left-adjust">
                   <div class="d-flex flex-column">
                   <span class="adorno">Experiencia</span>
@@ -376,7 +392,7 @@
                   <li>Materiales basicos incluidos*</li>
                   <li>Reporte mensual de trabajos realizados</li>
                 </ul>
-                <a href="">Solicitar Cotización</a>
+                <a class="solicitar-cotizacion" data-service="basico" href="#contactForm">Solicitar Cotización</a>
               </div>
             </div>
             <div class="d-flex justify-content-center">
@@ -401,13 +417,13 @@
                   <li>Asistencia de especialistas</li>
                   <li>Flexibilidad de horarios para emergencias</li>
                 </ul>
-                <a href="">Solicitar Cotización</a>
+                <a class="solicitar-cotizacion" data-service="recomendado" href="#contactForm">Solicitar Cotización</a>
               </div>
             </div>
             <div class="d-flex justify-content-center">
               <div class="card-price">
                 <div class="d-flex justify-content-between">
-                  <span class="plan-type">Básico</span>
+                  <span class="plan-type">Avanzado</span>
                   <span class="period">Mensual</span>
                 </div>
                 <h3>
@@ -426,13 +442,13 @@
                   <li>Asistencia de especialistas</li>
                   <li>Flexibilidad de horarios para emergencias</li>
                 </ul>
-                <a href="">Solicitar Cotización</a>
+                <a class="solicitar-cotizacion" data-service="avanzado" href="#contactForm">Solicitar Cotización</a>
               </div>
             </div>
             <div class="d-flex justify-content-center">
               <div class="card-price">
                 <div class="d-flex justify-content-between">
-                  <span class="plan-type">Básico</span>
+                  <span class="plan-type">Administración total</span>
                   <span class="period">Mensual</span>
                 </div>
                 <h3>
@@ -454,7 +470,7 @@
                   <li>Plan de mantenimiento mensual y anual</li>
                   <li>Elaboración de presupuesto</li>
                 </ul>
-                <a href="">Solicitar Cotización</a>
+                <a class="solicitar-cotizacion" data-service="administración total" href="#contactForm">Solicitar Cotización</a>
               </div>
             </div>
           </div>
@@ -696,6 +712,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/optimization.js"></script>
     <script src="./js/scrollingNavigation.js"></script>
+    <script src="./js/updateInputHidden.js"></script>
     <script src="./js/form.js"></script>
     <script src="./js/download.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
@@ -760,12 +777,6 @@
 });
   });
  
-
-  let whatsappBtn = document.getElementById("whatsappBtn"); 
-  whatsappBtn.addEventListener("click",function(){
-    // window.location.href('https://wa.me/19999975057'); 
-    window.open('https://wa.me/529982134769','_blank');
-  });
 
 
     </script>

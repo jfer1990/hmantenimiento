@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo HM</title>
+    <link rel="icon" href="./assets/img/logo-sticky.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> -->
+
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"> -->
+</head>
+<body class="">
+  <div class="container-fluid fixed-top" id="nav-container" style="z-index: 99999;">
+      <div class="">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container-fluid px-0 justify-content-between justify-content-md-start gap-4">
+            <div class="logo">
+                <img Loading="lazy" src="assets/img/logo.webp" alt="">
+            </div>
+            <button class="navbar-toggler" id="btnMenu"  data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <!-- <span class="navbar-toggler-icon"></span> -->
+              <svg id="btnIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+            </button>
+            <script>
+              const btn = document.querySelector('#btnMenu');
+              btn.addEventListener('click', function() {
+                const nav = document.querySelector('#nav-container');
+                const btnIcon = document.querySelector('#btnIcon'); 
+                if (!this.classList.contains('collapsed')) {
+                  nav.classList.add('bg-white');
+                  btnIcon.classList.add('black'); 
+                } else {
+                  setTimeout(()=>{
+                    nav.classList.remove('bg-white'); 
+                    btnIcon.classList.remove('black'); 
+                  },250); 
+                 
+                }
+              });
+            </script>
+            <div class="collapse navbar-collapse justify-content-start flex-grow" id="navbarTogglerDemo02">
+              <ul class="ps-5 ps-lg-0 navbar-nav d-flex justify-content-between w-75 gap-4">
+                <li class="nav-item">
+                  <a class="nav-link " href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#beneficios">BENEFICIOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#servicios">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#contacto">CONTÁCTANOS</a>
+                </li>
+
+              </ul>
+              <div class="ps-5 ps-lg-0  display-lg-none d-flex flex-column justify-content-between" id="sectionTwoNavbar">
+                <div>
+                  <p class="" >hola@gropohmantenimiento.com</p>
+                  <p class="">Tel: 9982134769</p>
+                </div>
+                
+                <ul class="d-flex justify-content-start pb-auto" >
+                  <li class="nav-item"><a class="nav-link" href=""><span class="icon-Linkeding"></span></a></li>
+                  <li class="nav-item"><a class="nav-link" href=""><span class="icon-facebook1"></span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="mailto:hola@grupohmantenimiento.com"><span class="icon-message"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="collapse navbar-collapse">
+              <ul class="navbar-nav d-flex justify-content-evenly">
+                <li class="nav-item"><a class="nav-link" href=""><span class="icon-Linkeding"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><span class="icon-facebook1"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="mailto:hola@grupohmantenimiento.com"><span class="icon-message"></span></a></li>
+              </ul>
+            </div> -->
+            
+          </div>
+        </nav>
+      </div>
+      
+ 
+  </div>
+    
+    <header class="d-flex align-items-center gray-bg">
+
+      
+      <!-- <img src="./assets/img/hero.webp"/> -->
+      <div class="header-wrapper">
+        <div class="d-flex justify-content-center align-items-center"> 
+          <div class="floating-title">
+            <h1>Administración del <br>mantenimiento en propiedades</h1>
+            <h3>Cotiza hoy un plan a medida y soluciona las <br>necesidades de tu inmueble con personal calificado</h3>
+          </div>
+        </div>
+        <div  class="d-flex justify-content-center align-items-center">
+          <div class="form-container">
+            <div class="d-flex gap-2 align-items-center pb-3">
+              <img src="assets/img/logo-icon.webp">
+              <div class="d-flex flex-column">
+                <h2>
+                  Soluciones en mantenimiento
+                </h2>
+                <p>
+                  servicios especializados para crear entornos seguros, funcianales y rentables
+                </p>
+              </div>
+            </div>
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" placeholder="Nombre completo" id="nombre-completo" name="nombre-completo" tabindex="1" autofocus required>
+              </div>
+              
+              <div class="form-group">
+                <input type="email" placeholder="Email" id="email" name="email" tabindex="2" required>
+              </div>
+              
+              <div class="form-group">
+                <input type="tel" placeholder="Teléfono" id="telefono" name="telefono" tabindex="3" required>
+              </div>
+    
+              
+              <div class="form-group">
+                <select name="servicio" tabindex="4">
+                  <option value="" disabled selected>Cuéntanos qué te interesa</option>
+                  <option value="casa">Casa</option>
+                  <option value="negocio">Negocio</option>
+                </select>
+              </div>
+    
+              <div class="form-group">
+                <select name="interes" tabindex="7">
+                  <option value="" disabled selected>Selecciona un plan de mantenimiento</option>
+                  <option value="">Ejemplo1</option>
+                  <option value="">Ejemplo2</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <textarea id="mensaje" placeholder="Comentarios" name="mensaje" rows="5" tabindex="5" required></textarea>
+              </div>
+              
+              <div class="form-group">
+                <button class="cotizacion-btn" type="submit" tabindex="6">Solicitar cotización</button>
+              </div>
+
+              <!-- Hidden input field for storing the card interest -->
+              <input type="hidden" id="card-interest" name="card-interest" value="">
+              <div class="d-flex justify-content-center align-items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                  <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/>
+                </svg>
+                <span class="protected-info" >Tu información está 100% protegida</span>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+
+
+    </header>
+    
+    <main class="">
+      <section >
+        <div class="little-cards">
+         <p class="f-pilate">¿Por qué contratar nuestra <br> póliza de mantenimiento?</p>
+          <div class="box-plan-wrapper">
+            <div class="box-plan">
+                <span class="icon-Optimisamos"></span>
+                <div> 
+                  <h3>Mantenimiento Preventivo</h3>
+                  <p>Optimizando recursos</p>
+                </div>
+            </div>
+
+            <div class="box-plan">
+              <span class="icon-igualas-de-mantenimiento"></span>
+              <div> 
+                <h3>Servicios Integrales</h3>
+                <p>Gama amplia de servicios</p>
+              </div>
+            </div>
+
+            <div class="box-plan">
+              <span class="icon-Supervision-de-obras"></span>
+              <div> 
+                <h3>Técnicos calificados</h3>
+                <p>Equipo eficaz y confiable</p>
+              </div>
+            </div>
+
+            <div class="box-plan">
+              <span class="icon-Servicios-de-mantenimiento"></span>
+              <div> 
+                <h3>Gestión administrativa</h3>
+                <p>Mantenimiento y respaldo de datos</p>
+              </div>
+            </div>
+
+          </div>  
+        </div>
+      </section>
+
+      <section id="overall-info" class="py-5">
+        <article>
+          <div class="cotizacion-box">
+            <span class="adorno">Tu empresa funcionando a la perfección</span>
+            <h2>Poliza de mantenimiento industrial</h2>
+            <p>Brindar un entorno seguro y eficaz a tus clientes
+              cuidando la rentabilidad de tu negocio</p>
+            <ul>
+              <li>Hoteles</li>
+              <li>Oficinas</li>
+              <li>Supermercados</li>
+              <li>Cuarto de máquinas</li>
+              <li>Elevadores</li>
+            </ul>
+            <a class="cotizacion-btn" href="">Solicitar Cotización</a>
+          </div>
+          <div class="inverse">
+            <img src="./assets/img/worker.webp" alt="">
+          </div>
+        </article>
+        <article>
+          <div>
+            <img src="./assets/img/family.webp" alt="">
+          </div>
+          <div class="cotizacion-box">
+            <span class="adorno">Tu inmueble en las mejores condiciones </span>
+            <h2>Administración de inmuebles</h2>
+            <p>Plan de mantenimiento a la medida, mantenimiento preventivo y correctivo, supervisión externa, control de presupuesto y seguimiento de consumo energetico, limpieza y seguridad, </p>
+            <ul>
+              <li>Conjunto de departamentos</li>
+              <li>Coworking</li>
+              <li>Restaurantes</li>
+              <li>Condominios</li>
+              <li>Almacenes</li>
+            </ul>
+            <a href="">Solicitar Cotización</a>
+          </div>
+        </article>
+        <article>
+          <div class="cotizacion-box">
+            <span class="adorno">Cuida tu plusvalía</span>
+            <h2>Póliza de mantenimiento residencial</h2>
+            <p>
+              Contamos con un equipo confiable y optimo para cumplir con los trabajos necesarios basados en el plan de mantenimiento
+            </p>
+            <ul>
+              <li>Departamentos</li>
+              <li>Airbnb</li>
+              <li>Residenciales</li>
+              <li>Penthouse</li>
+            </ul>
+            <a href="">Solicitar Cotización</a>
+          </div>
+          <div class="inverse">
+            <img src="./assets/img/pool.webp" alt="">
+          </div>
+        </article>
+        
+
+      </section>
+
+    
+      
+        <section class="py-5" id="trabajosActuales">   
+          <div class="container-fluid ">
+            <div class="row h-100 align-items-center">
+
+              <div class="col-12 p-0 p-lg-3 slider-title max-size ">
+                <div class="ps-2 left-adjust">
+                  <div class="d-flex flex-column">
+                  <span class="adorno">Experiencia</span>
+                  <h3 class="">
+                    Nuestros trabajos actuales
+                  </h3>
+                  </div>
+                  <div class="controls">
+                    <div class="prev fs-1 icon-arrow-left d-flex justify-content-center align-items-center"></div>
+                    <div class="next fs-1 icon-arrow-right d-flex justify-content-center align-items-center"></div>
+                  </div>
+                </div>
+                <div class="info">
+                  <p>
+                    Somos una empresa de administración de propiedades <br>inmobiliarias, en Quintana Roo.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex justify-content-center order-2 order-md-3">
+                <div class="glide" id="slider" data-glide='{
+                  "type":"carousel",
+                  "perView":4.2,
+                  "autoplay":5000,
+                  "hoverpause":false,
+                  "gap":22,
+                  "breakpoints": {
+                    "1024": {
+                      "perView": 3
+                    },
+                    "600": {
+                      "perView": 1
+                    }
+                  }
+
+                }'>
+                  <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                      
+        
+                      
+                      <li class="glide__slide position-relative">
+        
+                          <img loading="lazy"   src="./assets/img/slider/our-works-1.webp" alt=""> 
+                          <div class="moonlit2">
+                            <p class="text-yellow">Hotel Sunset </p>
+                            <p class="text-white">Trabajos en alturas</p>
+                          </div>
+        
+                      </li>
+                      <li class="glide__slide position-relative">
+        
+                          <img loading="lazy"  src="./assets/img/slider/our-works-2.webp" alt="">
+                          <div class="moonlit2">
+                            <p class="text-yellow">Plaza Sky Cumbres</p>
+                            <p class="text-white">Fabricación de camara fria</p>
+                          </div>
+                      </li>
+                      <li class="glide__slide position-relative">
+        
+                        <img loading="lazy"  src="./assets/img/slider/our-works-3.webp" alt="">
+                        <div class="moonlit2">
+                          <p class="text-yellow">beNuk</p>
+                          <p class="text-white">Rotulo en altura</p>
+                        </div>
+                      </li>
+                      <li class="glide__slide position-relative">
+          
+                        <img loading="lazy"  src="./assets/img/slider/our-works-4.webp" alt="">
+                        <div class="moonlit2">
+                          <p class="text-yellow">7-Eleven</p>
+                          <p class="text-white">Mantenimiento Electricidad</p>
+                        </div>
+                      </li>
+                      
+                     
+                    </ul>
+                  </div>
+                  
+
+                  
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+     
+        <!--   -->
+
+        <section class="py-5" >
+          <div class="max-size left-adjust">
+          <div class="d-flex flex-column pb-md-5 ">
+            <span class="adorno">Creamos un plan a tu medida</span>
+            <h3 class="">
+              Planes de mantenimiento
+            </h3>
+            </div>
+          </div>
+          <div class="planes-mantenimiento max-size">
+            <div class="d-flex justify-content-center">
+              <div class="card-price">
+                <div class="d-flex justify-content-between">
+                  <span class="plan-type">Básico</span>
+                  <span class="period">Mensual</span>
+                </div>
+                <h3>
+                  Desde $6,800 al mes
+                </h3>
+                <div class="d-flex justify-content-start gap-1 discounts">
+                  <span class="subrayado">20%DCT</span>
+                  <span class="normal-span">Ahorras $1,700</span>
+                </div>
+                <p>
+                  Atención personaliada personalizada para imprevisto que sucedan en el inmueble
+                </p>
+                <ul>
+                  <li>Elege tus 4 servicios de interés</li>
+                  <li>Visita con supervición 1 al mes</li>
+                  <li>Materiales basicos incluidos*</li>
+                  <li>Reporte mensual de trabajos realizados</li>
+                </ul>
+                <a class="solicitar-cotizacion" data-service="basico" href="#contactForm">Solicitar Cotización</a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="card-price">
+                <div class="d-flex justify-content-between">
+                  <span class="plan-type">Recomendado</span>
+                  <span class="period">Mensual</span>
+                </div>
+                <h3>
+                  Desde $12,800 al mes
+                </h3>
+                <div class="d-flex justify-content-start gap-1 discounts">
+                  <span class="subrayado">20%DCT</span>
+                  <span class="normal-span">Ahorras $3,200</span>
+                </div>
+                <p>
+                  Perfecto para negocios medianos y grandes, bares, restaurantes y locales
+                </p>
+                <ul>
+                  <li>9-12 visitas al mes</li>
+                  <li>Reportes mensuales</li>
+                  <li>Asistencia de especialistas</li>
+                  <li>Flexibilidad de horarios para emergencias</li>
+                </ul>
+                <a class="solicitar-cotizacion" data-service="recomendado" href="#contactForm">Solicitar Cotización</a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="card-price">
+                <div class="d-flex justify-content-between">
+                  <span class="plan-type">Avanzado</span>
+                  <span class="period">Mensual</span>
+                </div>
+                <h3>
+                  Desde $17,425 al mes
+                </h3>
+                <div class="d-flex justify-content-start gap-1 discounts">
+                  <span class="subrayado">20%DCT</span>
+                  <span class="normal-span">Ahorras $3,075</span>
+                </div>
+                <p>
+                  Perfecto para inmuebles grandes que necesiten mantenimiento constante y una gestión administrativa
+                </p>
+                <ul>
+                  <li>12-16 visitas al mes</li>
+                  <li>Visita con supervición 4 al mes</li>
+                  <li>Asistencia de especialistas</li>
+                  <li>Flexibilidad de horarios para emergencias</li>
+                </ul>
+                <a class="solicitar-cotizacion" data-service="avanzado" href="#contactForm">Solicitar Cotización</a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="card-price">
+                <div class="d-flex justify-content-between">
+                  <span class="plan-type">Administración total</span>
+                  <span class="period">Mensual</span>
+                </div>
+                <h3>
+                  Desde $22,100 al mes
+                </h3>
+                <div class="d-flex justify-content-start gap-1 discounts">
+                  <span class="subrayado">20%DCT</span>
+                  <span class="normal-span">Ahorras $3,900</span>
+                </div>
+                <p>
+                  Cobertura amplia y supervisión total del inmueble con transparencia en gastos
+                </p>
+                <ul>
+                  <li>Personal fijo</li>
+                  <li>Visita con supervición</li>
+                  <li>Asistencia personalizada</li>
+                  <li>Flexibilidad de horarios para emergencias</li>
+                  <li>Seguimiento de consumo energetico </li>
+                  <li>Plan de mantenimiento mensual y anual</li>
+                  <li>Elaboración de presupuesto</li>
+                </ul>
+                <a class="solicitar-cotizacion" data-service="administración total" href="#contactForm">Solicitar Cotización</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    </main>
+        
+    <div class="pre-footer">
+      <section>
+        <div class="accordion" id="faqAccordion">
+          <div class="ps-3 ps-md-0">
+            <h5 class="adorno">Preguntas Frecuentes</h5>
+          </div>
+          
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <span class="accordion-title">
+                  ¿Cúales son los servicios de mantenimeinto?  
+                </span>
+                <span class="accordion-icon">
+                  <i class="bi bi-plus"></i>
+                </span>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Contamos con expertos en Plomería, Electricidad, Herrería y Estructura, Transformadores, Tablaroca, Aire acondicionado y refrigeración, Albañileria, Carpinteria y Cisternas
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                
+                <span class="accordion-title">
+                  ¿Cómo perzonalizo mi plan de mantenimiento?  
+                </span>
+                <span class="accordion-icon">
+                  <i class="bi bi-plus"></i>
+                </span>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Selecciona uno de nuestros planes para que nuestros agentes te contacten y podemos agendar una cita en el inmuble que necesites que administremos 
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                
+                <span class="accordion-title">
+                  ¿Por qué tener un plan mensual de mantenimeinto?  
+                </span>
+                <span class="accordion-icon">
+                  <i class="bi bi-plus"></i>
+                </span>
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Contamos con expertos en Plomería, Electricidad, Herrería y Estructura, Transformadores, Tablaroca, Aire acondicionado y refrigeración, Albañileria, Carpinteria y Cisternas
+              </div>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                
+                <span class="accordion-title">
+                  ¿Como solicito ayuda ante un desastre?  
+                </span>
+                <span class="accordion-icon">
+                  <i class="bi bi-plus"></i>
+                </span>
+              </button>
+            </h2>
+            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Respuesta 2
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                
+                <span class="accordion-title">
+                  ¿Como solicito ayuda ante un desastre?  
+                </span>
+                <span class="accordion-icon">
+                  <i class="bi bi-plus"></i>
+                </span>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Respuesta 1
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                
+                <span class="accordion-title">
+                  ¿Como solicito ayuda ante un desastre?  
+                </span>
+                <span class="accordion-icon">
+                  <i class="bi bi-plus"></i>
+                </span>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Respuesta 2
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <article class="max-size">
+          <div class="cotizacion-box dark-mode"> 
+            <img src="./assets/img/logo-small.webp">
+            <h2 class="adorno">Administración de inmuebles</h2>
+            <p>Plan de mantenimiento a la medida, mantenimiento preventivo y correctivo, supervisión externa, control de presupuesto y seguimiento de consumo energetico, limpieza y seguridad, </p>
+            <ul>
+              <li>Conjunto de departamentos</li>
+              <li>Coworking</li>
+              <li>Restaurantes</li>
+              <li>Condominios</li>
+              <li>Almacenes</li>
+            </ul>
+          </div>
+          <div>
+            <img src="./assets/img/pool.webp" alt="">
+          </div>
+        </article>
+      </section>
+
+      <section class="py-5">
+        <div class="container-fluid">
+          <div class=" left-adjust "><h4 class="text-white adorno">Nuestros clientes</h4></div>
+          
+        <div class=" py-5 d-flex justify-content-evenly align-items-center" id="clientes">
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/anderson.webp" alt=""></div>
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/cancun.webp" alt=""></div>
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/chedraui.webp" alt=""></div>
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/colliers.webp" alt=""></div>
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/cumbres.webp" alt=""></div>
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/funo.webp" alt=""></div>
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/logar.webp" alt=""></div>
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/plazaroca.webp" alt=""></div>
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/plazasoutlet.webp" alt=""></div>
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/sunset.webp" alt=""></div>
+          <div class="cliente"><img loading="lazy"  src="./assets/img/clientes/viverent.webp" alt=""></div>
+        </div>
+        </div>
+        
+      </section>
+
+      <footer class="container-fluid d-flex flex-column px-1 px-md-3 px-lg-4 px-xl-5 justify-content-between" id="contacto">
+        <div class="footer pb-5">
+          <div class="item-contact">
+            <div class="d-flex flex-column justify-content-start">
+              <h5>¿Por qué elegirnos?</h5>
+              <ul>
+                <li>Beneficios</li>
+                <li>Mantenimiento para empreas</li>
+                <li>Mantenimiento para recidenciales</li>
+                <li>Planes personalizados</li>
+              </ul>
+            </div>
+            
+          </div>
+          <div class="item-contact">
+            <div class="d-flex flex-column justify-content-start">
+              <h5>Contacto</h5>
+              <ul>
+                <li>
+                  <a href="mailto:hola@grupohmantenimiento.com">hola@grupohmantenimiento.com</a>
+                </li>
+                <li>
+                  <a href="whatsapp://send?phone=+529981234567&text=Hola%20Grupo%20H%20Mantenimiento!">WhatsApp 9981234567</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item-contact">
+            <div class="d-flex flex-column justify-content-start"> 
+              <h5>
+                Descarga nuestro PDF <br> y conoce a detalle nuestros servicios.
+              </h5>
+              <input type="email" id="emailInput" class="mb-1">
+              <button onclick="downloadPDF()">Descargar</button>
+            </div>
+            
+            <script>
+              function downloadPDF() {
+                const emailInput = document.getElementById("emailInput");
+                const email = emailInput.value;
+                if (isValidEmail(email)) {
+                  // Replace the URL below with the URL of your PDF file
+                  const pdfURL = "./assets/downloads/presentacion.pdf";
+                  const link = document.createElement("a");
+                  link.href = pdfURL;
+                  link.download = "presentacion.pdf";
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                } else {
+                  alert("Invalid email. Please enter a valid email address.");
+                }
+              }
+
+              function isValidEmail(email) {
+                // A simple email validation regex
+                const emailRegex = /^\S+@\S+\.\S+$/;
+                return emailRegex.test(email);
+              }
+            </script>
+          </div>
+        </div>  
+      </footer>
+    </div>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/optimization.js"></script>
+    <script src="./js/scrollingNavigation.js"></script>
+    <script src="./js/updateInputHidden.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/download.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script> -->
+
+    <script>
+
+      const COMPONENT_NAME = "data-glide";
+      const COMPONENT_SELECTOR = `[${COMPONENT_NAME}]`;
+
+      const components = document.querySelectorAll(COMPONENT_SELECTOR);
+      for (let i = 0; i < components.length; i++) {
+        const options = JSON.parse(components[i].getAttribute(COMPONENT_NAME) || "{}");
+        let glide = new Glide(
+          components[i],
+          options
+        );
+        
+        
+
+        glide.mount();
+
+        if(components[i].id == 'slider'){
+          let nextBtn = document.querySelector('.next');
+          let prevBtn = document.querySelector('.prev');
+          nextBtn.addEventListener('click',function(){
+            glide.go('>');
+          })
+          prevBtn.addEventListener('click',function(){
+            glide.go('<');
+          })
+          
+        }
+
+
+      }
+
+      let heartIconSVG1 = document.getElementsByClassName("heartSVG"); 
+                          for(let index = 0; index<heartIconSVG1.length;index++){
+                            let heartSVG = heartIconSVG1[index]; 
+                            let heartIconSVG = heartSVG.querySelector('.heartIcon'); 
+                            heartSVG.addEventListener('click',function(){heartIconSVG.classList.toggle('active')}); 
+                          }
+
+
+
+  const shareButton = document.querySelectorAll('.share-btn');
+  shareButton.forEach((current)=>{
+    current.addEventListener('click', event => {
+    let link = current.getAttribute("data-blog-link"); 
+    if (navigator.share) {
+      navigator.share({
+        title: 'WebShare API Demo',
+        url: link
+      }).then(() => {
+        console.log('Thanks for sharing!');
+      })
+      .catch(console.error);
+    } else {
+      // fallback
+    }
+});
+  });
+ 
+
+
+    </script>
+  
+    
+    
+</body>
+</html>

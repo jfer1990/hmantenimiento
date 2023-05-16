@@ -330,6 +330,28 @@ header{
                 // bottom:-450px;
                 bottom:80px;
             }
+            img{
+                object-fit: contain;
+                width:61.27px; 
+            }
+            h2{
+                font-family: 'Pilat Wide';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 105%;
+                color: #000;
+            }
+            p{
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 105%;
+                color: #000000;
+                margin-bottom: 0!important;
+                padding-right:20px; 
+            }
             width: 357px;
             padding: 14px;
             background-color: #fff;
@@ -1519,5 +1541,39 @@ footer{
   .modal{
     position:relative; 
     display:grid; 
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    background-color: #242424;
+  }
+  .modal-info{
+    background-image: url('../assets/img/modal-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: start;
+    padding-left: 1em;
+    h4,p{
+        color:white!important; 
+        text-align: left;
+    }
+    h4{
+        font-family: 'Pilat Wide';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22.2693px;
+        line-height: 29px;
+    }
+    p{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16.7019px;
+        line-height: 151%;
+    }
+    ul{
+        gap:20px!important; 
+    }
+  }
+  .swal2-popup {
+    width:90%!important; 
+    max-width:800px!important; 
   }

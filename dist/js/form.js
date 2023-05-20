@@ -1,4 +1,4 @@
-const contactForm=document.getElementById("contactForm");function showModal(i){Swal.fire({html:`<div class="modal"><img style="width:100%;" src="assets/img/modal.png"><div class="modal-info d-flex flex-column gap-4">${i}</div></div>`,showCloseButton:!0,showCancelButton:!1,showConfirmButton:!1})}contactForm.addEventListener("submit",function(i){i.preventDefault();i=new FormData(contactForm);fetch("sendEmail.php",{method:"POST",body:i}).then(function(i){i.ok||i.status,showModal(`
+const contactForm=document.getElementById("contactForm");function showModal(t){Swal.fire({html:`<div class="modal"><img style="width:100%;" src="assets/img/modal.png"><div class="modal-info d-flex flex-column gap-4">${t}</div></div>`,showCloseButton:!0,showCancelButton:!1,showConfirmButton:!1})}contactForm.addEventListener("submit",function(t){t.preventDefault();t=new FormData(contactForm);validateFormInputs()&&fetch("sendEmail.php",{method:"POST",body:t}).then(function(t){t.ok||t.status,showModal(`
         <h4>Tu solicitus ha sido enviada con éxito!</h4>
         <p>Nuestro equipo se pondá en contacto lo más rápido posible</p>
         <ul class="d-flex justify-content-center gap-2">
@@ -26,7 +26,7 @@ const contactForm=document.getElementById("contactForm");function showModal(i){S
         </svg>
         </a></li>
         </ul>
-        `)}).catch(function(i){showModal(`
+        `)}).catch(function(t){showModal(`
       <h4>Tu solicitus ha sido enviada con éxito!</h4>
       <p>Nuestro equipo se pondá en contacto lo más rápido posible</p>
       <ul class="d-flex justify-content-center gap-2">
@@ -54,4 +54,4 @@ const contactForm=document.getElementById("contactForm");function showModal(i){S
       </svg>
       </a></li>
       </ul>
-      `)})});
+      `)})});const validateFormInputs=()=>{let t=!0;var s=document.getElementById("nombre-completo"),i=document.getElementById("email"),a=document.getElementById("mensaje");return s.classList.remove("error"),i.classList.remove("error"),a.classList.remove("error"),""===s.value.trim()&&(t=!1,s.classList.add("error")),""!==i.value.trim()&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(i.value.trim())||(t=!1,i.classList.add("error")),""===a.value.trim()&&(t=!1,a.classList.add("error")),!!t};

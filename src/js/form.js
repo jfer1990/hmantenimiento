@@ -129,6 +129,8 @@ contactForm.addEventListener('submit', function (event) {
   // Collect form data
   const formData = new FormData(contactForm);
 
+  if(!validateFormInputs())return; 
+
   // Send the form data to sendEmail.php using fetch
   fetch('sendEmail.php', {
     method: 'POST',
@@ -273,6 +275,46 @@ function showModal(message) {
       })
   // Code to display the modal with the provided title and message
 }
+
+const validateFormInputs = ()=>{
+      // Check if required fields are filled
+      let isFormValid = true;
+
+      const nombreInput = document.getElementById('nombre-completo');
+      const emailInput = document.getElementById('email');
+      const mensajeInput = document.getElementById('mensaje');
+  
+      nombreInput.classList.remove('error');
+      emailInput.classList.remove('error');
+      mensajeInput.classList.remove('error'); 
     
+      if (nombreInput.value.trim() === '') {
+        isFormValid = false;
+        nombreInput.classList.add('error')
+        
+      }
+    
+      if (emailInput.value.trim() === '') {
+        isFormValid = false;
+        emailInput.classList.add('error');
+      } else {
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailInput.value.trim())) {
+          isFormValid = false;
+          emailInput.classList.add('error');
+        }
+      }
+    
+      if (mensajeInput.value.trim() === '') {
+        isFormValid = false;
+        mensajeInput.classList.add('error')
+  
+      }
+    
+      if (!isFormValid) {
+        return false;
+      }
+      return true; 
+}
 
     

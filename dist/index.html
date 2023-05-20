@@ -81,19 +81,22 @@
               id="navbarTogglerDemo02"
             >
               <ul
-                class="ps-5 ps-lg-0 navbar-nav d-flex justify-content-between w-75 gap-4"
+                class="ps-5 ps-lg-0 navbar-nav d-flex justify-content-start w-75 gap-4"
               >
                 <li class="nav-item">
-                  <a class="nav-link" href="#">INICIO</a>
+                  <a class="nav-link" href="#empresarial">Empresarial</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#beneficios">BENEFICIOS</a>
+                  <a class="nav-link" href="#residencial">Residencial</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#servicios">SERVICIOS</a>
+                  <a class="nav-link" href="#nuestrosTrabajos">Nuestros trabajos </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contacto">CONTÁCTANOS</a>
+                  <a class="nav-link" href="#faqAccordion">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#nosotros">Nosotros</a>
                 </li>
               </ul>
               <div
@@ -313,8 +316,8 @@
       </section>
 
       <section id="overall-info" class="py-5">
-        <article>
-          <div class="cotizacion-box">
+        <article id="empresarial">
+          <div class="cotizacion-box" >
             <span class="adorno">Tu empresa funcionando a la perfección</span>
             <h2>Poliza de mantenimiento industrial</h2>
             <p>
@@ -358,7 +361,7 @@
             <a href="#contactForm">Solicitar Cotización</a>
           </div>
         </article>
-        <article>
+        <article id="residencial">
           <div class="cotizacion-box">
             <span class="adorno">Cuida tu plusvalía</span>
             <h2>Póliza de mantenimiento residencial</h2>
@@ -382,7 +385,7 @@
 
       <section class="py-5" id="trabajosActuales">
         <div class="container-fluid">
-          <div class="row h-100 align-items-center">
+          <div class="row h-100 align-items-center" id="nuestrosTrabajos">
             <div class="col-12 p-0 p-lg-3 slider-title max-size">
               <div class="ps-2 left-adjust">
                 <div class="d-flex flex-column">
@@ -932,10 +935,10 @@ Planificación del mantenimiento: Esta actividad implica la definición de un pl
       </section>
 
       <section>
-        <article class="max-size special-card">
+        <article class="max-size special-card" id="nosotros">
           <div class="cotizacion-box dark-mode">
             <img src="./assets/img/logo-small.webp" />
-            <h2 class="adorno">Pólizas-Mantenimiento-Outsourcing</h2>
+            <h2 class="adorno oneline">Pólizas-Mantenimiento-Outsourcing</h2>
             <p>
               Administramos los recursos, activos e infraestructura de inmubles con nuestros planes personalizados, enfocando los esfuerzos para construir entornos rentables y seguros en inmubles insdustriales, empresariales, smart depas y recidencial 
             </p>
@@ -1107,10 +1110,13 @@ Planificación del mantenimiento: Esta actividad implica la definición de un pl
             </div>
 
             <script>
+
               function downloadPDF() {
                 const emailInput = document.getElementById("emailInput");
                 const email = emailInput.value;
-                if (isValidEmail(email)) {
+                const checkbox = document.querySelector('input[name="download"]');
+                
+                if (isValidEmail(email) && checkbox.checked) {
                   // Replace the URL below with the URL of your PDF file
                   const pdfURL = "./assets/downloads/presentacion.pdf";
                   const link = document.createElement("a");
@@ -1120,7 +1126,7 @@ Planificación del mantenimiento: Esta actividad implica la definición de un pl
                   link.click();
                   document.body.removeChild(link);
                 } else {
-                  alert("Invalid email. Please enter a valid email address.");
+                  alert("Please enter a valid email address and check the checkbox to download the PDF.");
                 }
               }
 
@@ -1131,8 +1137,12 @@ Planificación del mantenimiento: Esta actividad implica la definición de un pl
               }
             </script>
           </div>
+          
         </div>
       </footer>
+      <div class="mobile-last">
+        <a href="#contactForm" class="btn solicitar-cotizacion">Solicitar cotización</a>
+      </div>
     </div>
 
     <script

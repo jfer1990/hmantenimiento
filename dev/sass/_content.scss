@@ -68,6 +68,11 @@ h3{
         left: -1em;
     }
 }
+h2.oneline{
+    @media screen and (max-width:772px) {
+        font-size: 16px!important;
+    }
+}
     
 
 .cotizacion-btn{
@@ -175,7 +180,7 @@ img{
 // }
 #nav-container{
     @media screen and (max-width:728px) {
-        padding-left: 0px;
+        padding-left: 15px;
     }
     padding-left: 120px;
     .navbar-toggler{
@@ -193,7 +198,7 @@ img{
     .navbar{
         padding-top: 20px;
         #navbarTogglerDemo02{
-            max-width: 556px;
+            // max-width: 600px;
             .icons{
                 @media screen and (min-width:772px) {
                     //display: none!important;
@@ -267,6 +272,7 @@ img{
         .navbar{
             // margin-left: -40px;
             padding: 10px;
+            padding-top: 20px;
             // margin-right: -40px;
             background: transparent;
             
@@ -963,7 +969,7 @@ footer{
 
 .nav-item{
     a{
-        // font-family: 'sofiaPro';
+        font-size:12px!important; 
     }
 }
 
@@ -1348,6 +1354,9 @@ footer{
               .accordion-title {
                 flex: 1;
                 padding-left: 1rem;
+                @media screen and (max-width:772px) {
+                    font-size: 1.2em;
+                }
               }
           
               &:not(.collapsed) {
@@ -1364,6 +1373,9 @@ footer{
               background-color: black;
               border-top: 1px solid $yellow;
               padding: 1rem;
+              @media screen and (max-width:772px) {
+                font-size: 12px;
+            }
             }
           
             
@@ -1632,3 +1644,31 @@ footer{
     width:90%!important; 
     max-width:800px!important; 
   }
+
+  .mobile-last{
+    @media screen and (max-width:500px) {
+        display:block; 
+    }
+    display:none; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+    .btn.solicitar-cotizacion{
+        display: flex;
+        justify-content: center;
+        margin:auto;
+        width: 328.01px;
+        height: 57.24px;
+        background: $yellow;
+        border-radius: 10.8731px;
+        padding: 18.1218px 14.4975px;
+        font-family: 'Pilat Wide';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        /* identical to box height */
+        color: #000000;
+    }
+  }
+  

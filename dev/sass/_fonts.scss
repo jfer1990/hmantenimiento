@@ -33,6 +33,10 @@ h1{
     line-height: 41px;
     line-height: 51px;
     font-family: 'Pilat Wide';
+    @media screen and (max-width:772px) {
+        font-size:25px!important; 
+        line-height: 1.3em;
+    }
 }
 h2{
     // font-family:'Helvetica Neue';
